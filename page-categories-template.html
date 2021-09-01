@@ -1,0 +1,46 @@
+<div class="container fadeIn">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="bracelets-olfactifs-tab" data-toggle="pill" href="#bracelets-olfactifs" role="tab" aria-controls="bracelets-olfactifs" aria-selected="true">Les bracelets olfactifs</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="bijoux-seuls-tab" data-toggle="pill" href="#bijoux-seuls" role="tab" aria-controls="bijoux-seuls" aria-selected="false">Les bijoux seuls</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="recharges-parfum-tab" data-toggle="pill" href="#recharges-parfum" role="tab" aria-controls="recharges-parfum" aria-selected="false">Les recharges de parfums</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="coffret-decouverte-tab" data-toggle="pill" href="#coffret-decouverte" role="tab" aria-controls="coffret-decouverte" aria-selected="false">Coffret découverte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="bracelets-olfactifs" role="tabpanel" aria-labelledby="bracelets-olfactifs-tab">
+                    <div class="cards">
+                        [pods name="product" template="Page Categories Product Template" limit="3" where="product_cat.slug = 'bracelets-olfactifs'"]
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bijoux-seuls" role="tabpanel" aria-labelledby="bijoux-seuls-tab">
+                    <div class="cards">
+                        [pods name="product" template="Page Categories Product Template" limit="3" where="product_cat.slug = 'bijoux-seuls'"]
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="recharges-parfum" role="tabpanel" aria-labelledby="recharges-parfum-tab">
+                    <div class="cards">
+                        [pods name="product" template="Page Categories Product Template" limit="3" where="product_cat.slug = 'recharges-parfum'"]
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="coffret-decouverte" role="tabpanel" aria-labelledby="coffret-decouverte-tab">
+                    <div class="cards">
+                        [pods name="product" template="Page Categories Product Template" limit="3" where="product_cat.slug = 'coffret-decouverte'"]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
