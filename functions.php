@@ -4,10 +4,9 @@
 add_action( 'wp_enqueue_scripts', 'wpchild_enqueue_styles' );
 function wpchild_enqueue_styles(){
   wp_enqueue_style( 'wpm-wp-bootstrap-starter-style', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'wpm-wp-bootstrap-starter-style', get_template_directory_uri() . '/style.scss' );
 }
 
-remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_content', 'wpautop' );
 
 add_action( 'init', function () {
   add_image_size( 'dgwt-wcas-product-custom', 300, '', false );

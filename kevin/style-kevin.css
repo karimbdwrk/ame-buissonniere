@@ -1,0 +1,13 @@
+#wesh .morray {
+  display: flex; }
+
+header {
+  border: 1px solid black; }
+
+#hero .container .row .col-12 .description {
+  color: lightblue; }
+
+.product_title {
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style-kevin.css.map */

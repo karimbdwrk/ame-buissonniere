@@ -47,4 +47,11 @@ jQuery(document).ready(function() {
             }
         }
     })
+
+    // jQuery('#productThumbnails').owlCarousel({
+    //     loop:true,
+    //     margin:10,
+    //     nav:true,
+    //     items: 3
+    // })
 })

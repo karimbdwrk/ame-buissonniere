@@ -9,7 +9,8 @@
  * @package WP_Bootstrap_Starter
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -19,9 +20,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kzt8ihr.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<?php wp_head(); ?>
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/kevin/style-kevin.css" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -73,9 +76,9 @@
                 </div>
 
                 <div class="header-btns">
-                    <a href="#" class="header-link">Mon Compte</a>
+                    <a href="/mon-compte" class="header-link">Mon Compte</a>
                     <div class="divider">|</div>
-                    <a href="#" class="header-link" id="cartBtn">Panier</a>
+                    <a class="header-link" id="cartBtn">Panier</a>
                     <button class="btn" id="searchBtn">
                         <i class="fas fa-search"></i>
                     </button>

@@ -48,7 +48,58 @@ if ( ! empty( $product_tabs ) ) : ?>
 					</div>
 				<?php endforeach; ?>
 			</div>
-			<div class="tab-pane" id="p2">Panneau 2</div>
+			<div class="tab-pane" id="p2">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<img src="http://amebuissonniere.com/wp-content/uploads/2021/09/guide-des-tailles.jpg" />
+						</div>
+						<div class="col-6">
+							<p><strong>Nos bracelets sont ajustables.</strong>
+							Par souci d’élégance et de confort,
+							nous souhaitons vous proposer la
+							juste taille.</p>
+							<p><b>COMMENT SÉLECTIONNER LA BONNE TAILLE</b></p>
+							<p>Pour trouver votre taille idéale de
+							bracelet, utilisez un mètre ruban
+							pour mesurer le tour de votre
+							poignet.
+							<br />
+							Si vous n’en avez pas, vous
+							pouvez le télécharger ci-dessous.</p>
+							<a href="#">Téléchargez le ruban à mesurer</a>
+						</div>
+						<div class="col-12">
+							<table>
+								<thead>
+									<tr>
+										<td>Circonférence de votre tour de poignet (cm)</td>
+										<td>Taille bracelet</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Inférieure ou égale à 16,5 cm</td>
+										<td>XS</td>
+									</tr>
+									<tr>
+										<td>Inférieure ou égale à 17,5 cm</td>
+										<td>S</td>
+									</tr>
+									<tr>
+										<td>Inférieure ou égale à 18,5 cm</td>
+										<td>M</td>
+									</tr>
+									<tr>
+										<td>Inférieure ou égale à 19,5 cm</td>
+										<td>L</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="tab-pane" id="p3">
 				<p class="product-conseils">
 					Pour préserver les qualités olfactives de la capsule, il est conseillé de la <strong>remettre dans son sachet</strong> refermable après utilisation et de la <strong>renouveler chaque mois</strong>. Il est conseillé de remettre les perles de parfum <strong>dans leur petite boite après utilisation</strong>.<br>
