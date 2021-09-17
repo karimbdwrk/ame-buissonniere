@@ -1,12 +1,11 @@
 "use strict";
 
-console.log('page categories ok js');
-
 function selectCategorie() {
   var hash = window.location.hash;
   console.log(hash);
 
   if (hash == '#bijoux-seuls') {
+    console.log('ok hash');
     jQuery('#bijoux-seuls-tab').tab('show');
   }
 
@@ -28,7 +27,9 @@ function selectCategorie() {
   removeHash();
 }
 
-selectCategorie(); // jQuery(function(){
+if (document.querySelector('body.post-type-archive')) {
+  selectCategorie();
+} // jQuery(function(){
 //     var hash = window.location.hash;
 //     hash && jQuery('ul.nav a[href="' + hash + '"]').tab('show');
 //     jQuery('.nav-tabs a').click(function (e) {

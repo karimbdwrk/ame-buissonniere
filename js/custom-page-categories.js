@@ -1,8 +1,8 @@
-console.log('page categories ok js')
 function selectCategorie() {
-    const hash = window.location.hash
+    let hash = window.location.hash
     console.log(hash)
     if (hash == '#bijoux-seuls') {
+        console.log('ok hash')
         jQuery('#bijoux-seuls-tab').tab('show')
     }
 
@@ -24,7 +24,10 @@ function selectCategorie() {
     }
     removeHash()
 }
-selectCategorie()
+
+if (document.querySelector('body.post-type-archive')) {
+    selectCategorie()
+}
 
 // jQuery(function(){
 //     var hash = window.location.hash;
