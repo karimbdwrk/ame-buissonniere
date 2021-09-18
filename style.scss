@@ -231,6 +231,16 @@ header#masthead {
                         // flex-direction: row;
                         // justify-content: space-between;
 
+                        &.mega-toggle-on {
+
+                            & ~ li {
+                                & > a {
+                                    color: #AAA;
+                                    transition: color 250ms ease;
+                                }
+                            }
+                        }
+
                         a {
                             text-transform: uppercase;
                             font-size: 16px;
@@ -395,7 +405,7 @@ header#masthead {
                                         width: 20%;
                                         max-height: 200px;
                                         overflow: hidden;
-                                        
+
                                         .mega-menu-link {
                                             display: none;
                                         }
@@ -493,6 +503,138 @@ header#masthead {
             }
         }
 
+    }
+}
+
+.xoo-wsc-modal {
+    .xoo-wsc-container {
+        // max-width: 100vw;
+
+        .xoo-wsc-header {
+            .xoo-wsch-top {
+                justify-content: flex-start;
+            }
+            .xoo-wsch-basket {
+                display: none;
+                .xoo-wscb-icon {
+                    &::before {
+                        color: transparent;
+                    }
+
+
+                }
+            }
+            .xoo-wsch-text {
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+
+            .xoo-wsch-close {
+                right: 15px;
+                &::before {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .xoo-wsc-body {
+            .xoo-wsc-products {
+                .xoo-wsc-product {
+                    .xoo-wsc-sm-info {
+                        .xoo-wsc-pname {
+                            font-family: futura-pt, sans-serif;
+                            font-weight: 500;
+                            font-size: 18px;
+                            font-style: normal;
+                            text-transform: uppercase;
+
+                        }
+                        .variation {
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 500;
+                            font-style: italic;
+                            font-size: 16px;
+                            padding-left: 2px;
+                            padding-bottom: 0;
+
+                            dt {
+                                font-weight: 500;
+                            }
+
+                            dd {
+                                p {
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .xoo-wsc-qty-price {
+                            color: transparent;
+                            span {
+                                display: none;
+
+                                &:last-of-type {
+                                    color: transparent;
+                                    display: inline-block;
+
+                                    &>.woocommerce-Price-amount {
+                                        transform: translateX(-25px);
+
+                                        bdi {
+                                            color: #000;
+    
+                                            span {
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .xoo-wsc-footer {
+            .xoo-wsc-ft-buttons-cont {
+                .button {
+                    display: none;
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: italic;
+                    background-color: #000;
+                    color: #FFF;
+                    border-radius: 0;
+                    border: 1px solid #000;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 8px 25px;
+            
+                    &:hover {
+                        text-decoration: none;
+                        background-color: #FFF;
+                        color: #000;
+                        transition: all 250ms ease;
+                    }
+
+                    &.xoo-wsc-ft-btn-checkout {
+                        display: flex;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    .xoo-wsc-opac {
+        background-color: #000;
     }
 }
 
@@ -1498,8 +1640,10 @@ footer#colophon {
                     li {
                         margin-bottom: 10px;
                         a {
-                            color: #000;
-                            font-family: 'Playfair Display', serif;
+                            color: #000; 
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 400;
+                            font-style: normal;
                             font-size: 16px;
                         }
                     }
@@ -1517,14 +1661,17 @@ footer#colophon {
 
                         span {
                             font-size: 26px;
-                            font-family: 'Playfair Display', serif;
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 400;
                             font-style: italic;
                         }
                     }
                     h4 {
                         text-align: center;
                         color: #AAA;
-                        font-family: 'Playfair Display', serif;
+                        font-family: baskerville-display-pt, serif;
+                        font-weight: 400;
+                        font-style: normal;
                         font-size: 16px;
                     }
 
@@ -1815,6 +1962,11 @@ footer#colophon {
     }
 }
 
+#checkoutPage {
+    padding: 150px 0 90px;
+
+}
+
 #baladesOlfactives {
     padding: 150px 0 90px;
 
@@ -1836,13 +1988,173 @@ footer#colophon {
 
 #myAccount {
     padding: 150px 0 90px;
+
+    h1.title {
+        font-family: baskerville-poster-pt, serif;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: lowercase;
+        font-size: 46px;
+        text-align: center;
+
+        span {
+
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 38px;
+            display: block;
+            margin-left: 135px;
+        }
+    }
+
+    .woocommerce {
+        margin-top: 90px;
+        .woocommerce-MyAccount-navigation {
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        font-family: baskerville-display-pt, serif;
+                        font-weight: 400;
+                        font-style: italic;
+                        font-size: 24px;
+                        color: #AAA;
+
+                        &:hover {
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &.is-active {
+                        a {
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 500;
+                            font-style: italic;
+                            border-bottom: 1px solid #000;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .woocommerce-MyAccount-content {
+            & > p:first-of-type {
+                font-size: 46px;
+            }
+        }
+    }
 }
 
 #blog {
     padding: 150px 0 90px;
 
+    .title {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        margin-top: 60px;
+        text-transform: uppercase;
+        font-size: 38px;
+
+        em {
+            font-family: baskerville-poster-pt, serif;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: lowercase;
+            font-size: 46px;
+            // display: block;
+            // margin-left: 90px;
+        }
+    }
+
+    .description {
+        font-family: baskerville-display-pt, serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 90px;
+
+        em {
+            font-style: italic;
+        }
+    }
+
     .posts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+
+        .post {
+            .img-container {
+                height: 250px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            .txt-container {
+                padding-top: 15px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin-bottom: 10px;
+
+                    &.category {
+                        color: #AAA;
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 10px;
+                    }
+                    &.post-title {
+                        font-family: baskerville-display-pt, serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        text-align: center;
+                        font-size: 26px;
+                        line-height: 26px;
+                        padding: 0 30px;
+                    }
+                    &.post-subtitle {
+                        font-family: baskerville-display-pt, serif;
+                        font-weight: 400;
+                        font-style: italic;
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                        padding: 0 30px;
+                    }
+                    &.post-date {
+                        color: #AAA;
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     } 
 }
