@@ -1,10 +1,53 @@
-<div class="container" id="homepage">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="h1 title">HOMEPAGE</h1>
-                [slide-anything id="44"]
-            </div>
-        </div>
+<div id="hero" class="container-fluid">
+    <div class="row">
+    <div class="col-12">[pods name="hero" slug="hero" template="Hero Template"]</div>
     </div>
-</div>
+    </div>
+    <div id="avantPremiere" class="container">
+    <div class="row">
+    <div class="col-12">
+    
+    [pods name="avant_premire" slug="avant-premiere" template="Avant Première Template"]
+    <div id="APCarousel" class="owl-carousel owl-theme">[pods name="avant_premiere_item" orderby="id" template="Avant Premiere Item Template"]</div>
+    </div>
+    </div>
+    </div>
+    [pods name="promenade" slug="1" template="Promenade Template"]
+    <div id="boost" class="container-fluid d-none">
+    <div class="row">
+    <div class="col-12">
+    <h3 class="title">SE PARFUMER RIEN QUE POUR SOI</h3>
+    POUR BOOSTER SON HUMEUR
+    <div id="BoostCarousel" class="owl-carousel owl-theme">[pods name="boost_item" orderby="id" template="Boost Item Template"]</div>
+    </div>
+    </div>
+    </div>
+    <div id="vacances" class="container">
+    <div class="row">
+    <div class="col-12 col-md-3 title-container">
+    <h2>[pods name="vacances_section" field="vacances-section-titre"]</h2>
+    <div class="description">[pods name="vacances_section" field="vacances-section-sous-titre"]</div>
+    </div>
+    <div class="col-12 col-md-9">
+    <div id="VacancesCarousel" class="owl-carousel owl-theme">[pods name="vacances_item" orderby="id" template="Vacances Item Template"]</div>
+    </div>
+    </div>
+    </div>
+    <div id="banners" class="container-fluid">[pods name="banner" template="Banner Template" orderby="bracelet-olfactif-nbr"]</div>
+    [pods name="section_tuto" template="Home Tuto Template"]
+    <div id="engagements" class="container-fluid">
+    <div class="row">[pods name="nos_engagements" slug="nos-engagements" template="Engagements Template"]</div>
+    </div>
+    <div id="motsDoux" class="container-fluid">
+    <div class="row">[pods name="nos_mots_doux" slug="nos-mots-doux" template="Mots Doux Template"]</div>
+    </div>
+    <div id="instagram" class="container-fluid">
+    <div class="row">
+    <div class="col-12">
+    <h2 class="title">REJOIGNEZ ÂME BUISSONNIÈRE</h2>
+    <h3 class="subtitle">Suivez-nous sur Instagram</h3>
+    [instagram-feed]
+    
+    </div>
+    </div>
+    </div>

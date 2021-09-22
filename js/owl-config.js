@@ -48,6 +48,38 @@ jQuery(document).ready(function() {
         }
     })
 
+
+
+    jQuery('#boCarousel').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                loop:false,
+                items:4
+            }
+        }
+    })
+
+    jQuery('#boShopCarousel').owlCarousel({
+        loop:true,
+        margin:50,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                loop:false,
+                items:3
+            }
+        }
+    })
+
     // jQuery('#productThumbnails').owlCarousel({
     //     loop:true,
     //     margin:10,

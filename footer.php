@@ -26,25 +26,25 @@
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
 		<div class="container">
 			<div class="row">
-			<div class="col-3 col-links">
+			<div class="col-12 col-md-3 col-links">
 				<h2 class="title">AIDE</h2>
 					<ul>
 						<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=0" template="Footer Lists Template"]'); ?>
 					</ul>
 			</div>
-			<div class="col-3 col-links">
+			<div class="col-12 col-md-3 col-links">
 				<h2 class="title">À PROPOS</h2>
 				<ul>
 					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=1" template="Footer Lists Template"]'); ?>
 				</ul>
 			</div>
-			<div class="col-3 col-links">
+			<div class="col-12 col-md-3 col-links">
 				<h2 class="title">NOS PRODUITS</h2>
 				<ul>
 					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=2" template="Footer Lists Template"]'); ?>
 				</ul>
 			</div>
-			<div class="col-3 last-col">
+			<div class="col-12 col-md-3 last-col">
 				<div class="newsletter">
 					<h3>RECEVEZ <span>nos invitations</span></h3>
 					<h4>Rejoignez les filles buissonnières</h4>
