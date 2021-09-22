@@ -1432,6 +1432,52 @@ footer#colophon {
           box-shadow: inherit; }
   .single-product.woocommerce #content .product .container .product_meta {
     display: none; }
+  .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container {
+    background-color: #FFEDDD; }
+    .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container {
+      padding: 30px 75px; }
+      .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container h2 {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 36px; }
+      .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container h3 {
+        font-family: baskerville-display-pt, serif;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 46px; }
+      .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container .subtitle {
+        font-family: baskerville-display-pt, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        text-align: center; }
+      .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container .description {
+        font-family: baskerville-display-pt, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px; }
+        .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container .description p {
+          margin-bottom: 0; }
+    .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .img-container {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .img-container img {
+        position: absolute;
+        width: 100%;
+        height: auto; }
   .single-product.woocommerce #content .mode-demploi .steps {
     display: flex;
     flex-direction: row; }
