@@ -2,7 +2,7 @@ window.onload = function(e) {
 
     let isOpen = false
     console.log('isOpen ' + isOpen)
-    const searchBtn = document.getElementById('searchBtn')
+    const searchBtn = document.getElementById('searchBtn2')
     searchBtn.onclick = () => {
         console.log('search btn clicked !')
         isOpen = !isOpen
