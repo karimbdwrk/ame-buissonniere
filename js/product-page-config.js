@@ -21,6 +21,8 @@ jQuery(document).on('woocommerce_update_variation_values', function() {
     });
 });
 
+jQuery('.variation-radios label[for=attribute_pa_couleur-cordon-framboise]').html('FRAMBOISE<span>fil d\'or</span>')
+
 jQuery('.variation-radios input[name=attribute_pa_color]').on('click', function() {
     console.log('click variation')
     jQuery('.variation-radios input[name=attribute_pa_color]').removeClass('checked')

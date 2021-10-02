@@ -1,10 +1,13 @@
 function selectCategorie() {
     let hash = window.location.hash
+    jQuery(hash + '-tab').tab('show')
     console.log(hash)
-    if (hash == '#bijoux-seuls') {
-        console.log('ok hash')
-        jQuery('#bijoux-seuls-tab').tab('show')
-    }
+    // if (hash == '#bijoux-seuls') {
+    //     console.log('ok hash')
+    //     jQuery('#bijoux-seuls-tab').tab('show')
+    // } else if (hash == '#bijoux-seuls') {
+
+    // }
 
     function removeHash() { 
         var scrollV, scrollH, loc = window.location;

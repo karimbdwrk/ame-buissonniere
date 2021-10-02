@@ -12,7 +12,7 @@ Version: 1.0
 #wesh {
     display: flex;
     .morray {
-        display: none;
+        display: flex;
     }
 }
 
@@ -2280,10 +2280,11 @@ footer#colophon {
                                     .variation-radios {
                                         width: 100%;
                                         display: flex;
-                                        flex-direction: row;
+                                        flex-direction: row-reverse;
     
                                         input {
                                             opacity: 0;
+                                            visibility: hidden;
                                             &.checked {
                                                 & + label {
                                                     border: 1px solid #000;
@@ -2294,7 +2295,7 @@ footer#colophon {
     
                                         label {
                                             display: flex;
-                                            flex-direction: row;
+                                            flex-direction: column;
                                             justify-content: center;
                                             font-family: futura-pt, sans-serif;
                                             font-weight: 500;
@@ -2305,6 +2306,17 @@ footer#colophon {
                                             border: 1px solid #AAA;
                                             color: #999;
                                             transition: all 250ms ease;
+                                            line-height: 15px;
+                                            padding-top: 8px;
+                                            padding-bottom: 8px;
+                                            
+                                            span {
+                                                font-family: baskerville-display-pt, serif;
+                                                font-weight: 400;
+                                                font-style: italic;
+                                                display: block;
+                                                text-transform: lowercase;
+                                            }
 
                                             &:hover {
                                                     border: 1px solid #000;
@@ -2327,7 +2339,7 @@ footer#colophon {
     
                                     #pa_couleur-cordon + .variation-radios {
                                         label {
-                                            width: 150px;
+                                            width: 123px;
                                         }
                                     }
     
@@ -2349,6 +2361,7 @@ footer#colophon {
                                         font-weight: 700;
                                         font-style: normal;
                                         width: 100%;
+                                        max-width: 396px;
     
                                         &:hover {
                                             background-color: #303030;
@@ -2515,29 +2528,41 @@ footer#colophon {
 #checkoutPage {
     padding: 150px 0 90px;
 
-    h1.title {
-        font-family: futura-pt, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        text-align: center;
-        margin-bottom: 60px;
-        margin-top: 60px;
-        text-transform: uppercase;
+    &>.row {
+        &:first-of-type {
+            h1.title {
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                text-align: center;
+                margin-bottom: 60px;
+                margin-top: 60px;
+                text-transform: uppercase;
 
-        span {
-            font-family: baskerville-display-pt, serif;
-            font-weight: 400;
-            font-style: italic;
-            text-transform: lowercase;
-            display: block;
-            margin-left: 180px;
+                span {
+                    font-family: baskerville-display-pt, serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    text-transform: lowercase;
+                    display: block;
+                    margin-left: 180px;
+                }
+
+            }
         }
-
+        &>.col-12 {
+            &:first-of-type {
+                padding-right: 15px;
+            }
+            &:last-of-type {
+                padding-left: 15px;
+            }
+        }
     }
 
     form.checkout {
         .col2-set {
-            display: none;
+            // display: none;
         }
     }
 
@@ -2981,6 +3006,9 @@ footer#colophon {
         column-gap: 30px;
 
         .post {
+            &:hover {
+                text-decoration: none;
+            }
             .img-container {
                 height: 250px;
                 overflow: hidden;
@@ -3016,15 +3044,17 @@ footer#colophon {
                         margin-bottom: 10px;
                     }
                     &.post-title {
+                        color: #000;
                         font-family: baskerville-display-pt, serif;
                         font-weight: 400;
                         font-style: normal;
                         text-align: center;
                         font-size: 26px;
                         line-height: 26px;
-                        padding: 0 30px;
+                        padding: 0 25px;
                     }
                     &.post-subtitle {
+                        color: #000;
                         font-family: baskerville-display-pt, serif;
                         font-weight: 400;
                         font-style: italic;
@@ -3045,6 +3075,121 @@ footer#colophon {
             }
         }
     } 
+}
+
+.single-post {
+    article.post {
+        display: none;
+    }
+    nav.navigation {
+        display: none;
+    }
+
+    #post {
+        padding: 150px 0 90px;
+    
+        .title {
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+            margin-top: 60px;
+            text-transform: uppercase;
+            font-size: 38px;
+    
+            em {
+                font-family: baskerville-poster-pt, serif;
+                font-weight: 400;
+                font-style: italic;
+                text-transform: lowercase;
+                font-size: 46px;
+            }
+        }
+
+        .row {
+
+            &.title-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 60px;
+
+                h1.title {
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 36px;
+                    padding-bottom: 0;
+                }
+
+                .description {
+                    font-family: baskerville-display-pt, serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                }
+            }
+
+            &.section-row {
+                justify-content: center;
+
+                .col-12 {
+                    display: flex;
+                    flex-direction: row;
+                    min-height: 450px;
+                    margin-bottom: 30px;
+    
+                    .img-container {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+    
+                        img {
+                            // position: absolute;
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+    
+                    .txt-container {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 60px;
+
+                        .section-title {
+                            font-family: futura-pt, sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: 28px;
+                        }
+
+                        .section-content {
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            font-size: 18px;
+                        }
+                    }
+                }
+    
+                &:nth-of-type(2n+1) {
+                    .col-12 {
+                        flex-direction: row-reverse;
+                    }
+                }
+                
+            }
+        }
+    }
 }
 
 .error-404 {
