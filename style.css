@@ -27,7 +27,7 @@ html {
   html {
     font-size: 13px; } }
 .container {
-  max-width: 1600px; }
+  max-width: 1400px; }
 
 .container-fluid {
   max-width: 100%;
@@ -434,7 +434,7 @@ header#masthead {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("http://amebuissonniere.com/wp-content/uploads/2021/09/hero-background.jpg");
+    background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/09/hero-background.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -738,7 +738,7 @@ header#masthead {
     align-items: center;
     flex: 0 0 30%;
     max-width: 30%;
-    background-image: url("http://amebuissonniere.com/wp-content/uploads/2021/09/vacances-background.jpg");
+    background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/09/vacances-background.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
@@ -1446,7 +1446,7 @@ footer#colophon {
   .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container {
     background-color: #FFEDDD; }
     .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container {
-      padding: 30px 90px; }
+      padding: 60px 90px; }
       .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container h2 {
         font-family: futura-pt, sans-serif;
         font-weight: 500;
@@ -1490,7 +1490,7 @@ footer#colophon {
         width: 100%;
         height: auto; }
   .single-product.woocommerce #content .le-mot-du-parfumeur {
-    background-image: url("http://amebuissonniere.com/wp-content/uploads/2021/09/hero-background.jpg");
+    background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/09/hero-background.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1528,9 +1528,15 @@ footer#colophon {
       font-weight: 400;
       font-style: italic;
       font-size: 22px; }
-  .single-product.woocommerce #content .mode-demploi .steps {
-    display: flex;
-    flex-direction: row; }
+  .single-product.woocommerce #content .mode-demploi {
+    background-color: #FFEDDD;
+    padding: 30px 90px; }
+    .single-product.woocommerce #content .mode-demploi .steps {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .single-product.woocommerce #content .mode-demploi .steps .step {
+        max-width: 350px; }
 
 #checkoutPage {
   padding: 150px 0 90px; }
@@ -1999,7 +2005,7 @@ footer#colophon {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("http://amebuissonniere.com/wp-content/uploads/2021/09/background-404.jpg");
+  background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/09/background-404.jpg");
   background-position: center;
   background-size: cover; }
   .error-404 h1.title {

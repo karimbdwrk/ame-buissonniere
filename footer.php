@@ -56,7 +56,7 @@
 		<div class="container logo-footer">
 			<div class="row">
 				<div class="col-12">
-					<img src="http://amebuissonniere.com/wp-content/uploads/2021/08/logo-1.png" />
+					<img src="https://amebuissonniere.com/wp-content/uploads/2021/08/logo-1.png" />
 				</div>
 			</div>	
             <div class="site-info">
@@ -69,14 +69,14 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-page-categories.js" id="custom-page-categories-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-page-categories.js" id="custom-page-categories-js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/cart-custom.js" id="cart-custom-js"></script>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-mega-menu.js" id="custom-mega-menu-js"></script>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/header-search-form.js" id="header-search-form-js"></script>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/product-page-config.js" id="product-page-config-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/cart-custom.js" id="cart-custom-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-mega-menu.js" id="custom-mega-menu-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/header-search-form.js" id="header-search-form-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/product-page-config.js" id="product-page-config-js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/owl-config.js" id="owl-config-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/owl-config.js" id="owl-config-js"></script>
 </body>
 </html>

@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php wp_head(); ?>
-    <!-- <link rel="stylesheet" href="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/kevin/style-kevin.css" /> -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -71,16 +70,16 @@
                         </a>
                     <?php else : ?>
                         <a class="site-title d-none" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
-                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><img src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/logo-amebuissonniere.svg" /></a>
+                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/logo-amebuissonniere.svg" /></a>
                     <?php endif; ?>
                 </div>
 
                 <div class="header-btns">
-                    <a href="#" class="header-link"><img src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span>Mon Compte</span></a>
+                    <a href="#" class="header-link"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span>Mon Compte</span></a>
                     <div class="divider">|</div>
-                    <a class="header-link" id="cartBtn"><img src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/shopping-bag.svg" class="header-icon" /><span>Panier</span></a>
+                    <a class="header-link" id="cartBtn"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/shopping-bag.svg" class="header-icon" /><span>Panier</span></a>
                     <button class="btn" id="searchBtn">
-                        <img src="http://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/search.svg" class="header-icon" />
+                        <img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/search.svg" class="header-icon" />
                     </button>
                 </div>
             </nav>
