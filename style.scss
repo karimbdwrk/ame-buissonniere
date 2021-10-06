@@ -2227,6 +2227,111 @@ footer#colophon {
                                             font-family: baskerville-display-pt, serif;
                                             font-weight: bolder;
                                         }
+
+                                        &#p2 {
+                                            &>.container {
+                                                margin: 0;
+                                                width: 100%;
+    
+                                                .col-6 {
+                                                    padding-left: 0;
+                                                    padding-right: 0;
+                                                    margin-bottom: 90px;
+
+                                                    &:first-of-type {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: flex-start;
+                                                        align-items: flex-end;
+
+                                                        img {
+                                                            width: 280px;
+                                                            height: auto;
+                                                            max-width: 280px;
+                                                        }
+                                                    }
+
+                                                    p {
+                                                        font-size: 14px;
+
+                                                        strong {
+                                                            font-weight: bolder;
+                                                            font-size: 16px;
+                                                        }
+    
+                                                        b {
+                                                            font-family: futura-pt, sans-serif;
+                                                            font-weight: 500;
+                                                            font-style: normal;
+                                                            text-align: center;
+                                                            font-size: 18px;
+                                                        }
+
+                                                    }
+
+                                                    a {
+                                                        font-family: futura-pt, sans-serif;
+                                                        font-weight: 500;
+                                                        background-color: #FFF;
+                                                        border: 1px solid #000;
+                                                        color: #000;
+                                                        font-size: 14px;
+                                                        font-weight: 500;
+                                                        text-transform: uppercase;
+                                                        font-style: italic;
+                                                        padding: 8px 25px;
+                                                        position: absolute;
+                                                        width: max-content;
+                                                        align-self: flex-end;
+                                                        transform: translateX(-60px);
+                                        
+                                                        &:hover {
+                                                            text-decoration: none;
+                                                        }
+                                                    }
+                                                }
+
+                                                table {
+                                                    border: 1px solid #000;
+                                                    thead {
+                                                        tr {
+                                                            td {
+                                                                font-weight: bolder;
+                                                                font-size: 14px;
+                                                                border-bottom: 1px solid #000;
+                                                                padding: 4px 8px;
+
+                                                                &:not(last-of-type) {
+                                                                    border-right: 1px solid #000;
+                                                                }
+
+                                                                &:last-of-type {
+                                                                    text-align: center;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    tbody {
+                                                        tr {
+                                                            td {
+                                                                color: #AAA;
+                                                                font-size: 14px;
+                                                                border-bottom: 1px solid #000;
+                                                                padding: 4px 8px;
+
+                                                                &:not(last-of-type) {
+                                                                    border-right: 1px solid #000;
+                                                                }
+
+                                                                &:last-of-type {
+                                                                    text-align: center;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2362,11 +2467,18 @@ footer#colophon {
                                         font-style: normal;
                                         width: 100%;
                                         max-width: 396px;
+
+                                        &::after {
+                                            display: none;
+                                        }
     
                                         &:hover {
                                             background-color: #303030;
                                             box-shadow: inherit;
                                         }
+                                    }
+                                    .added_to_cart {
+                                        display: none!important;
                                     }
                                 }
 
@@ -2456,7 +2568,8 @@ footer#colophon {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            margin: 30px 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
             padding: 180px 180px;
 
             .row {
@@ -2514,6 +2627,32 @@ footer#colophon {
             background-color: #FFEDDD;
             padding: 30px 90px;
 
+            h2 {
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                font-size: 36px;
+
+                em {
+                    font-family: baskerville-poster-pt, serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    text-transform: lowercase;
+                    font-size: 46px;
+                }
+            }
+
+            h3 {
+                font-family: baskerville-display-pt, serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 24px;
+                margin-bottom: 60px;
+            }
+
             .steps {
                 display: flex;
                 flex-direction: row;
@@ -2521,11 +2660,211 @@ footer#colophon {
 
                 .step {
                     max-width: 350px;
+
+                    img {
+
+                    }
+
+                    .txt {
+                        .nbr {
+                            font-family: futura-pt, sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: 36px;
+                            margin-bottom: 0;
+                        }
+                        .txt-content {
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+                    }
+
+                    &.step-1 {
+
+                        .txt {
+                            padding-left: 0px;
+                            transform: translateY(-15px);
+                        }
+                    }
+
+                    &.step-2 {
+                        transform: translateY(-90px);
+                        
+                        .txt {
+                            padding-left: 60px;
+                        }
+                    }
+
+                    &.step-3 {
+
+                        .txt {
+                            padding-left: 30px;
+                            transform: translateY(-30px);
+                        }
+                    }
                 }
             }
         }
 
         .le-mot-de-latelier {
+            padding: 90px 0;
+            &>.row {
+                &>div {
+                    display: flex;
+                    flex-direction: row;
+
+                    .txt-content {
+                        width: 66%;
+                        padding-right: 45px;
+
+                        h2 {
+                            font-family: futura-pt, sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            text-transform: uppercase;
+                            text-align: right;
+                            margin-bottom: 0;
+                            padding-bottom: 0;
+                            font-size: 36px;
+            
+                            em {
+                                font-family: baskerville-poster-pt, serif;
+                                font-weight: 400;
+                                font-style: italic;
+                                text-transform: lowercase;
+                                font-size: 46px;
+                            }
+                        }
+
+                        .description {
+                            font-family: baskerville-display-pt, serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            text-align: center;
+                            font-size: 18px;
+                            margin-top: 60px;
+                        }
+
+                        img {
+                            position: absolute;
+                            max-height: 350px;
+                            right: 200px;
+                            bottom: -25px;
+                        }
+                    }
+                    .image {
+                        width: 34%;
+
+                        img {
+                            max-height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-upsell {
+            background-color: #FFEDDD;
+            padding: 30px 90px;
+
+            .col-12 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-family: baskerville-poster-pt, serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 32px;
+                    text-align: center;
+                    width: max-content;
+                    margin: 30px 0;
+                    line-height: 28px;
+    
+                    strong {
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        margin-right: 180px;
+                        font-size: 28px;
+                        display: block;
+                    }
+    
+                    em {
+                        font-family: baskerville-poster-pt, serif;
+                        font-weight: 400;
+                        font-style: italic;
+                        text-transform: lowercase;
+                        font-size: 32px;
+                        margin-right: -180px;
+                    }
+                }
+    
+                .upsell-list {
+                    display: flex;
+                    flex-direction: row;
+    
+                    .item {
+                        padding: 0 15px;
+                        .img-container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 350px;
+                            overflow: hidden;
+                        }
+                        .txt-container {
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            a {
+                                background-color: #FFF;
+                                border: 1px solid #FFF;
+                                color: #000;
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                font-style: italic;
+                                padding: 8px 25px;
+                                position: absolute;
+                                transform: translateY(-60px);
+                
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+
+                            .title {
+                                font-family: baskerville-poster-pt, serif;
+                                font-weight: 400;
+                                font-style: italic;
+                                font-size: 28px;
+                                margin-top: 30px;
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                            }
+
+                            .category {
+                                font-family: futura-pt, sans-serif;
+                                font-weight: 500;
+                                font-style: normal;
+                                text-transform: uppercase;
+                                color: #AAA;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
 
         }
     }

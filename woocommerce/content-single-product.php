@@ -66,13 +66,15 @@ if ( post_password_required() ) {
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<?php echo do_shortcode('[pods name="product" slug="' . $product->get_id() . '" template="Product Template"]'); ?>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid d-none">
 		<div class="row">
 			<div class="col-12">
 				<?php
