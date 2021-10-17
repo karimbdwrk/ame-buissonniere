@@ -40,3 +40,70 @@ jQuery('.variation-radios input[name=attribute_pa_couleur-cordon]').on('click', 
     jQuery('.variation-radios input[name=attribute_pa_couleur-cordon]').removeClass('checked')
     jQuery(this).addClass('checked')
 })
+
+// jQuery(document).ready(function() {
+
+//   function owlCarouselProductPage() {
+//     const imgPrincipale = document.querySelectorAll('.woocommerce-product-gallery .flex-viewport figure > div a img')
+//     const imgNav = document.querySelectorAll('.woocommerce-product-gallery .flex-control-nav li')
+//     const cible = document.getElementById('owlImg')
+//     const cible2 = document.getElementById('owlNavigation')
+//     console.log(imgPrincipale)
+
+//     for (img of imgPrincipale) {
+//       let imgSrc = img.getAttribute('src')
+//       console.log(imgSrc)
+//       let item = document.createElement('div')
+//       item.classList.add('item')
+//       let imgT = document.createElement('img')
+//       imgT.setAttribute('src', imgSrc)
+//       item.append(imgT)
+//       cible.append(item)
+//     }
+
+//     for (img of imgNav) {
+//       let content = img.innerHTML
+//       let item = document.createElement('div')
+//       item.classList.add('item')
+//       item.innerHTML = content
+//       cible2.append(item)
+//     }
+//   }
+//   owlCarouselProductPage()
+
+// })
+
+jQuery(document).ready(function() {
+  function arrowsCarousel() {
+    let nbr = document.querySelectorAll('.flex-control-nav > li').length
+    
+    const topBtn = document.getElementById('scrollUp')
+    const bottomBtn = document.getElementById('scrollDown')
+    let i = 1
+    let y
+
+    topBtn.addEventListener('click', () => {
+      console.log(nbr)
+      if (i > 1) {
+        console.log('y', y)
+        let x = y - i * 145 + 145
+
+        document.querySelector('.flex-control-nav').scroll(0, -x)
+        i--
+        console.log(i, x)
+      }
+    })
+
+    bottomBtn.addEventListener('click', () => {
+      console.log(nbr)
+      if (i < nbr) {
+        let x = i * 145
+        y = x
+        document.querySelector('.flex-control-nav').scroll(0, x)
+        i++
+        console.log(i, x)
+      }
+    })
+  }
+  arrowsCarousel()
+})

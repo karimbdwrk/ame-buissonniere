@@ -46,7 +46,8 @@ aute dis ad qui dolorum repudic torehen imagnis ciduntur</p>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-4">
+				<button id="scrollUp" class="btn"><i class="fas fa-chevron-up"></i></button>
 				<?php
 					/**
 					 * Hook: woocommerce_before_single_product_summary.
@@ -56,6 +57,11 @@ aute dis ad qui dolorum repudic torehen imagnis ciduntur</p>
 					 */
 					do_action( 'woocommerce_before_single_product_summary' );
 				?>
+				<button id="scrollDown" class="btn"><i class="fas fa-chevron-down"></i></button>
+				<div id="owlImg" class="owl-carousel owl-theme"></div>
+			</div>
+			<div class="col-2">
+				<div id="owlNavigation" class="owl-carousel owl-theme"></div>
 			</div>
 			<div class="col-6">
 				<div class="summary entry-summary">

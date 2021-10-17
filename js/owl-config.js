@@ -80,27 +80,33 @@ jQuery(document).ready(function() {
         }
     })
 
-    // jQuery('#productThumbnails').owlCarousel({
+    // jQuery('.woocommerce-product-gallery .flex-control-nav').owlCarousel({
     //     loop:true,
     //     margin:50,
-    //     nav:true,
-    //     mouseDrag:false,
-    //     touchDrag: false,
     //     responsive:{
     //         0:{
     //             items:1
     //         },
     //         600:{
-    //             loop:false,
-    //             items:3
+    //             items:4
     //         }
     //     }
     // })
 
-    // jQuery('#productThumbnails').owlCarousel({
+    // jQuery('.woocommerce-product-gallery .flex-control-nav').addClass('owl-carousel owl-theme')
+
+    // jQuery('#owlImg').owlCarousel({
     //     loop:true,
     //     margin:10,
     //     nav:true,
-    //     items: 3
+    //     items: 1,
+    //     mouseDrag: true
+    // })
+
+    // jQuery('#owlNavigation').owlCarousel({
+    //     loop:true,
+    //     margin:10,
+    //     nav:true,
+    //     items: 4
     // })
 })
