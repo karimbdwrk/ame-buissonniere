@@ -82,6 +82,23 @@ jQuery(document).ready(function() {
 
     // jQuery('#productThumbnails').owlCarousel({
     //     loop:true,
+    //     margin:50,
+    //     nav:true,
+    //     mouseDrag:false,
+    //     touchDrag: false,
+    //     responsive:{
+    //         0:{
+    //             items:1
+    //         },
+    //         600:{
+    //             loop:false,
+    //             items:3
+    //         }
+    //     }
+    // })
+
+    // jQuery('#productThumbnails').owlCarousel({
+    //     loop:true,
     //     margin:10,
     //     nav:true,
     //     items: 3

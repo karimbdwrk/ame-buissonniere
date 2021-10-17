@@ -101,16 +101,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 				</div>
 			</div>
 			<div class="tab-pane" id="p3">
-				<p class="product-conseils">
-					Pour préserver les qualités olfactives de la capsule, il est conseillé de la <strong>remettre dans son sachet</strong> refermable après utilisation et de la <strong>renouveler chaque mois</strong>. Il est conseillé de remettre les perles de parfum <strong>dans leur petite boite après utilisation</strong>.<br>
-					<br>
-					Pour prendre soin de votre bracelet, <strong>éviter un contact prolongé avec l’eau</strong>, l’eau de mer ou de piscine, les produits ménagers. Ranger le <strong>à l’abri de la lumière et de l’humidité</strong>.<br>
-					<br>
-					Ne pas re-parfumer la capsule<br>
-					Tenir hors de portée des enfants<br>
-					Ne pas stocker les capsules ou les disposer près d’une flamme ou
-					d’une source de chaleur
-				</p>
+				<?php echo do_shortcode('[pods name="product-conseils" template="Conseils Template"]'); ?>
 			</div>
 		</div>
 		<ul class="tabs wc-tabs d-none" role="tablist">

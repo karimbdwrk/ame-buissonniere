@@ -103,3 +103,34 @@ function variation_check($active, $variation) {
   return $active;
 }
 add_filter('woocommerce_variation_is_active', 'variation_check', 10, 2);
+
+// adresse de facturation
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_true');
+
+/**
+ * Allows to remove products in checkout page.
+ * 
+ * @param string $product_name 
+ * @param array $cart_item 
+ * @param string $cart_item_key 
+ * @return string
+ */
+function lionplugins_woocommerce_checkout_remove_item( $product_name, $cart_item, $cart_item_key ) {
+	if ( is_checkout() ) {
+		$_product = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+		$product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+
+		$remove_link = apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
+			'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s"><i class="trash-btn"></i></a>',
+			esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
+			__( 'Remove this item', 'woocommerce' ),
+			esc_attr( $product_id ),
+			esc_attr( $_product->get_sku() )
+        ), $cart_item_key );
+
+		return '<span>' . $product_name . '</span><span id="trashBtn">' . $remove_link . '</span>';
+	}
+
+	return $product_name;
+}
+add_filter( 'woocommerce_cart_item_name', 'lionplugins_woocommerce_checkout_remove_item', 10, 3 );

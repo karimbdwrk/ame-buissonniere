@@ -51,10 +51,5 @@ $wrapper_classes   = apply_filters(
 
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
-		<div class="owl-carousel owl-theme" id="productThumbnails">
-			<?php
-				do_action( 'woocommerce_product_thumbnails' );
-			?>
-		</div>
 	</figure>
 </div>

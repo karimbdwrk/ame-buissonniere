@@ -76,6 +76,8 @@
 <script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-mega-menu.js" id="custom-mega-menu-js"></script>
 <script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/header-search-form.js" id="header-search-form-js"></script>
 <script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/product-page-config.js" id="product-page-config-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-checkout.js" id="checkout-page-config-js"></script>
+<script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-blog.js" id="custom-blog-js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/owl-config.js" id="owl-config-js"></script>
 </body>

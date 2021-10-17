@@ -12,7 +12,7 @@ Version: 1.0
 #wesh {
     display: flex;
     .morray {
-        display: flex;
+        display: none;
     }
 }
 
@@ -21,6 +21,91 @@ Version: 1.0
 $primary : darkgrey;
 $dark : #000;
 $light : #FFF;
+
+/* GENERAL EXTENDS */
+
+.futura-font-normal {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.futura-font-italic {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.baskerville-display-font-normal {
+    font-family: baskerville-display-pt, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.baskerville-display-font-italic {
+    font-family: baskerville-display-pt, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.baskerville-poster-font-normal {
+    font-family: baskerville-poster-pt, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.baskerville-poster-font-italic {
+    font-family: baskerville-poster-pt, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.white-btn {
+    @extend .futura-font-italic;
+    background-color: #FFF;
+    color: #000;
+    width: max-content;
+    border-radius: 0;
+    border: 1px solid #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.black-btn {
+    @extend .futura-font-italic;
+    background-color: #000;
+    color: #FFF;
+    width: max-content;
+    border-radius: 0;
+    border: 1px solid #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 /* GENERAL BOOTSTRAP */
 html {
@@ -154,7 +239,7 @@ header.entry-header, footer.entry-footer {
 /* TABLEPRESS */
 
 .tablepress {
-    display: none;
+    display: none!important;
 }
 
 /* cart custom */
@@ -169,11 +254,61 @@ header.entry-header, footer.entry-footer {
 
 /* HEADER */
 
+.home, .single-product {
+    header#masthead {
+        background-color: transparent;
+
+        &.scrolled, &.search-open, &:hover, &:active, &:focus {
+            background-color: $light;
+            transition: background-color 250ms ease;
+    
+            .container-fluid {
+                .navbar {
+    
+                    .navbar-brand {
+                        a {
+                            img {
+                                height: 60px;
+                                transition: height 300ms ease;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+
+        .container-fluid {
+            .navbar {
+                .navbar-brand {
+                    margin-right: 0;
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    a {
+                        color: $dark;
+                        height: 100%;
+                
+                        img {
+                            height: 100px;
+                            transition: height 750ms ease 750ms;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
 header#masthead {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-color: transparent;
+    background-color: $light;
     position: fixed;
     z-index: 9999;
     width: 100vw;
@@ -185,26 +320,6 @@ header#masthead {
     transition: background-color 500ms ease 250ms;
     padding-left: 50px;
     padding-right: 50px;
-
-    &.scrolled, &.search-open, &:hover, &:active, &:focus {
-        background-color: $light;
-        transition: background-color 250ms ease;
-
-        .container-fluid {
-            .navbar {
-
-                .navbar-brand {
-                    a {
-                        img {
-                            height: 60px;
-                            transition: height 300ms ease;
-                        }
-                    }
-                }
-
-            }
-        }
-    }
 
     .container-fluid {
         display: flex;
@@ -429,7 +544,7 @@ header#masthead {
                     height: 100%;
 
                     img {
-                        height: 100px;
+                        height: 60px;
                         transition: height 750ms ease 750ms;
                     }
                 }
@@ -743,27 +858,11 @@ header#masthead {
             .xoo-wsc-ft-buttons-cont {
                 .button {
                     display: none;
-                    font-family: futura-pt, sans-serif;
-                    font-weight: 500;
-                    font-style: italic;
-                    background-color: #000;
-                    color: #FFF;
-                    border-radius: 0;
-                    border: 1px solid #000;
-                    font-size: 14px;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    padding: 8px 25px;
-            
-                    &:hover {
-                        text-decoration: none;
-                        background-color: #FFF;
-                        color: #000;
-                        transition: all 250ms ease;
-                    }
+                    @extend .black-btn;
 
                     &.xoo-wsc-ft-btn-checkout {
                         display: flex;
+                        width: 100%;
                     }
 
                 }
@@ -791,16 +890,24 @@ header#masthead {
     // grid-template-areas: "product product product"
     //                      "link link link";
     .dgwt-wcas-suggestion-product {
-        width: 33.33%;
-        max-width: 33.33%;
+        width: 25%;
+        max-width: 25%;
         padding: 0;
-        // grid-area: product;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: column;
 
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.dgwt-wcas-suggestion-selected {
+            background-color: #FFF;
+        }
+
         .dgwt-wcas-si {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 310px;
         
             img {
                 width: 100%;
@@ -810,6 +917,29 @@ header#masthead {
         .dgwt-wcas-content-wrapp {
             display: flex;
             flex-direction: column;
+            padding-left: 0;
+
+
+            .dgwt-wcas-st {
+                margin-bottom: 15px;
+
+                .dgwt-wcas-st-title {
+                    width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @extend .futura-font-normal;
+                    font-size: 18px;
+                }
+            }
+
+            .dgwt-wcas-sp {
+                .amount {
+                    bdi {
+                        @extend .baskerville-display-font-normal;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
     .dgwt-wcas-suggestion-more {
@@ -819,7 +949,8 @@ header#masthead {
 }
 
 #hero {
-    padding-bottom: 90px;
+    padding-bottom: 0px;
+
     .hero-video-container {
         max-height: 750px;
         overflow: hidden;
@@ -846,7 +977,7 @@ header#masthead {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url('https://amebuissonniere.com/wp-content/uploads/2021/09/hero-background.jpg');
+        background-image: url('https://amebuissonniere.com/wp-content/uploads/2021/10/hero-background-2.jpg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -860,7 +991,7 @@ header#masthead {
             text-align: right;
             display: flex;
             justify-content: center;
-            font-size: 46px;
+            font-size: 32px;
             letter-spacing: 1px;
             margin-top: 30px;
             p {
@@ -870,7 +1001,7 @@ header#masthead {
             strong {
                 font-family: futura-pt, sans-serif;
                 font-weight: 500;
-                font-size: 42px;
+                font-size: 28px;
                 font-style: normal;
                 display: block;
                 letter-spacing: 1.5px;
@@ -887,32 +1018,15 @@ header#masthead {
             font-weight: 400;
             font-style: normal;
             text-align: center;
-            font-size: 22px;
+            font-size: 18px;
             line-height: 26px;
             color: $dark!important;
+            margin-bottom: 25px;
         }
         
         .btn {
-            // position: absolute;
-            // bottom: 0;
-            background-color: #000;
-            color: #FFF;
-            width: max-content;
-            // transform: translateY(-90px);
-            border-radius: 0;
-            border: 1px solid #000;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-style: italic;
-            padding: 8px 25px;
-            margin-top: 25px;
-            // opacity: 0;
-            // transition: opacity 350ms ease;
-    
-            &:hover {
-                text-decoration: none;
-            }
+            @extend .black-btn;
+            font-style: normal;
         }
 
     }
@@ -954,12 +1068,12 @@ header#masthead {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 90px 0;
+    padding: 0 0 90px;
     // border-top: 1px solid #000;
 
     .title {
         text-align: center;
-        font-size: 26px;
+        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: .5px;
         margin-bottom: 0;
@@ -968,7 +1082,7 @@ header#masthead {
 
     .subtitle {
         text-align: center;
-        font-size: 54px;
+        font-size: 32px;
         margin-bottom: 0;
 
         p {
@@ -977,7 +1091,7 @@ header#masthead {
         strong {
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 42px;
+            font-size: 24px;
         }
         em {
             text-transform:lowercase;
@@ -1037,7 +1151,7 @@ header#masthead {
                         font-size: 14px;
                         font-weight: 500;
                         text-transform: uppercase;
-                        font-style: italic;
+                        font-style: normal;
                         padding: 8px 25px;
                         margin-bottom: 35px;
                         // opacity: 0;
@@ -1060,7 +1174,7 @@ header#masthead {
     font-style: normal;
 
     h2.title {
-        font-size: 24px;
+        font-size: 20px;
         margin-top: 30px;
         margin-bottom: 90px;
         text-align: center;
@@ -1074,7 +1188,7 @@ header#masthead {
         strong {
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 42px;
+            font-size: 24px;
             letter-spacing: 2px;
             font-family: futura-pt, sans-serif;
             font-weight: 500;
@@ -1084,13 +1198,13 @@ header#masthead {
             font-family: baskerville-display-pt, serif;
             font-weight: 400;
             font-style: italic;
-            font-size: 36px;
+            font-size: 26px;
             letter-spacing: 0px;
         }
     }
 
     h3.title {
-        font-size: 46px;
+        font-size: 32px;
         margin-top: 0px;
         margin-bottom: 60px;
         margin-left: 30px;
@@ -1106,7 +1220,7 @@ header#masthead {
         strong {
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 36px;
+            font-size: 24px;
             letter-spacing: .5px;
             font-family: futura-pt, sans-serif;
             font-weight: 500;
@@ -1117,7 +1231,7 @@ header#masthead {
             font-family: baskerville-display-pt, serif;
             font-weight: 400;
             font-style: italic;
-            font-size: 46px;
+            font-size: 32px;
             letter-spacing: 0px;
         }
     }
@@ -1137,7 +1251,7 @@ header#masthead {
     }
 
     .col-12 {
-        max-height: 450px;
+        max-height: 550px;
         overflow: hidden;
 
         img {
@@ -1151,6 +1265,7 @@ header#masthead {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            padding-left: 60px;
         }
     }
 
@@ -1174,7 +1289,7 @@ header#masthead {
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
-            font-style: italic;
+            font-style: normal;
             padding: 8px 25px;
             margin-bottom: 35px;
         }
@@ -1287,7 +1402,7 @@ header#masthead {
     .title-container {
         flex-direction: column;
         h2 {
-            font-size: 36px;
+            font-size: 28px;
             font-family: futura-pt, sans-serif;
             font-weight: 500;
             font-style: normal;
@@ -1296,7 +1411,7 @@ header#masthead {
                 font-weight: 500;
                 display: block;
                 letter-spacing: .5px;
-                line-height: 24px;
+                line-height: 28px;
             }
             br {
                 line-height: 12px;
@@ -1307,7 +1422,7 @@ header#masthead {
                 font-weight: 400;
                 font-style: italic;
                 margin-left: 90px;
-                font-size: 46px;
+                font-size: 32px;
                 line-height: 24px;
             }
         }
@@ -1363,13 +1478,13 @@ header#masthead {
             p {
                 margin-bottom: 0;
                 padding-bottom: 0;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 500;
                 letter-spacing: .5px;
                 strong {
                     text-transform: uppercase;
                     display: block;
-                    font-size: 32px;
+                    font-size: 24px;
                     font-weight: 500;
                     letter-spacing: .5px;
                     margin-bottom: 10px;
@@ -1380,7 +1495,7 @@ header#masthead {
                     font-weight: 400;
                     font-style: italic;
                     margin-left: 5px;
-                    font-size: 32px;
+                    font-size: 26px;
                 }
             }
         }
@@ -1403,7 +1518,8 @@ header#masthead {
                 font-style: normal;
                 margin-bottom: 30px;
                 letter-spacing: .5px;
-                font-size: 20px;
+                font-size: 18px;
+                text-shadow: 5px 5px 12px #000;
             }
 
             h3 {
@@ -1427,7 +1543,7 @@ header#masthead {
                     strong {
                         text-transform: uppercase;
                         display: block;
-                        font-size: 32px;
+                        font-size: 28px;
                         font-weight: 500;
                         letter-spacing: .5px;
                         font-family: futura-pt, sans-serif;
@@ -1440,26 +1556,15 @@ header#masthead {
                         font-weight: 400;
                         font-style: italic;
                         margin-left: 5px;
-                        font-size: 32px;
+                        font-size: 30px;
                     }
                 }
             }
 
             a {
-                background-color: #FFF;
-                border: 1px solid #FFF;
-                color: #000;
-                font-size: 14px;
-                font-weight: 500;
-                text-transform: uppercase;
-                font-style: italic;
-                padding: 8px 25px;
-                width: max-content;
+                @extend .white-btn;
+                font-style: normal;
                 margin-bottom: 50px;
-
-                &:hover {
-                    text-decoration: none;
-                }
             }
         }
     }
@@ -1468,12 +1573,16 @@ header#masthead {
 #homeTuto {
     .row {
         .video-container {
+            display: flex;
+            justify-content: flex-end;
+
             video {
-                width: 100%;
+                // width: 100%;
+                max-height: 600px;
             }
         }
         .txt-container {
-            background-color: #FFEDDD;
+            // background-color: #FFEDDD;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1534,7 +1643,7 @@ header#masthead {
             align-items: center;
 
             .txt-content {
-                // border-top: 1px solid #000;
+                border-top: 1px solid #000;
                 padding-top: 30px;
                 height: max-content;
                 width: 100%;
@@ -1605,7 +1714,7 @@ header#masthead {
             align-items: center;
 
             .txt-content {
-                // border-top: 1px solid #000;
+                border-top: 1px solid #000;
                 padding-top: 30px;
                 height: max-content;
                 width: 100%;
@@ -2079,6 +2188,8 @@ footer#colophon {
                         }
 
                         h2 {
+                            @extend .futura-font-normal;
+                            font-size: 24px;
                             position: absolute;
                             bottom: 90px;
                             color: $light;
@@ -2087,6 +2198,7 @@ footer#colophon {
                             text-align: center;
                             padding-left: 90px;
                             padding-right: 90px;
+                            text-shadow: 5px 5px 20px #000;
                         }
                     }
                 }
@@ -2108,12 +2220,22 @@ footer#colophon {
     #content {
         padding: 180px 0 90px;
 
+        .top-quote {
+            margin-bottom: 60px;
+            p {
+                @extend .baskerville-poster-font-normal;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
         .product {
             .container {
                 .row {
                     .col-6 {
                         div.images {
                             width: 100%;
+                            max-height: 700px;
                             display: flex;
                             flex-direction: row;
 
@@ -2121,26 +2243,43 @@ footer#colophon {
                                 display: none;
                             }
 
+                            .woocommerce-product-gallery__wrapper {
+                                width: 500px;
+                                height: 700px;
+
+                                .woocommerce-product-gallery__image {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
                             .flex-viewport {
                                 width: 80%;
                             }
 
                             ol {
-                                display: flex;
-                                flex-direction: column;
+                                // display: flex;
+                                // flex-direction: column;
                                 width: 150px;
-                                padding: 15px;
+                                padding: 0 15px;
                                 max-height: 750px;
                                 overflow-y: auto;
 
                                 li {
                                     width: 100%;
-                                    margin-bottom: 15px;
-                                    margin-top: 15px;
+                                    height: 150px;
+                                    overflow: hidden;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    &:not(:last-of-type) {
+                                        margin-bottom: 15px;
+                                    }
 
                                     img {
-                                        width: 100%;
-                                        height: auto;
+                                        min-height: 100%;
+                                        min-width: 100%;
                                     }
                                 }
                             }
@@ -2236,7 +2375,7 @@ footer#colophon {
                                                 .col-6 {
                                                     padding-left: 0;
                                                     padding-right: 0;
-                                                    margin-bottom: 90px;
+                                                    margin-bottom: 30px;
 
                                                     &:first-of-type {
                                                         display: flex;
@@ -2270,20 +2409,11 @@ footer#colophon {
                                                     }
 
                                                     a {
-                                                        font-family: futura-pt, sans-serif;
-                                                        font-weight: 500;
-                                                        background-color: #FFF;
+                                                        @extend .white-btn;
                                                         border: 1px solid #000;
-                                                        color: #000;
-                                                        font-size: 14px;
-                                                        font-weight: 500;
-                                                        text-transform: uppercase;
-                                                        font-style: italic;
-                                                        padding: 8px 25px;
                                                         position: absolute;
-                                                        width: max-content;
                                                         align-self: flex-end;
-                                                        transform: translateX(-60px);
+                                                        transform: translateX(-53px);
                                         
                                                         &:hover {
                                                             text-decoration: none;
@@ -2332,6 +2462,16 @@ footer#colophon {
                                                 }
                                             }
                                         }
+
+                                        &#p3 {
+                                            .conseils {
+                                                font-size: 14px;
+
+                                                strong {
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2341,6 +2481,8 @@ footer#colophon {
                             }
 
                             .woocommerce-Tabs-panel {
+                                margin-bottom: 0;
+
                                 h2 {
                                     display: none;
                                 }
@@ -2355,10 +2497,13 @@ footer#colophon {
     
                                     tbody {
                                         display: grid;
-                                        grid-template-columns: 250px 150px;
-                                        grid-template-rows: 60px 60px;
+                                        grid-template-columns: 285px 155px;
+                                        grid-template-rows: 90px 90px;
     
                                         tr {
+                                            display: flex;
+                                            flex-direction: column;
+
                                             &:first-of-type {
                                                 grid-column: 1;
                                                 grid-row: 1;
@@ -2375,7 +2520,15 @@ footer#colophon {
                                     }
     
                                     .label {
-                                        display: none;
+                                        @extend .futura-font-normal;
+                                        text-transform: uppercase;
+                                        color: #606060;
+                                        font-weight: 400!important;
+                                        font-size: 14px;
+
+                                        &:after {
+                                            content: ' :';
+                                        }
                                     }
     
                                     select {
@@ -2383,9 +2536,11 @@ footer#colophon {
                                     }
     
                                     .variation-radios {
-                                        width: 100%;
+                                        width: 443px;
                                         display: flex;
                                         flex-direction: row-reverse;
+                                        justify-content: flex-end;
+                                        align-items: flex-end;
     
                                         input {
                                             opacity: 0;
@@ -2444,7 +2599,10 @@ footer#colophon {
     
                                     #pa_couleur-cordon + .variation-radios {
                                         label {
-                                            width: 123px;
+                                            height: 38px;
+                                            width: 100%;
+                                            padding-top: 2px;
+                                            padding-bottom: 2px;
                                         }
                                     }
     
@@ -2458,22 +2616,15 @@ footer#colophon {
                                         display: none!important;
                                     }
                                     .single_add_to_cart_button {
-                                        background-color: #000;
-                                        color: #FFF;
-                                        border-radius: 0;
-                                        text-transform: uppercase;
-                                        font-family: futura-pt, sans-serif;
-                                        font-weight: 700;
-                                        font-style: normal;
+                                        @extend .black-btn;
                                         width: 100%;
-                                        max-width: 396px;
+                                        max-width: 430px;
 
                                         &::after {
                                             display: none;
                                         }
     
                                         &:hover {
-                                            background-color: #303030;
                                             box-shadow: inherit;
                                         }
                                     }
@@ -2502,7 +2653,7 @@ footer#colophon {
 
                         .row {
                             .txt-container {
-                                padding: 60px 90px;
+                                padding: 90px;
                                 h2 {
                                     font-family: futura-pt, sans-serif;
                                     font-weight: 500;
@@ -2533,8 +2684,8 @@ footer#colophon {
                                     font-style: normal;
                                     font-size: 18px;
                                     text-align: center;
-                                    padding-left: 30px;
-                                    padding-right: 30px;
+                                    padding-left: 90px;
+                                    padding-right: 90px;
                                     
                                     p {
                                         margin-bottom: 0;
@@ -2826,14 +2977,7 @@ footer#colophon {
                             align-items: center;
 
                             a {
-                                background-color: #FFF;
-                                border: 1px solid #FFF;
-                                color: #000;
-                                font-size: 14px;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                                font-style: italic;
-                                padding: 8px 25px;
+                                @extend .white-btn;
                                 position: absolute;
                                 transform: translateY(-60px);
                 
@@ -2843,9 +2987,7 @@ footer#colophon {
                             }
 
                             .title {
-                                font-family: baskerville-poster-pt, serif;
-                                font-weight: 400;
-                                font-style: italic;
+                                @extend .baskerville-poster-font-italic;
                                 font-size: 28px;
                                 margin-top: 30px;
                                 margin-bottom: 0;
@@ -2853,9 +2995,7 @@ footer#colophon {
                             }
 
                             .category {
-                                font-family: futura-pt, sans-serif;
-                                font-weight: 500;
-                                font-style: normal;
+                                @extend .futura-font-normal;
                                 text-transform: uppercase;
                                 color: #AAA;
                                 font-size: 16px;
@@ -2874,6 +3014,170 @@ footer#colophon {
 
 #checkoutPage {
     padding: 150px 0 90px;
+
+    .woocommerce-form-coupon-toggle {
+        .woocommerce-info {
+            border: 1px solid #AAA;
+            background-color: #FFF;
+            @extend .futura-font-normal;
+            text-transform: uppercase;
+            text-align: center;
+            color: #666;
+            padding: 1em 2em;
+
+            &::before {
+                display: none;
+            }
+
+            .showcoupon {
+                display: block;
+                color: #000;
+                font-style: italic;
+            }
+        }
+    }
+
+    .woocommerce-info {
+        border: 1px solid #AAA;
+        background-color: #FFF;
+        @extend .futura-font-normal;
+        text-transform: uppercase;
+        text-align: center;
+        color: #666;
+        padding: 1em 2em;
+
+        &::before {
+            display: none;
+        }
+
+        .showlogin {
+            display: block;
+            color: #000;
+            font-style: italic;
+        }
+    }
+
+    .woocommerce-form-login {
+        border-radius: 0;
+        border: 1px solid #AAA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @extend .futura-font-normal;
+        text-transform: uppercase;
+
+        & > p {
+            &:first-of-type {
+                text-align: center;
+                color: #AAA;
+                width: 45%;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 0;
+                border: 1px solid #000;
+                padding: 5px 15px;
+            }
+
+            &.form-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 45%;
+
+                &:before {
+                    content: "";
+                    display: inherit;
+                }
+
+                &.form-row-first, &.form-row-last {
+                    justify-content: flex-start;
+                }
+
+                .woocommerce-form-login__rememberme {
+                    width: 50%;
+
+                    input {
+                        height: max-content;
+                        margin-right: 15px;
+                    }
+                }
+
+                .woocommerce-form-login__submit {
+                    @extend .white-btn;
+                    border: 1px solid #000;
+                    width: 50%;
+                }
+            }
+
+            &.lost_password {
+                color: #AAA;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 14px;
+
+                a {
+                    color: #AAA;
+                }
+            }
+        }
+    }
+
+    .woocommerce-message {
+        border: 1px solid #8fae1b;
+        background-color: #FFF;
+        @extend .futura-font-normal;
+        text-transform: uppercase;
+        text-align: center;
+        color: #666;
+        padding: 1em 2em;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .checkout_coupon {
+        border: 1px solid #AAA;
+        background-color: #FFF;
+        @extend .futura-font-normal;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &>p:first-of-type {
+            display: none;
+        }
+
+        &>.form-row {
+            max-width: 325px;
+            justify-content: center;
+
+            input {
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+                font-weight: 300;
+                border-radius: 0;
+                border: 1px solid #000;
+                padding: 8px 15px;
+                text-align: center
+            }
+
+            .button {
+                @extend .white-btn;
+                border: 1px solid #000;
+            }
+        }
+    }
 
     &>.row {
         &:first-of-type {
@@ -2908,12 +3212,487 @@ footer#colophon {
     }
 
     form.checkout {
-        .col2-set {
-            // display: none;
+        display: flex;
+        flex-direction: row;
+
+        #customer_details {
+            padding-right: 15px;
+            h3 {
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+
+            .woocommerce-billing-fields__field-wrapper {
+                margin-bottom: 45px;
+
+                .form-row {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        display: none;
+                    }
+                    input {
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        border-radius: 0;
+                        border: 1px solid #000;
+                    }
+
+                    .select2-selection--single {
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+                        border-radius: 0px;
+                        border: 1px solid #000;
+                        height: 40px;
+                        padding: .375rem .75rem;
+
+                        .select2-selection__rendered {
+                            height: 100%;
+                            padding-left: 0;
+                        }
+
+                        .select2-selection__arrow {
+                            height: 100%;
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+
+            .woocommerce-account-fields {
+                .create-account {
+                    #account_password_field {
+                        display: flex;
+                        flex-direction: column;
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+
+                        input {
+                            border: 1px solid #000;
+                            border-radius: 0;
+
+                            &::placeholder {
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .woocommerce-additional-fields {
+                .form-row {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        display: none;
+                    }
+                    textarea {
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        border-radius: 0;
+                        border: 1px solid #000;
+                        min-height: 250px;
+                    }
+                }
+            }
+        }
+
+        .order-review-column {
+            padding-left: 15px;
+
+            h3 {
+                margin-bottom: 30px;
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+            }
+
+            #order_review {
+                .shop_table {
+                    .container {
+                        .row {
+                            .cart_item {
+                                display: flex;
+                                flex-direction: row;
+
+                                .product-img {
+                                    width: 15%;
+                                    padding-bottom: 15px;
+                                }
+
+                                .product-name {
+                                    width: 50%;
+                                    @extend .futura-font-normal;
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                    padding-left: 15px;
+
+                                    .remove {
+                                        position: absolute;
+                                        right: 0;
+                                        top: -8px;
+                                        font-family: 'Woo-Side-Cart' !important;
+
+                                        &:hover {
+                                            background-color: transparent;
+
+                                            .trash-btn {
+                                                &:before {
+                                                    color: #000;
+                                                    transition: color 250ms ease;
+                                                }
+                                            }
+                                        }
+
+                                        .trash-btn {
+
+                                            &:before {
+                                                content: "\e908";
+                                                font-size: 16px;
+                                                color: #AAA;
+                                                font-style: normal;
+                                            }
+
+                                        }
+                                    }
+
+                                    .variation {
+                                        padding-top: 15px;
+                                        font-size: 14px;
+                                        display: grid;
+                                        grid-template-columns: 2fr 1fr;
+                                        grid-template-rows: 20px 20px 20px;
+                                        grid-template-areas: 'medaillon medaillon-info'
+                                                            'taille taille-info'
+                                                            'cordon cordon-info';
+                                        text-transform: capitalize;
+                                        @extend .baskerville-display-font-italic;
+
+                                        dt.variation-Couleurdumdaillon {
+                                            grid-area: medaillon;
+                                            font-weight: 300;
+                                        }
+                                        dt.variation-Taille {
+                                            grid-area: taille;
+                                            font-weight: 300;
+                                        }
+                                        dt.variation-Couleurdescordons {
+                                            grid-area: cordon;
+                                            font-weight: 300;
+                                        }
+                                        dd.variation-Couleurdumdaillon {
+                                            grid-area: medaillon-info;
+                                            font-weight: 600;
+                                        }
+                                        dd.variation-Taille {
+                                            grid-area: taille-info;
+                                            font-weight: 600;
+                                        }
+                                        dd.variation-Couleurdescordons {
+                                            grid-area: cordon-info;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                                .product-qty {
+                                    width: 15%;
+                                    @extend .futura-font-normal;
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    text-transform: uppercase;
+                                    text-align: right;
+
+                                    strong {
+                                        font-weight: 600;
+                                    }
+                                }
+                                .product-total {
+                                    width: 10%;
+                                    @extend .futura-font-normal;
+                                    font-size: 16px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+
+                    .order-shipping-choice {
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+                        .cart-subtotal {
+                            display: flex;
+                            justify-content: flex-end;
+                            border-bottom: 1px solid #AAA;
+                            margin-bottom: 30px;
+                            div {
+                                padding: 10px 0 10px 15px;
+                                @extend .futura-font-normal;
+                                text-transform: uppercase;
+                                font-size: 18px;
+                                vertical-align: bottom;
+                                font-weight: 300;
+
+                                .amount {
+                                    @extend .futura-font-normal;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+
+                        .cart-discount {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-bottom: 30px;
+                            padding-right: 30px;
+
+                            a {
+                                color: transparent;
+                                font-family: 'Woo-Side-Cart' !important;
+                                position: absolute;
+                                transform: translate3d(10px, -1px, 0px);
+
+                                &:before {
+                                    content: "\e908";
+                                    font-size: 16px;
+                                    color: #AAA;
+                                    font-style: normal;
+                                }
+                            }
+                        }
+
+                        #shipping_method {
+                            padding: 30px 0;
+
+                            li {
+                                input {
+                                    margin-top: 5px;
+                                }
+                            }
+
+                            .bw-parcel-client {
+                                padding: 20px;
+                                @extend .futura-font-normal;
+                                font-weight: 300;
+
+                                .bw-parcel-name {
+                                    @extend .futura-font-normal;
+                                }
+                            }
+
+                            .bw-select-parcel {
+                                padding-left: 20px;
+                                @extend .futura-font-italic;
+                            }
+                        }
+                        .order-total {
+                            display: flex;
+                            justify-content: flex-end;
+                            border-top: 1px solid #AAA;
+                            div {
+                                padding: 15px 0 10px 15px;
+                                @extend .futura-font-normal;
+                                text-transform: uppercase;
+                                font-size: 18px;
+
+                                .amount {
+                                    @extend .futura-font-normal;
+                                    font-size: 18px;
+                                    font-weight: bolder;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                #payment {
+                    background-color: #FFF;
+                    border-radius: 0;
+
+                    .wc_payment_methods {
+                        padding: 0;
+                        border: 0px;
+                        .wc_payment_method {
+                            &>label {
+                                display: none;
+                            }
+                            .payment_box {
+                                background-color: #FFF;
+                                padding: 15px;
+                                border: 1px solid #000;
+                                border-radius: 0;
+                                @extend .futura-font-normal;
+
+                                &:before {
+                                    display: none;
+                                }
+
+                                #stripe-payment-data {
+                                    #wc-stripe-cc-form {
+                                        & > .form-row {
+                                            padding: 0;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    text-transform: uppercase;
+                                    margin-bottom: 0;
+                                }
+
+                                .stripe-card-group {
+                                    width: 100%;
+                                }
+
+                                #stripe-exp-element {
+                                    width: 100%;
+                                }
+
+                                #stripe-cvc-element {
+                                    width: 100%;
+                                }
+
+                                #wc-stripe-new-payment-method {
+                                    margin: 7px 15px 7px 0;
+
+                                    &+label {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .wc-stripe-elements-field {
+                                    border: 1px solid #000;
+                                    height: 40px;
+                                    padding: 10px 15px;
+                                }
+
+                                #wc-woocommerce_payments-upe-form {
+                                    padding: 0;
+
+                                    #wcpay-upe-element {
+                                        padding: 0;
+
+                                        .wc-stripe-elements-field {
+                                            border-color: pink;
+                                        }
+
+                                        .p-PaymentElement {
+                                            #card-panel {
+                                                label.Label {
+                                                    @extend .futura-font-normal;
+                                                    text-transform: uppercase !important;
+                                                }
+                                                .Input {
+                                                    border: 1px solid #000 !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .place-order {
+                        
+                        .form-row {
+                            display: none;
+                        }
+                        .woocommerce-terms-and-conditions-wrapper {
+                            display: none;
+                        }
+
+                        button.button {
+                            @extend .black-btn;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-id-947 {
+
+    header#masthead {
+        background-color: transparent;
+
+        .mega-menu-wrap {
+            opacity: 0;
+            pointer-events: none;
+
+            a {
+                pointer-events: none;
+            }
+        }
+
+        .navbar-brand {
+            img {
+                height: 100px!important;
+                filter: invert(1);
+            }
+        }
+
+        .header-link {
+            color: #FFF;
+        }
+
+        .divider {
+            display: none;
+        }
+
+        #cartBtn {
+            display: none;
+        }
+
+        #searchBtn {
+            display: none;
         }
     }
 
+    #merci {
+        // padding: 150px 0 90px;
+        min-height: 100vh;
+        background-image: url('https://amebuissonniere.com/wp-content/uploads/2021/10/20210520_AME-BUISSONIERE_002_305_©Maeva-Delacroix.jpg');
+        background-size: cover;
+        background-position: top;
+
+        .row {
+            height: 100vh;
+
+            .col-12 {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                padding-bottom: 150px;
+                height: 100%;
+        
+                h1 {
+                    @extend .futura-font-normal;
+                    color: #FFF;
+                    font-size: 64px;
+            
+                    span {
+                        @extend .baskerville-poster-font-italic;
+                        display: block;
+                    }
+                }
+        
+                a.btn {
+                    @extend .white-btn;
+                }
+            }
+        }
+
+    }
 }
+
+
 
 #baladesOlfactives {
     padding: 150px 0 90px;
@@ -3276,6 +4055,11 @@ footer#colophon {
                 list-style: none;
                 li {
                     margin-bottom: 15px;
+
+                    &.woocommerce-MyAccount-navigation-link--downloads {
+                        display: none;
+                    }
+
                     a {
                         font-family: baskerville-display-pt, serif;
                         font-weight: 400;
@@ -3303,8 +4087,298 @@ footer#colophon {
         }
 
         .woocommerce-MyAccount-content {
+            @extend .futura-font-normal;
+
             & > p:first-of-type {
-                font-size: 46px;
+                font-size: 38px;
+                color: transparent;
+                line-height: 38px;
+
+                strong {
+                    color: #000;
+                    // position: absolute;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 32px;
+                    padding-bottom: 5px;
+
+                    &:not(:first-of-type) {
+                        display: none;
+                    }
+
+                    &:first-of-type {
+
+                        &::before {
+                            @extend .baskerville-display-font-italic;
+                            text-transform: initial;
+                            position: absolute;
+                            content: 'Bonjour';
+                            transform: translate3d(-118%, 3px, 0);
+                        }
+                    }
+                }
+
+                a {
+                    @extend .white-btn;
+                    border: 1px solid #000;
+                }
+            }
+
+            & > p:last-of-type {
+                @extend .baskerville-display-font-normal;
+
+                a {
+                    @extend .baskerville-display-font-italic;
+                    color: #000;
+                    text-decoration: underline;
+                }
+            }
+
+            .woocommerce-MyAccount-orders {
+                border-radius: 0;
+                border: 1px solid #000;
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+
+                tr {
+                    th {
+                        padding: 10px;
+                    }
+                    td {
+                        padding: 10px;
+                        border-top: 1px solid #000;
+
+                        a {
+                            color: #000;
+                            pointer-events: none;
+
+                            &.button {
+                                @extend .white-btn;
+                                border: 1px solid #000;
+                                pointer-events: initial;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .woocommerce-Address {
+                position: absolute;
+                top: 90px;
+
+                .woocommerce-Address-title {
+                    margin-bottom: 30px;
+                    h3 {
+                        text-transform: uppercase;
+                    }
+                    a.edit {
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            form {
+                h3 {
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                }
+
+                .woocommerce-address-fields__field-wrapper {
+                    p {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                            font-size: 14px;
+                        }
+
+                        input {
+                            border-radius: 0;
+                            border: 1px solid #000;
+                        }
+
+                        .select2-selection--single {
+                            @extend .futura-font-normal;
+                            text-transform: uppercase;
+                            border-radius: 0px;
+                            border: 1px solid #000;
+                            height: 40px;
+                            padding: .375rem .75rem;
+    
+                            .select2-selection__rendered {
+                                height: 100%;
+                                padding-left: 0;
+                            }
+    
+                            .select2-selection__arrow {
+                                height: 100%;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+
+                button.button {
+                    @extend .white-btn;
+                    border: 1px solid #000;
+                    margin-top: 30px;
+                }
+            }
+
+            .button {
+                @extend .white-btn;
+                border: 1px solid #000;
+                pointer-events: initial;
+            }
+
+            .woocommerce-MyAccount-paymentMethods {
+                border-radius: 0;
+                border: 1px solid #000;
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+
+                tr {
+                    th {
+                        padding: 10px;
+                    }
+                    td {
+                        padding: 10px;
+                        border-top: 1px solid #000;
+
+                        a {
+                            color: #000;
+                            pointer-events: none;
+
+                            &.button {
+                                @extend .white-btn;
+                                border: 1px solid #000;
+                                pointer-events: initial;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .woocommerce-PaymentMethods {
+                background-color: #FFF;
+
+                .woocommerce-PaymentBox {
+                    background-color: #FFF !important;
+                    padding: 15px;
+                    border: 1px solid #000;
+                    border-radius: 0;
+                    @extend .futura-font-normal;
+
+                    &:before {
+                        display: none!important;
+                    }
+
+                    #stripe-payment-data {
+                        #wc-stripe-cc-form {
+                            & > .form-row {
+                                padding: 0;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    label {
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                    }
+
+                    .stripe-card-group {
+                        width: 100%;
+                    }
+
+                    #stripe-exp-element {
+                        width: 100%;
+                    }
+
+                    #stripe-cvc-element {
+                        width: 100%;
+                    }
+
+                    #wc-stripe-new-payment-method {
+                        margin: 7px 15px 7px 0;
+
+                        &+label {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .wc-stripe-elements-field {
+                        border: 1px solid #000;
+                        height: 40px;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+
+            .form-row {
+                background-color: #FFF;
+
+                button {
+                    @extend .white-btn;
+                    border: 1px solid #000;
+                }
+            }
+
+            .woocommerce-EditAccountForm {
+                p {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                        font-size: 14px;
+                    }
+
+                    input {
+                        border-radius: 0;
+                        border: 1px solid #000;
+                    }
+
+                    #wcpay_selected_currency {
+                        @extend .futura-font-normal;
+                        text-transform: uppercase;
+                        border-radius: 0px;
+                        border: 1px solid #000;
+                        height: 40px;
+                        padding: .375rem .75rem;
+
+                        .select2-selection__rendered {
+                            height: 100%;
+                            padding-left: 0;
+                        }
+
+                        .select2-selection__arrow {
+                            height: 100%;
+                            padding-right: 30px;
+                        }
+                    }
+
+                    span {
+                        em {
+                            @extend .futura-font-italic;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                legend {
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                }
+
+                button {
+                    @extend .white-btn;
+                    border: 1px solid #000;
+                }
             }
         }
     }
@@ -3390,16 +4464,6 @@ footer#colophon {
                         letter-spacing: 1px;
                         margin-bottom: 10px;
                     }
-                    &.post-title {
-                        color: #000;
-                        font-family: baskerville-display-pt, serif;
-                        font-weight: 400;
-                        font-style: normal;
-                        text-align: center;
-                        font-size: 26px;
-                        line-height: 26px;
-                        padding: 0 25px;
-                    }
                     &.post-subtitle {
                         color: #000;
                         font-family: baskerville-display-pt, serif;
@@ -3416,8 +4480,19 @@ footer#colophon {
                         font-family: futura-pt, sans-serif;
                         font-weight: 500;
                         font-style: normal;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
+                }
+
+                .post-title {
+                    color: #000;
+                    font-family: baskerville-display-pt, serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-align: center;
+                    font-size: 26px;
+                    line-height: 26px;
+                    padding: 0 25px;
                 }
             }
         }
@@ -3434,23 +4509,11 @@ footer#colophon {
 
     #post {
         padding: 150px 0 90px;
-    
-        .title {
-            font-family: futura-pt, sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            text-align: center;
-            margin-top: 60px;
-            text-transform: uppercase;
-            font-size: 38px;
-    
-            em {
-                font-family: baskerville-poster-pt, serif;
-                font-weight: 400;
-                font-style: italic;
-                text-transform: lowercase;
-                font-size: 46px;
-            }
+
+        .numero {
+            @extend .baskerville-display-font-normal;
+            font-size: 28px;
+            margin-top: 15px;
         }
 
         .row {
@@ -3462,26 +4525,52 @@ footer#colophon {
                 align-items: center;
                 margin-bottom: 60px;
 
-                h1.title {
+                p.mb {
+                    @extend .futura-font-normal;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color: #AAA;
+                    margin: 60px 0 0;
+        
+                    em {
+                        @extend .baskerville-display-font-italic;
+                        text-transform: lowercase;
+                        font-size: 24px;
+                    }
+                }
+            
+                .title {
                     font-family: futura-pt, sans-serif;
                     font-weight: 500;
                     font-style: normal;
-                    font-size: 36px;
-                    padding-bottom: 0;
-                }
-
-                .description {
-                    font-family: baskerville-display-pt, serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    font-size: 24px;
                     text-align: center;
-                    line-height: 24px;
+                    text-transform: uppercase;
+                    font-size: 38px;
+                    margin-bottom: 0;
+        
+                    p {
+                        margin-bottom: 5px;
+                    }
+            
+                    em {
+                        font-family: baskerville-poster-pt, serif;
+                        font-weight: 400;
+                        font-style: italic;
+                        text-transform: lowercase;
+                        font-size: 46px;
+                    }
+                }
+        
+                .date {
+                    @extend .futura-font-normal;
+                    font-size: 16px;
+                    color: #AAA;
                 }
             }
 
             &.section-row {
                 justify-content: center;
+                margin-bottom: 60px;
 
                 .col-12 {
                     display: flex;
@@ -3494,12 +4583,12 @@ footer#colophon {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-end;
     
                         img {
-                            // position: absolute;
-                            height: auto;
-                            width: 100%;
+                            position: absolute;
+                            height: 100%;
+                            width: auto;
                         }
                     }
     
@@ -3507,23 +4596,33 @@ footer#colophon {
                         width: 50%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        padding: 60px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        // text-align: center;
+                        padding: 0 30px;
 
                         .section-title {
                             font-family: futura-pt, sans-serif;
                             font-weight: 500;
                             font-style: normal;
-                            font-size: 28px;
+                            font-size: 34px;
+                            margin-bottom: 30px
+                        }
+
+                        .section-subtitle {
+                            @extend .baskerville-display-font-italic;
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            font-size: 34px;
+                            text-align: center;
                         }
 
                         .section-content {
                             font-family: baskerville-display-pt, serif;
                             font-weight: 400;
                             font-style: normal;
-                            font-size: 18px;
+                            font-size: 20px;
                         }
                     }
                 }
@@ -3531,6 +4630,20 @@ footer#colophon {
                 &:nth-of-type(2n+1) {
                     .col-12 {
                         flex-direction: row-reverse;
+
+                        .img-container {
+                            align-items: flex-start;
+                        }
+
+                        .txt-container {
+                            .section-title {
+                                align-self: flex-end;
+                            }
+
+                            .section-content {
+                                text-align: right;
+                            }
+                        }
                     }
                 }
                 

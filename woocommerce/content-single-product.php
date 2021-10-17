@@ -31,6 +31,17 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+<div class="top-quote">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<p>Nam quis sed utAs et ditate niatem inulliciur, sequias piendis deles aut andae digeniscia cus
+aute dis ad qui dolorum repudic torehen imagnis ciduntur</p>
+			</div>
+		</div>
+	</div>
+
+</div>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<div class="container">
