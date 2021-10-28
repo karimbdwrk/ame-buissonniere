@@ -37,6 +37,7 @@ jQuery(document).ready(function() {
         loop:true,
         margin:30,
         nav:true,
+        mouseDrag: false,
         responsive:{
             0:{
                 items:1
@@ -69,6 +70,22 @@ jQuery(document).ready(function() {
         loop:true,
         margin:50,
         nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                loop:false,
+                items:3
+            }
+        }
+    })
+
+    jQuery('.portrait-content .owl-carousel').owlCarousel({
+        loop:true,
+        margin:50,
+        nav:true,
+        mouseDrag: false,
         responsive:{
             0:{
                 items:1

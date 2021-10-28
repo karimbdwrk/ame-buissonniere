@@ -1,9 +1,127 @@
-<div class="container" id="baladeOlfactive">
-    <div class="row">
-        <div class="col-8">
-            <p class="before-title">Découvrez la balade olfactive</p>
-            <h1 class="title">WEEK-END champêtre</h1>
-            <p class="description">Vous vous baladez-vous pieds nus à travers champs, parmi les violettes, les coquelicots et autres petites fleurs sauvages. Au loin on cultive le tilleul. Un léger vent effleure votre visage.</p>
-        </div>
-    </div>
+<div id="baladeOlfactive">
+	<div class="video-container container-fluid">
+		<video autoplay muted loop id="bgvid">
+			<source src={@bo-video} type="video/mp4">
+		</video>
+	</div>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-10 col-md-8">
+							<p class="before-title">Découvrez la balade olfactive</p>
+							<h1 class="title">{@bo-title}</h1>
+							<div class="description">{@bo-description}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="img-container">
+								<img src={@bo-image_principale._src} />
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="product-container">
+								<div class="product">
+									<div class="product-img-cta">
+										<img src={@bo-image_produit._src} />
+										<a class="btn" href={@bo-slug_produit}>Découvrir</a>
+									</div>
+									<div class="product-txt">
+										<p class="product-title">Le bracelet olfactif <span>{@post_title}</span></p>
+										<p class="product-cat">KIT : BIJOUX + PERLES DE PARFUM</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="owl-carousel owl-theme" id="boCarousel">
+								<div class="item"><img src={@bo-image_carousel_1._src} /></div>
+								<div class="item"><img src={@bo-image_carousel_2._src} /></div>
+								<div class="item"><img src={@bo-image_carousel_3._src} /></div>
+								<div class="item"><img src={@bo-image_carousel_4._src} /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid shop-links">
+					<div class="row">
+						<div class="col-12">
+							<h2>JE LE VEUX !</h2>
+							<div class="owl-carousel owl-theme" id="boShopCarousel">
+								<div class="item">
+									<div class="shop-img-cta">
+										<img src={@bo-shop_product_1_image._src} />
+										<a class="btn" href={@bo-shop_product_1_link}>Découvrir</a>
+									</div>
+									<div class="shop-txt">
+										<p class="shop-title">{@bo-shop_product_1_title}</p>
+										<p class="shop-cat">{@bo-shop_product_1_categorie}</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="shop-img-cta">
+										<img src={@bo-shop_product_2_image._src} />
+										<a class="btn" href={@bo-shop_product_2_link}>Découvrir</a>
+									</div>
+									<div class="shop-txt">
+										<p class="shop-title">{@bo-shop_product_2_title}</p>
+										<p class="shop-cat">{@bo-shop_product_2_categorie}</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="shop-img-cta">
+										<img src={@bo-shop_product_3_image._src} />
+										<a class="btn" href={@bo-shop_product_3_link}>Découvrir</a>
+									</div>
+									<div class="shop-txt">
+										<p class="shop-title">{@bo-shop_product_3_title}</p>
+										<p class="shop-cat">{@bo-shop_product_3_categorie}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container last-section">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-3">
+							<div class="product-container">
+								<div class="product-img-cta">
+									<img src={@bo-lookbook_image_1._src} />
+									<a class="btn" href={@bo-slug_produit}>Découvrir</a>
+								</div>
+								<div class="product-txt">
+									<p class="product-title">Le bracelet olfactif <span>{@post_title}</span></p>
+									<p class="product-cat">KIT : BIJOUX + PERLES DE PARFUM</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="img-container">
+								<img src={@bo-lookbook_image_2._src} />
+							</div>
+						</div>
+                    </div>
+                    <div class="row justify-content-center">
+						<div class="col-12 col-sm-3">
+							<div class="img-container illu">
+								<img src={@bo-lookbook_illustration._src} />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="img-container">
+								<img src={@bo-lookbook_image_3._src} />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

@@ -11,26 +11,26 @@ Version: 1.0
 #wesh {
   display: flex; }
   #wesh .morray {
-    display: block; }
+    display: none; }
 
 /* VARIABLES */
 /* GENERAL EXTENDS */
-.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card h2, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, #myAccount .woocommerce .woocommerce-MyAccount-content, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date {
+.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card h2, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal; }
 
-.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
+.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, .page-id-947 #merci .continue-shop, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: italic; }
 
-.baskerville-display-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, .single-post #post .numero {
+.baskerville-display-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, .single-post #post .numero, .single-post #post .row.portrait-content .hero-name .hero-description, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-4 .txt-content p.title, .single-post #post .row.portrait-content .section-4 .txt-content .description {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: normal; }
 
-.baskerville-display-font-italic, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle {
+.baskerville-display-font-italic, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: italic; }
@@ -69,7 +69,7 @@ Version: 1.0
   .white-btn:hover, #banners .row .img-container a:hover, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a:hover, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit:hover, #checkoutPage .checkout_coupon > .form-row .button:hover, .page-id-947 #merci .row .col-12 a.btn:hover, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button:hover {
     text-decoration: none; }
 
-.black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button {
+.black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit {
   background-color: #000;
   color: #FFF;
   width: max-content;
@@ -78,7 +78,7 @@ Version: 1.0
   font-size: 14px;
   text-transform: uppercase;
   padding: 8px 25px; }
-  .black-btn:hover, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button:hover, #hero .hero-txt .btn:hover, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button:hover {
+  .black-btn:hover, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button:hover, #hero .hero-txt .btn:hover, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button:hover, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit:hover {
     text-decoration: none; }
 
 /* GENERAL BOOTSTRAP */
@@ -173,24 +173,24 @@ header.entry-header, footer.entry-footer {
   display: none !important; }
 
 /* HEADER */
-.home header#masthead, .single-product header#masthead {
+.home header#masthead, .single-product header#masthead, .woocommerce-shop header#masthead {
   background-color: transparent; }
-  .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus {
+  .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus, .woocommerce-shop header#masthead.scrolled, .woocommerce-shop header#masthead.search-open, .woocommerce-shop header#masthead:hover, .woocommerce-shop header#masthead:active, .woocommerce-shop header#masthead:focus {
     background-color: #FFF;
     transition: background-color 250ms ease; }
-    .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img {
+    .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:focus .container-fluid .navbar .navbar-brand a img {
       height: 60px;
       transition: height 300ms ease; }
-  .home header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand {
+  .home header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand {
     margin-right: 0;
     width: 10%;
     display: flex;
     justify-content: center;
     padding: 0; }
-    .home header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a {
+    .home header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a {
       color: #000;
       height: 100%; }
-      .home header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img {
+      .home header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a img {
         height: 100px;
         transition: height 750ms ease 750ms; }
 
@@ -259,20 +259,34 @@ header#masthead {
                     header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-column > .mega-sub-menu > .mega-menu-item a:hover {
                       color: #000;
                       transition: color 200ms ease; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 #mega-menu-item-124 .mega-menu-link {
+            color: #000; }
           header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-3 {
             max-height: 200px;
             overflow: hidden; }
             header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-1 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-121 ul li ul #mega-menu-121-0-3 .mega-menu-link {
-              display: none; }
+              transform: translateY(-60px);
+              color: #FFF;
+              text-align: center;
+              text-shadow: 3px 3px 8px #000000AA; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-item-364 .mega-menu-link {
+            color: #000;
+            pointer-events: none; }
           header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-3 {
             max-height: 200px;
             overflow: hidden; }
             header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-1 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-167 ul li ul #mega-menu-167-0-3 .mega-menu-link {
-              display: none; }
+              transform: translateY(-60px);
+              color: #FFF;
+              text-align: center;
+              text-shadow: 3px 3px 8px #000000AA; }
           header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-0, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 {
             width: 20%; }
             header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-0 ul li, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 ul li {
               margin-bottom: 15px; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-item-850 .mega-menu-link {
+            color: #000;
+            pointer-events: none; }
           header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-4 {
             width: 20%;
             max-height: 200px;
@@ -1290,18 +1304,20 @@ footer#colophon {
     font-weight: 500;
     font-style: normal;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    text-transform: uppercase; }
+    margin-bottom: 30px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 32px; }
     .woocommerce-shop #products h1 em {
       font-family: baskerville-display-pt, serif;
       font-weight: 400;
       font-style: italic;
       text-transform: lowercase;
       display: block;
-      margin-left: 90px; }
+      margin-left: 90px;
+      font-size: 38px; }
   .woocommerce-shop #products #pills-tab {
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 20px; }
     .woocommerce-shop #products #pills-tab.nav-pills li a {
       color: #000;
@@ -1323,7 +1339,7 @@ footer#colophon {
     flex-direction: row;
     justify-content: space-between; }
     .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card {
-      height: 750px;
+      height: 450px;
       width: calc(33.33% - 30px);
       overflow: hidden;
       border-radius: 0;
@@ -1331,15 +1347,15 @@ footer#colophon {
       .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card img {
         width: 100%; }
       .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card h2 {
-        font-size: 24px;
+        font-size: 22px;
         position: absolute;
-        bottom: 90px;
+        bottom: 45px;
         color: #FFF;
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        padding-left: 90px;
-        padding-right: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
         text-shadow: 5px 5px 20px #000; }
   .woocommerce-shop #products #pills-tabContent .tab-pane#coffret-decouverte .card {
     width: 100%; }
@@ -1518,7 +1534,7 @@ footer#colophon {
               .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container table thead tr td:last-of-type {
                 text-align: center; }
             .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container table tbody tr td {
-              color: #AAA;
+              color: #666;
               font-size: 14px;
               border-bottom: 1px solid #000;
               padding: 4px 8px; }
@@ -1667,7 +1683,9 @@ footer#colophon {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      overflow: hidden; }
+      overflow: hidden;
+      flex: 0 0 33.333333% !important;
+      max-width: 33.333333% !important; }
       .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .img-container img {
         position: absolute;
         width: 100%;
@@ -2221,8 +2239,7 @@ footer#colophon {
     .page-id-947 header#masthead .mega-menu-wrap a {
       pointer-events: none; }
   .page-id-947 header#masthead .navbar-brand img {
-    height: 100px !important;
-    filter: invert(1); }
+    height: 100px !important; }
   .page-id-947 header#masthead .header-link {
     color: #FFF; }
   .page-id-947 header#masthead .divider {
@@ -2233,9 +2250,17 @@ footer#colophon {
     display: none; }
 .page-id-947 #merci {
   min-height: 100vh;
-  background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/10/20210520_AME-BUISSONIERE_002_305_©Maeva-Delacroix.jpg");
+  background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/10/20210520_AME-BUISSONIERE_002_045_©Maeva-Delacroix-1.jpg");
   background-size: cover;
   background-position: top; }
+  .page-id-947 #merci .continue-shop {
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    z-index: 9999; }
   .page-id-947 #merci .row {
     height: 100vh; }
     .page-id-947 #merci .row .col-12 {
@@ -2279,7 +2304,7 @@ footer#colophon {
     font-family: baskerville-poster-pt, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 18px;
     color: #AAA;
     text-align: center;
     margin-top: 90px;
@@ -2291,7 +2316,7 @@ footer#colophon {
     text-align: right;
     display: flex;
     justify-content: center;
-    font-size: 38px;
+    font-size: 28px;
     letter-spacing: 1px;
     text-align: center; }
     #baladeOlfactive h1.title p {
@@ -2307,13 +2332,13 @@ footer#colophon {
       font-family: baskerville-poster-pt, serif;
       font-weight: 400;
       font-style: italic;
-      font-size: 46px; }
+      font-size: 38px; }
   #baladeOlfactive .description {
     font-family: baskerville-poster-pt, serif;
     font-weight: 400;
     font-style: italic;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 26px;
     color: #000 !important;
     margin-bottom: 90px; }
@@ -2322,61 +2347,61 @@ footer#colophon {
   #baladeOlfactive .img-container {
     padding: 30px 15px;
     display: flex;
-    justify-content: center; }
+    justify-content: flex-end; }
     #baladeOlfactive .img-container img {
-      width: 100%;
-      height: auto; }
+      width: auto;
+      height: 100%;
+      max-height: 550px; }
   #baladeOlfactive .product-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; }
-    #baladeOlfactive .product-container .product {
-      margin-top: 90px; }
-      #baladeOlfactive .product-container .product .product-img-cta {
-        height: 600px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end; }
-        #baladeOlfactive .product-container .product .product-img-cta img {
-          height: 100%;
-          width: auto; }
-        #baladeOlfactive .product-container .product .product-img-cta a {
-          position: absolute;
-          background-color: #FFF;
-          border: 1px solid #FFF;
-          color: #000;
-          font-size: 14px;
-          font-weight: 500;
-          text-transform: uppercase;
+    #baladeOlfactive .product-container .product .product-img-cta {
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      #baladeOlfactive .product-container .product .product-img-cta img {
+        height: 100%;
+        width: auto;
+        max-height: 350px; }
+      #baladeOlfactive .product-container .product .product-img-cta a {
+        position: absolute;
+        background-color: #FFF;
+        border: 1px solid #FFF;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-style: normal;
+        padding: 8px 25px;
+        width: max-content;
+        margin-bottom: 30px;
+        border-radius: 0; }
+        #baladeOlfactive .product-container .product .product-img-cta a:hover {
+          text-decoration: none; }
+    #baladeOlfactive .product-container .product .product-txt {
+      height: 50px;
+      text-align: center; }
+      #baladeOlfactive .product-container .product .product-txt .product-title {
+        margin-bottom: 0;
+        margin-top: 15px;
+        font-family: baskerville-poster-pt, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px; }
+        #baladeOlfactive .product-container .product .product-txt .product-title span {
           font-style: italic;
-          padding: 8px 25px;
-          width: max-content;
-          margin-bottom: 30px;
-          border-radius: 0; }
-          #baladeOlfactive .product-container .product .product-img-cta a:hover {
-            text-decoration: none; }
-      #baladeOlfactive .product-container .product .product-txt {
-        height: 50px;
-        text-align: center; }
-        #baladeOlfactive .product-container .product .product-txt .product-title {
-          margin-bottom: 0;
-          margin-top: 15px;
-          font-family: baskerville-poster-pt, serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 20px; }
-          #baladeOlfactive .product-container .product .product-txt .product-title span {
-            font-style: italic;
-            text-decoration: underline; }
-        #baladeOlfactive .product-container .product .product-txt .product-cat {
-          font-family: futura-pt, sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          color: #AAA;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 14px; }
+          text-decoration: underline; }
+      #baladeOlfactive .product-container .product .product-txt .product-cat {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #AAA;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px; }
   #baladeOlfactive #boCarousel {
     margin-bottom: 30px; }
   #baladeOlfactive .shop-links {
@@ -2411,7 +2436,7 @@ footer#colophon {
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
-            font-style: italic;
+            font-style: normal;
             padding: 8px 25px;
             width: max-content;
             margin-bottom: 30px;
@@ -2436,58 +2461,106 @@ footer#colophon {
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 14px; }
-  #baladeOlfactive .last-section .product-container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 15px; }
-    #baladeOlfactive .last-section .product-container .product-img-cta {
+  #baladeOlfactive .last-section {
+    padding-top: 30px; }
+    #baladeOlfactive .last-section .product-container {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100%; }
-      #baladeOlfactive .last-section .product-container .product-img-cta img {
-        height: 100%;
+      padding: 15px; }
+      #baladeOlfactive .last-section .product-container .product-img-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #baladeOlfactive .last-section .product-container .product-img-cta img {
+          height: 100%;
+          width: auto;
+          max-height: 380px; }
+        #baladeOlfactive .last-section .product-container .product-img-cta a {
+          position: absolute;
+          background-color: #FFF;
+          border: 1px solid #FFF;
+          color: #000;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-style: normal;
+          padding: 8px 25px;
+          width: max-content;
+          margin-bottom: 30px;
+          border-radius: 0;
+          bottom: 125px; }
+          #baladeOlfactive .last-section .product-container .product-img-cta a:hover {
+            text-decoration: none; }
+      #baladeOlfactive .last-section .product-container .product-txt {
+        text-align: center; }
+        #baladeOlfactive .last-section .product-container .product-txt .product-title {
+          margin-bottom: 0;
+          margin-top: 15px;
+          font-family: baskerville-poster-pt, serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 18px; }
+          #baladeOlfactive .last-section .product-container .product-txt .product-title span {
+            font-style: italic;
+            text-decoration: underline; }
+        #baladeOlfactive .last-section .product-container .product-txt .product-cat {
+          font-family: futura-pt, sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          color: #AAA;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 14px; }
+    #baladeOlfactive .last-section .img-container {
+      justify-content: flex-start;
+      padding: 15px; }
+      #baladeOlfactive .last-section .img-container.illu {
+        justify-content: flex-end; }
+      #baladeOlfactive .last-section .img-container img {
+        height: 450px;
         width: auto; }
-      #baladeOlfactive .last-section .product-container .product-img-cta a {
-        position: absolute;
-        background-color: #FFF;
-        border: 1px solid #FFF;
-        color: #000;
-        font-size: 14px;
-        font-weight: 500;
-        text-transform: uppercase;
-        font-style: italic;
-        padding: 8px 25px;
-        width: max-content;
-        margin-bottom: 30px;
-        border-radius: 0; }
-        #baladeOlfactive .last-section .product-container .product-img-cta a:hover {
-          text-decoration: none; }
-    #baladeOlfactive .last-section .product-container .product-txt {
-      height: 50px;
-      text-align: center; }
-      #baladeOlfactive .last-section .product-container .product-txt .product-title {
-        margin-bottom: 0;
-        margin-top: 15px;
-        font-family: baskerville-poster-pt, serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 20px; }
-        #baladeOlfactive .last-section .product-container .product-txt .product-title span {
-          font-style: italic;
-          text-decoration: underline; }
-      #baladeOlfactive .last-section .product-container .product-txt .product-cat {
-        font-family: futura-pt, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        color: #AAA;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px; }
 
 #myAccount {
   padding: 150px 0 90px; }
+  #myAccount #customer_login {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px; }
+    #myAccount #customer_login .u-column1 {
+      width: 100%;
+      max-width: 450px;
+      -ms-flex: 0 0 450px;
+      flex: 0 0 450px; }
+      #myAccount #customer_login .u-column1 h2 {
+        text-transform: uppercase;
+        text-align: center; }
+      #myAccount #customer_login .u-column1 .woocommerce-form-login {
+        border: 1px solid #000;
+        border-radius: 0px; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login label {
+          text-transform: uppercase; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login input {
+          width: 100%;
+          border: 1px solid #000;
+          border-radius: 0px; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login .password-input {
+          width: 100%; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__rememberme {
+          display: none; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit {
+          width: 100%;
+          margin-top: 30px;
+          margin-right: 0px; }
+        #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword {
+          margin-top: 30px; }
+          #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a {
+            color: #000;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase; }
+    #myAccount #customer_login .u-column2 {
+      display: none; }
   #myAccount h1.title {
     font-family: baskerville-poster-pt, serif;
     font-weight: 400;
@@ -2504,7 +2577,8 @@ footer#colophon {
       display: block;
       margin-left: 135px; }
   #myAccount .woocommerce {
-    margin-top: 90px; }
+    margin-top: 90px;
+    padding-right: 90px; }
     #myAccount .woocommerce .woocommerce-MyAccount-navigation ul {
       list-style: none; }
       #myAccount .woocommerce .woocommerce-MyAccount-navigation ul li {
@@ -2770,7 +2844,16 @@ footer#colophon {
 
 .single-post article.post {
   display: none; }
-.single-post nav.navigation {
+  .single-post article.post.category-portrait-dame {
+    display: flex;
+    justify-content: center; }
+    .single-post article.post.category-portrait-dame > .post-thumbnail {
+      display: none; }
+    .single-post article.post.category-portrait-dame + .post-navigation + #post {
+      display: none; }
+.single-post .jp-relatedposts {
+  display: none !important; }
+.single-post .post-navigation {
   display: none; }
 .single-post #post {
   padding: 150px 0 90px; }
@@ -2860,6 +2943,100 @@ footer#colophon {
         align-self: flex-end; }
       .single-post #post .row.section-row:nth-of-type(2n+1) .col-12 .txt-container .section-content {
         text-align: right; }
+  .single-post #post .row.portrait-content .hero-name .title {
+    text-align: center; }
+  .single-post #post .row.portrait-content .hero-name .hero-description {
+    text-align: center;
+    font-size: 22px; }
+  .single-post #post .row.portrait-content .section-1 {
+    margin-bottom: 30px; }
+    .single-post #post .row.portrait-content .section-1 .row .col-12 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .single-post #post .row.portrait-content .section-1 .row .col-12 .img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        padding: 15px 30px 15px 15px; }
+      .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title {
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 28px; }
+        .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description {
+          font-size: 16px; }
+      .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige {
+        background-color: #FFEDDD;
+        width: 45%;
+        padding: 50px;
+        transform: translateY(-30px); }
+        .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p {
+          text-align: center;
+          margin: 0;
+          font-size: 18px; }
+    .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content {
+      padding-left: 60px; }
+      .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title {
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 700;
+        width: 100%; }
+      .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description {
+        text-align: center; }
+    .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .img-container {
+      padding: 0 0 0 30px; }
+  .single-post #post .row.portrait-content .section-2 {
+    margin-bottom: 30px; }
+    .single-post #post .row.portrait-content .section-2 .owl-carousel .item {
+      max-height: 250px; }
+      .single-post #post .row.portrait-content .section-2 .owl-carousel .item img {
+        height: 100%; }
+  .single-post #post .row.portrait-content .section-3 {
+    margin-bottom: 30px; }
+    .single-post #post .row.portrait-content .section-3 .col-12 {
+      display: flex; }
+      .single-post #post .row.portrait-content .section-3 .col-12 .img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        padding-right: 30px; }
+      .single-post #post .row.portrait-content .section-3 .col-12 .txt-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 16px; }
+        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title {
+          margin-bottom: 0;
+          font-weight: 700;
+          width: 100%; }
+        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description p {
+          margin-bottom: 0; }
+  .single-post #post .row.portrait-content .section-4 .txt-content {
+    padding: 30px 180px;
+    font-size: 14px; }
+    .single-post #post .row.portrait-content .section-4 .txt-content p.title {
+      margin-bottom: 0;
+      font-weight: 700;
+      width: 100%;
+      text-align: center; }
+    .single-post #post .row.portrait-content .section-4 .txt-content .description {
+      text-align: center; }
+      .single-post #post .row.portrait-content .section-4 .txt-content .description p {
+        margin-bottom: 0; }
+  .single-post #post .row.portrait-content .section-5 .row .col-12:first-of-type {
+    padding-right: 15px; }
+  .single-post #post .row.portrait-content .section-5 .row .col-12:last-of-type {
+    padding-left: 15px; }
 
 .error-404 {
   padding: 90px 0;

@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="header-btns">
-                    <a href="#" class="header-link"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span>Mon Compte</span></a>
+                    <a href="/mon-compte" class="header-link"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span>Mon Compte</span></a>
                     <div class="divider">|</div>
                     <a class="header-link" id="cartBtn"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/shopping-bag.svg" class="header-icon" /><span>Panier</span></a>
                     <button class="btn" id="searchBtn">
