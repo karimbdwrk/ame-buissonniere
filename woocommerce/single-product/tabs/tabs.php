@@ -32,9 +32,9 @@ if ( ! empty( $product_tabs ) ) : ?>
 
 	<div class="woocommerce-tabs wc-tabs-wrapper">
 		<nav class="nav nav-tabs">
-			<a class="nav-item nav-link active" href="#p1" data-toggle="tab">Description</a><span>|</span>
-			<a class="nav-item nav-link" href="#p2" data-toggle="tab">Guide des tailles</a><span>|</span>
-			<a class="nav-item nav-link" href="#p3" data-toggle="tab">Conseils</a>
+			<a class="nav-item nav-link active" href="#p1" data-toggle="tab">Description</a><span class="coffret">|</span>
+			<a class="nav-item nav-link bijou coffret" href="#p2" data-toggle="tab">Guide des tailles</a><span class="coffret bijou">|</span>
+			<a class="nav-item nav-link coffret" href="#p3" data-toggle="tab">Conseils</a>
 		</nav>
 		<div class="tab-content">
 			<div class="tab-pane active" id="p1">

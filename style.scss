@@ -145,11 +145,11 @@ html {
     }
 }
 
-@media (max-width: 1600px) {
-    .container {
-        width: calc(100% - 30px);
-    }
-}
+// @media (max-width: 1600px) {
+//     .container {
+//         width: calc(100% - 30px);
+//     }
+// }
 
 /* ANIMATE CSS */
 @-webkit-keyframes fadeIn {
@@ -254,7 +254,7 @@ header.entry-header, footer.entry-footer {
 
 /* HEADER */
 
-.home, .single-product, .woocommerce-shop {
+.home, .single-product, .woocommerce-shop, .parent-pageid-545, .page-id-1245 {
     header#masthead {
         background-color: transparent;
 
@@ -2208,7 +2208,7 @@ footer#colophon {
                     .card {
                         // background-color: pink;
                         // border: 1px solid grey;
-                        height: 450px;
+                        height: 600px;
                         width: calc(33.33% - 30px);
                         overflow: hidden;
                         border-radius: 0;
@@ -2253,6 +2253,7 @@ footer#colophon {
 
         .top-quote {
             margin-bottom: 60px;
+            display: none;
             p {
                 @extend .baskerville-poster-font-normal;
                 font-size: 20px;
@@ -2261,6 +2262,73 @@ footer#colophon {
         }
 
         .product {
+
+            &.product_cat-recharges-parfum {
+                .woocommerce-tabs {
+                    .nav-tabs {
+                        pointer-events: none;
+                        justify-content: flex-start!important;
+
+                        .nav-item {
+                            color: #777!important;
+                            text-decoration: none!important;
+                            margin-right: 30px;
+                        }
+                        span {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                .bijou {
+                    display: none;
+                }
+                .conseils {
+                    .bijou {
+                        display: none;
+                    }
+                }
+
+                .mode-demploi, .le-mot-de-latelier {
+                    display: none;
+                }
+            }
+
+            &.product_cat-bijoux-seuls {
+                .conseils {
+                    .parfum {
+                        display: none;
+                    }
+                }
+
+                .balade-olfactive, .le-mot-du-parfumeur, .mode-demploi {
+                    display: none;
+                }
+            }
+
+            &.product_cat-coffret-decouverte {
+                .woocommerce-tabs {
+                    .nav-tabs {
+                        pointer-events: none;
+
+                        .nav-item {
+                            color: #777!important;
+                            text-decoration: none!important;
+                        }
+                    }
+                }
+                .coffret {
+                    display: none;
+                }
+
+                .balade-olfactive, .le-mot-du-parfumeur, .mode-demploi, .le-mot-de-latelier {
+                    display: none;
+                }
+
+                .product-upsell {
+                    margin-top: 50px;
+                }
+            }
+
             .container {
                 .row {
                     &>.col-2 {
@@ -2541,6 +2609,10 @@ footer#colophon {
                                             .conseils {
                                                 font-size: 14px;
 
+                                                div {
+                                                    margin-bottom: 15px;
+                                                }
+
                                                 strong {
                                                     font-size: 16px;
                                                 }
@@ -2693,6 +2765,7 @@ footer#colophon {
                                         @extend .black-btn;
                                         width: 100%;
                                         max-width: 430px;
+                                        margin-left: 0;
 
                                         &::after {
                                             display: none;
@@ -2707,6 +2780,26 @@ footer#colophon {
                                     }
                                 }
 
+                            }
+                                
+                            .quantity {
+                                display: none!important;
+                            }
+
+                            .single_add_to_cart_button{
+                                @extend .black-btn;
+                                width: 100%;
+                                max-width: 430px;
+                                margin-left: 30px;
+
+                                &::after {
+                                    content:"";
+                                }
+
+                            }
+
+                            .added_to_cart {
+                                display: none;
                             }
 
                         }
@@ -3039,6 +3132,7 @@ footer#colophon {
     
                     .item {
                         padding: 0 15px;
+                        width: 50%;
                         .img-container {
                             display: flex;
                             justify-content: center;
@@ -3883,7 +3977,7 @@ footer#colophon {
         img {
             width: auto;
             height: 100%;
-            max-height: 550px;
+            // max-height: 550px;
         }
     }
 
@@ -3898,7 +3992,7 @@ footer#colophon {
             // margin-top: 90px;
 
             .product-img-cta {
-                height: 350px;
+                height: 550px;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -3906,7 +4000,7 @@ footer#colophon {
                 img {
                     height: 100%;
                     width: auto;
-                    max-height: 350px;
+                    max-height: 550px;
                 }
 
                 a {
@@ -3961,11 +4055,14 @@ footer#colophon {
 
     #boCarousel {
         margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .shop-links {
         background-color: #FFEDDD;
         padding: 35px 0;
+        width: calc(100% - 30px);
 
         .row {
             .col-12 {
@@ -3993,8 +4090,8 @@ footer#colophon {
                             align-items: flex-end;
             
                             img {
-                                height: 100%;
-                                width: auto;
+                                height: auto;
+                                width: 100%;
                             }
             
                             a {
@@ -4062,7 +4159,7 @@ footer#colophon {
                 img {
                     height: 100%;
                     width: auto;
-                    max-height: 380px;
+                    // max-height: 380px;
                 }
 
                 a {
@@ -4120,14 +4217,26 @@ footer#colophon {
             padding: 15px;
 
             &.illu {
-                justify-content: flex-end;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
             }
 
             img {
-                height: 450px;
+                height: 100%;
                 width: auto;
             }
         }
+
+        // .row:last-of-type {
+        //     .col-12:last-of-type {
+        //         .img-container {
+        //             transform: translateY(-60px);
+        //         }
+        //     }
+        // }
     }
 }
 
@@ -4897,7 +5006,7 @@ footer#colophon {
                                 background-color: #FFEDDD;
                                 width: 45%;
                                 padding: 50px;
-                                transform: translateY(-30px);
+                                transform: translateY(-50px);
     
                                 p {
                                     text-align: center;
@@ -5034,6 +5143,92 @@ footer#colophon {
             }
         }
     }
+}
+
+// #contactPage
+
+.page-id-1245 {
+
+    #contactPage {
+        padding: 250px 0 90px;
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                @extend .futura-font-normal;
+                text-transform: uppercase;
+                font-size: 42px;
+                line-height: 32px;
+                width: max-content;
+    
+    
+                span {
+                    display: block;
+                    @extend .baskerville-display-font-italic;
+                    margin-left: 60px;
+                    text-transform: lowercase;
+                    font-size: 48px;
+                }
+            }
+
+        }
+
+        .form-container {
+            .rmagic {
+                padding-top: 90px;
+                form {
+                    .rmheader {
+                        display: none;
+                    }
+                    .rm_form_page {
+                        .rmfieldset {
+                            padding: 0;
+
+                            .rmrow {
+                                padding: 0;
+                                min-height: max-content;
+
+                                .rmfield {
+                                    display: none;
+                                }
+
+                                .rminput {
+                                    padding: 0 0 10px 0;
+                                    width: 100%;
+                                    input {
+                                        @extend .futura-font-normal;
+                                        font-weight: 400;
+                                        border: 1px solid #000;
+                                        width: 60%;
+                                        min-height: 40px;
+                                        padding: 10px;
+                                    }
+                                    textarea {
+                                        @extend .futura-font-normal;
+                                        font-weight: 400;
+                                        border: 1px solid #000;
+                                        min-height: 200px;
+                                        padding: 10px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                    .buttonarea {
+                        .rm-btn {
+                            margin: 0;
+                            @extend .black-btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .error-404 {
