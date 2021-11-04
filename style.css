@@ -11,26 +11,26 @@ Version: 1.0
 #wesh {
   display: flex; }
   #wesh .morray {
-    display: none; }
+    display: inline; }
 
 /* VARIABLES */
 /* GENERAL EXTENDS */
-.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card h2, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea {
+.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card h2, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, #monHistoire h1.title, #monHistoire .section-1 .txt-container h2.title, #monHistoire .section-2 .txt-container h2.title, #monHistoire .section-3 .txt-container h2.title, #monHistoire .section-4 .txt-container h2.title, #monHistoire .section-6 .txt-container h2.title, #nosEngagements .banner, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title, #tutoPage .section-1 h1.title, #tutoPage .section-3 .col-10 .title-container .subtitle {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal; }
 
-.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-6 .summary .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, .page-id-947 #merci .continue-shop, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
+.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-10 .img-container .btn, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-6 .summary .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, .page-id-947 #merci .continue-shop, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: italic; }
 
-.baskerville-display-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, .single-post #post .numero, .single-post #post .row.portrait-content .hero-name .hero-description, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-4 .txt-content p.title, .single-post #post .row.portrait-content .section-4 .txt-content .description {
+.baskerville-display-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, .single-post #post .numero, .single-post #post .row.portrait-content .hero-name .hero-description, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-4 .txt-content p.title, .single-post #post .row.portrait-content .section-4 .txt-content .description, #monHistoire .section-1 .txt-container .text-content, #monHistoire .section-2 .txt-container .text-content, #monHistoire .section-3 .txt-container .text-content, #monHistoire .section-5 .txt-container .text-content, #monHistoire .section-6 .txt-container .text-content, #nosEngagements .container > .row > .col-12 .description, #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content, #tutoPage .section-1 .subtitle, #tutoPage .section-1 .description, #tutoPage .section-2 .container p {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: normal; }
 
-.baskerville-display-font-italic, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span {
+.baskerville-display-font-italic, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span, #monHistoire h1.title em, #monHistoire .section-1 .txt-container h2.title em, #monHistoire .section-2 .txt-container h2.title em, #monHistoire .section-3 .txt-container h2.title em, #monHistoire .section-3 .txt-container .subtitle, #monHistoire .section-4 .txt-container h2.title em, #monHistoire .section-6 .txt-container h2.title em, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em, #tutoPage .section-1 h1.title em, #tutoPage .section-3 .col-10 .title-container .title {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: italic; }
@@ -57,7 +57,7 @@ Version: 1.0
   justify-content: center;
   align-items: center; }
 
-.white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button {
+.white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-10 .img-container .btn {
   background-color: #FFF;
   color: #000;
   width: max-content;
@@ -66,7 +66,7 @@ Version: 1.0
   font-size: 14px;
   text-transform: uppercase;
   padding: 8px 25px; }
-  .white-btn:hover, #banners .row .img-container a:hover, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a:hover, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit:hover, #checkoutPage .checkout_coupon > .form-row .button:hover, .page-id-947 #merci .row .col-12 a.btn:hover, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button:hover {
+  .white-btn:hover, #banners .row .img-container a:hover, .single-product.woocommerce #content .product .container .row .col-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a:hover, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit:hover, #checkoutPage .checkout_coupon > .form-row .button:hover, .page-id-947 #merci .row .col-12 a.btn:hover, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button:hover, #tutoPage .section-3 .col-10 .img-container .btn:hover {
     text-decoration: none; }
 
 .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-6 .summary .single_add_to_cart_button, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn {
@@ -247,7 +247,8 @@ header#masthead {
                 padding: 0 15px;
                 margin-bottom: 30px; }
                 header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-column img {
-                  width: 100%; }
+                  width: 100%;
+                  cursor: pointer; }
                 header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-column > .mega-sub-menu > .mega-menu-item {
                   padding: 0;
                   margin-bottom: 15px; }
@@ -859,6 +860,18 @@ header#masthead {
       text-align: center;
       font-size: 20px;
       line-height: 22px; }
+  #vacances #VacancesCarousel .item .img-container {
+    max-height: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #vacances #VacancesCarousel .item .img-container img {
+      position: absolute;
+      width: 100%;
+      height: auto; }
   #vacances #VacancesCarousel .item h4 {
     font-family: baskerville-display-pt, serif;
     font-weight: 400;
@@ -953,44 +966,55 @@ header#masthead {
       font-style: normal;
       margin-bottom: 50px; }
 
-#homeTuto .row .video-container {
-  display: flex;
-  justify-content: flex-end; }
-  #homeTuto .row .video-container video {
-    max-height: 600px; }
-#homeTuto .row .txt-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  #homeTuto .row .txt-container h2.title {
-    margin-bottom: 60px;
-    padding-bottom: 0;
-    text-align: center; }
-    #homeTuto .row .txt-container h2.title p {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      font-size: 36px;
-      font-weight: 500; }
-      #homeTuto .row .txt-container h2.title p strong {
-        text-transform: uppercase;
-        display: block;
-        font-weight: 500;
-        margin-bottom: 10px; }
-      #homeTuto .row .txt-container h2.title p em {
-        text-transform: lowercase;
+#homeTuto .row {
+  justify-content: space-between; }
+  #homeTuto .row .video-container {
+    display: flex;
+    justify-content: flex-end; }
+    #homeTuto .row .video-container video {
+      max-height: 600px; }
+  #homeTuto .row .col-12.col-md-5 {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    #homeTuto .row .col-12.col-md-5 .txt-content {
+      border-top: 1px solid #000;
+      padding-top: 30px;
+      padding-bottom: 90px;
+      height: max-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      #homeTuto .row .col-12.col-md-5 .txt-content > div h2.title {
+        margin-bottom: 60px;
+        padding-bottom: 0;
+        text-align: center; }
+        #homeTuto .row .col-12.col-md-5 .txt-content > div h2.title p {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          font-size: 36px;
+          font-weight: 500; }
+          #homeTuto .row .col-12.col-md-5 .txt-content > div h2.title p strong {
+            text-transform: uppercase;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 10px; }
+          #homeTuto .row .col-12.col-md-5 .txt-content > div h2.title p em {
+            text-transform: lowercase;
+            font-family: baskerville-display-pt, serif;
+            font-weight: 400;
+            font-style: italic;
+            margin-left: 5px;
+            font-size: 42px;
+            display: block; }
+      #homeTuto .row .col-12.col-md-5 .txt-content > div a {
+        color: #000;
+        font-size: 24px;
         font-family: baskerville-display-pt, serif;
         font-weight: 400;
-        font-style: italic;
-        margin-left: 5px;
-        font-size: 42px;
-        display: block; }
-  #homeTuto .row .txt-container a {
-    color: #000;
-    font-size: 24px;
-    font-family: baskerville-display-pt, serif;
-    font-weight: 400;
-    font-style: normal; }
+        font-style: normal; }
 
 #engagements {
   padding: 90px 0 45px;
@@ -1002,7 +1026,7 @@ header#masthead {
     #engagements .row .col-12.col-md-5 {
       padding: 0;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center; }
       #engagements .row .col-12.col-md-5 .txt-content {
         border-top: 1px solid #000;
@@ -2392,7 +2416,8 @@ footer#colophon {
     justify-content: flex-end; }
     #baladeOlfactive .img-container img {
       width: auto;
-      height: 100%; }
+      height: 100%;
+      max-height: 700px; }
   #baladeOlfactive .product-container {
     display: flex;
     justify-content: center;
@@ -2447,8 +2472,11 @@ footer#colophon {
     margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px; }
+    #baladeOlfactive #boCarousel .item {
+      height: 28vw;
+      max-height: 400px; }
   #baladeOlfactive .shop-links {
-    background-color: #FFEDDD;
+    background-color: #f9f2e7;
     padding: 35px 0;
     width: calc(100% - 30px); }
     #baladeOlfactive .shop-links .row .col-12 {
@@ -2464,53 +2492,60 @@ footer#colophon {
         padding-bottom: 0; }
       #baladeOlfactive .shop-links .row .col-12 .owl-carousel {
         max-width: 1000px; }
-        #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta {
-          height: 350px;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end; }
-          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta img {
-            height: auto;
-            width: 100%; }
-          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta a {
-            position: absolute;
-            background-color: #FFF;
-            border: 1px solid #FFF;
-            color: #000;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-style: normal;
-            padding: 8px 25px;
-            width: max-content;
-            margin-bottom: 30px;
-            border-radius: 0; }
-            #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta a:hover {
-              text-decoration: none; }
-        #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt {
-          height: 50px;
-          text-align: center; }
-          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt .shop-title {
-            margin-bottom: 0;
-            margin-top: 15px;
-            font-family: baskerville-display-pt, serif;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 20px; }
-          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt .shop-cat {
-            font-family: futura-pt, sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            color: #AAA;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 14px; }
+        #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item {
+          height: 450px;
+          overflow: hidden; }
+          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta {
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta img {
+              height: auto;
+              width: 100%; }
+            #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta a {
+              position: absolute;
+              background-color: #FFF;
+              border: 1px solid #FFF;
+              color: #000;
+              font-size: 14px;
+              font-weight: 500;
+              text-transform: uppercase;
+              font-style: normal;
+              padding: 8px 25px;
+              width: max-content;
+              margin-top: 230px;
+              border-radius: 0; }
+              #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-img-cta a:hover {
+                text-decoration: none; }
+          #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt {
+            height: 50px;
+            text-align: center; }
+            #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt .shop-title {
+              margin-bottom: 0;
+              margin-top: 15px;
+              font-family: baskerville-display-pt, serif;
+              font-weight: 400;
+              font-style: italic;
+              font-size: 20px; }
+            #baladeOlfactive .shop-links .row .col-12 .owl-carousel .item .shop-txt .shop-cat {
+              font-family: futura-pt, sans-serif;
+              font-weight: 500;
+              font-style: normal;
+              color: #AAA;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 14px; }
   #baladeOlfactive .last-section {
     padding-top: 30px; }
     #baladeOlfactive .last-section .product-container {
       display: flex;
       flex-direction: column;
-      padding: 15px; }
+      padding: 15px;
+      justify-content: center;
+      align-items: flex-end;
+      padding-right: 75px; }
       #baladeOlfactive .last-section .product-container .product-img-cta {
         display: flex;
         flex-direction: column;
@@ -2518,7 +2553,8 @@ footer#colophon {
         align-items: center; }
         #baladeOlfactive .last-section .product-container .product-img-cta img {
           height: 100%;
-          width: auto; }
+          width: auto;
+          max-height: 550px; }
         #baladeOlfactive .last-section .product-container .product-img-cta a {
           position: absolute;
           background-color: #FFF;
@@ -2536,7 +2572,10 @@ footer#colophon {
           #baladeOlfactive .last-section .product-container .product-img-cta a:hover {
             text-decoration: none; }
       #baladeOlfactive .last-section .product-container .product-txt {
-        text-align: center; }
+        height: 50px;
+        text-align: center;
+        max-width: 370px;
+        width: 100%; }
         #baladeOlfactive .last-section .product-container .product-txt .product-title {
           margin-bottom: 0;
           margin-top: 15px;
@@ -2558,9 +2597,11 @@ footer#colophon {
     #baladeOlfactive .last-section .img-container {
       justify-content: flex-start;
       padding: 15px; }
-      #baladeOlfactive .last-section .img-container.illu img {
-        height: auto;
-        width: 100%; }
+      #baladeOlfactive .last-section .img-container.illu {
+        justify-content: flex-end; }
+        #baladeOlfactive .last-section .img-container.illu img {
+          height: 100%;
+          width: auto; }
       #baladeOlfactive .last-section .img-container img {
         height: 100%;
         width: auto; }
@@ -3182,5 +3223,317 @@ footer#colophon {
       text-decoration: none;
       background-color: #FFF;
       color: #000; }
+
+#monHistoire {
+  padding: 150px 0 90px; }
+  #monHistoire h1.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 90px; }
+    #monHistoire h1.title em {
+      font-size: 52px; }
+  #monHistoire .section-1 {
+    margin-bottom: 30px; }
+    #monHistoire .section-1 .txt-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      #monHistoire .section-1 .txt-container h2.title {
+        font-size: 36px;
+        margin-bottom: 90px; }
+        #monHistoire .section-1 .txt-container h2.title em {
+          font-size: 46px;
+          display: block;
+          margin-left: 160px; }
+      #monHistoire .section-1 .txt-container .text-content {
+        padding-left: 30px;
+        padding-right: 60px;
+        font-size: 18px; }
+  #monHistoire .section-2 {
+    margin-bottom: 60px; }
+    #monHistoire .section-2 .txt-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      #monHistoire .section-2 .txt-container h2.title {
+        font-size: 36px;
+        margin-bottom: 90px; }
+        #monHistoire .section-2 .txt-container h2.title em {
+          font-size: 46px;
+          display: block; }
+      #monHistoire .section-2 .txt-container .text-content {
+        padding-left: 30px;
+        padding-right: 60px;
+        font-size: 18px; }
+    #monHistoire .section-2 .img-container img {
+      transform: translateX(-18px); }
+  #monHistoire .section-3 > .col-12 {
+    background-color: #FFEDDD; }
+  #monHistoire .section-3 .txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 60px; }
+    #monHistoire .section-3 .txt-container h2.title {
+      font-size: 36px;
+      margin-bottom: 60px; }
+      #monHistoire .section-3 .txt-container h2.title em {
+        font-size: 46px;
+        display: block; }
+    #monHistoire .section-3 .txt-container .subtitle {
+      font-size: 22px;
+      text-align: center; }
+    #monHistoire .section-3 .txt-container .text-content {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px;
+      text-align: center; }
+  #monHistoire .section-3 .img-container {
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #monHistoire .section-4 .txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 60px; }
+    #monHistoire .section-4 .txt-container h2.title {
+      font-size: 36px;
+      margin-bottom: 60px;
+      transform: translateY(90px); }
+      #monHistoire .section-4 .txt-container h2.title em {
+        font-size: 46px;
+        display: block;
+        margin-left: 250px; }
+  #monHistoire .section-5 .txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 60px; }
+    #monHistoire .section-5 .txt-container .text-content {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px; }
+  #monHistoire .section-5 .img-container {
+    height: 600px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #monHistoire .section-5 .img-container img {
+      position: absolute;
+      z-index: -1;
+      height: auto;
+      width: 700px;
+      max-width: 700px; }
+  #monHistoire .section-6 .txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    padding: 60px;
+    transform: translateX(90px); }
+    #monHistoire .section-6 .txt-container h2.title {
+      font-size: 36px;
+      margin-bottom: 30px; }
+      #monHistoire .section-6 .txt-container h2.title em {
+        font-size: 46px;
+        display: block;
+        margin-left: 120px; }
+    #monHistoire .section-6 .txt-container .text-content {
+      font-size: 20px; }
+
+#nosEngagements {
+  padding: 150px 0 90px; }
+  #nosEngagements .banner {
+    height: 600px;
+    background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/11/engagements-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #nosEngagements .banner h1.title {
+      color: #FFF; }
+  #nosEngagements .container > .row {
+    justify-content: center; }
+    #nosEngagements .container > .row > .col-12 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #nosEngagements .container > .row > .col-12 .description {
+        text-align: center;
+        font-size: 22px;
+        max-width: 750px;
+        padding-top: 60px;
+        padding-bottom: 60px; }
+      #nosEngagements .container > .row > .col-12 .container .row {
+        margin-bottom: 30px; }
+        #nosEngagements .container > .row > .col-12 .container .row .col-7 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 30px; }
+          #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title {
+            font-size: 36px;
+            margin-bottom: 30px; }
+            #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em {
+              font-size: 46px;
+              display: block; }
+          #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content {
+            font-size: 20px; }
+
+#tutoPage {
+  padding: 150px 0 90px; }
+  #tutoPage .section-1 h1.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0px; }
+    #tutoPage .section-1 h1.title em {
+      font-size: 52px; }
+  #tutoPage .section-1 .subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #AAA;
+    margin-bottom: 60px; }
+  #tutoPage .section-1 .description {
+    text-align: center;
+    font-size: 20px; }
+  #tutoPage .section-1 video {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 90px; }
+  #tutoPage .mode-demploi {
+    background-color: #FFEDDD;
+    padding: 30px 90px; }
+    #tutoPage .mode-demploi h2 {
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-size: 36px; }
+      #tutoPage .mode-demploi h2 em {
+        font-family: baskerville-poster-pt, serif;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: lowercase;
+        font-size: 46px; }
+    #tutoPage .mode-demploi h3 {
+      font-family: baskerville-display-pt, serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      margin-bottom: 60px; }
+    #tutoPage .mode-demploi .steps {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #tutoPage .mode-demploi .steps .step {
+        max-width: 350px; }
+        #tutoPage .mode-demploi .steps .step .txt .nbr {
+          font-family: futura-pt, sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 36px;
+          margin-bottom: 0; }
+        #tutoPage .mode-demploi .steps .step .txt .txt-content {
+          font-family: baskerville-display-pt, serif;
+          font-weight: 400;
+          font-style: normal; }
+        #tutoPage .mode-demploi .steps .step.step-1 .txt {
+          padding-left: 0px;
+          transform: translateY(-15px); }
+        #tutoPage .mode-demploi .steps .step.step-2 {
+          transform: translateY(-90px); }
+          #tutoPage .mode-demploi .steps .step.step-2 .txt {
+            padding-left: 60px; }
+        #tutoPage .mode-demploi .steps .step.step-3 .txt {
+          padding-left: 30px;
+          transform: translateY(-30px); }
+  #tutoPage .section-2 {
+    padding: 90px 0; }
+    #tutoPage .section-2 h2.title {
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-size: 36px;
+      margin-left: 60px;
+      margin-bottom: 30px; }
+      #tutoPage .section-2 h2.title em {
+        font-family: baskerville-poster-pt, serif;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: lowercase;
+        font-size: 46px;
+        display: block;
+        margin-left: 180px; }
+    #tutoPage .section-2 .container p {
+      font-size: 18px; }
+      #tutoPage .section-2 .container p strong {
+        display: block;
+        font-size: 18px; }
+    #tutoPage .section-2 .container .row.justify-content-center .col-6 {
+      padding-left: 120px; }
+      #tutoPage .section-2 .container .row.justify-content-center .col-6 h2.title {
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 60px; }
+  #tutoPage .section-3 {
+    padding: 60px 0 30px;
+    background-color: #FFEDDD; }
+    #tutoPage .section-3 .col-10 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #tutoPage .section-3 .col-10 h2.title {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 32px;
+        margin-bottom: 30px; }
+        #tutoPage .section-3 .col-10 h2.title em {
+          font-family: baskerville-poster-pt, serif;
+          font-weight: 400;
+          font-style: italic;
+          text-transform: lowercase;
+          font-size: 42px;
+          display: block;
+          margin-left: 120px; }
+      #tutoPage .section-3 .col-10 .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #tutoPage .section-3 .col-10 .img-container .btn {
+          font-style: normal;
+          transform: translateY(-60px); }
+      #tutoPage .section-3 .col-10 .title-container .title {
+        text-align: center;
+        margin-bottom: 0; }
+      #tutoPage .section-3 .col-10 .title-container .subtitle {
+        text-align: center;
+        color: #AAA; }
 
 /*# sourceMappingURL=style.css.map */
