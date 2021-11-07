@@ -67,7 +67,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 							<br />
 							Si vous n’en avez pas, vous
 							pouvez le télécharger ci-dessous.</p>
-							<a href="#">Téléchargez le ruban à mesurer</a>
+							<a href="https://amebuissonniere.com/wp-content/uploads/2021/11/metre-ruban-ame-buissonniere-V2.pdf" download>Téléchargez le ruban à mesurer</a>
 						</div>
 						<div class="col-12">
 							<table>

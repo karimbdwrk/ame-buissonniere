@@ -56,7 +56,7 @@
 		<div class="container logo-footer">
 			<div class="row">
 				<div class="col-12">
-					<img src="https://amebuissonniere.com/wp-content/uploads/2021/08/logo-1.png" />
+					<img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/ame-buissonniere-paris.svg" />
 				</div>
 			</div>	
             <div class="site-info">

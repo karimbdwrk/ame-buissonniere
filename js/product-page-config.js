@@ -22,6 +22,8 @@ jQuery(document).on('woocommerce_update_variation_values', function() {
 });
 
 jQuery('.variation-radios label[for=attribute_pa_couleur-cordon-framboise]').html('FRAMBOISE<span>fil d\'or</span>')
+jQuery('.variation-radios label[for=attribute_pa_couleur-cordon-corail-boheme-fil-dor]').html('CORAIL BOHÈME<span>fil d\'or</span>')
+jQuery('.variation-radios label[for=attribute_pa_couleur-cordon-orange-soleil-fil-dor]').html('ORANGE SOLEIL<span>fil d\'or</span>')
 
 jQuery('.variation-radios input[name=attribute_pa_color]').on('click', function() {
     console.log('click variation')
@@ -40,6 +42,7 @@ jQuery('.variation-radios input[name=attribute_pa_couleur-cordon]').on('click', 
     jQuery('.variation-radios input[name=attribute_pa_couleur-cordon]').removeClass('checked')
     jQuery(this).addClass('checked')
 })
+
 
 // jQuery(document).ready(function() {
 

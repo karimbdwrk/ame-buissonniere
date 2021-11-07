@@ -30,7 +30,7 @@ Version: 1.0
   font-weight: 400;
   font-style: normal; }
 
-.baskerville-display-font-italic, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span, #monHistoire h1.title em, #monHistoire .section-1 .txt-container h2.title em, #monHistoire .section-2 .txt-container h2.title em, #monHistoire .section-3 .txt-container h2.title em, #monHistoire .section-3 .txt-container .subtitle, #monHistoire .section-4 .txt-container h2.title em, #monHistoire .section-6 .txt-container h2.title em, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em, #tutoPage .section-1 h1.title em, #tutoPage .section-3 .col-10 .title-container .title {
+.baskerville-display-font-italic, footer#colophon .container .row .last-col .newsletter .success, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong:first-of-type::before, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span, .page-id-1245 #contactPage .form-container .success, #monHistoire h1.title em, #monHistoire .section-1 .txt-container h2.title em, #monHistoire .section-2 .txt-container h2.title em, #monHistoire .section-3 .txt-container h2.title em, #monHistoire .section-3 .txt-container .subtitle, #monHistoire .section-4 .txt-container h2.title em, #monHistoire .section-6 .txt-container h2.title em, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em, #tutoPage .section-1 h1.title em, #tutoPage .section-3 .col-10 .title-container .title {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: italic; }
@@ -170,24 +170,24 @@ header.entry-header, footer.entry-footer {
   display: none !important; }
 
 /* HEADER */
-.home header#masthead, .single-product header#masthead, .woocommerce-shop header#masthead, .parent-pageid-545 header#masthead, .page-id-1245 header#masthead {
+.home header#masthead, .single-product header#masthead, .woocommerce-shop header#masthead, .parent-pageid-545 header#masthead, .page-id-1245 header#masthead, .page-id-1288 header#masthead, .page-id-1268 header#masthead, .page-id-1301 header#masthead {
   background-color: transparent; }
-  .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus, .woocommerce-shop header#masthead.scrolled, .woocommerce-shop header#masthead.search-open, .woocommerce-shop header#masthead:hover, .woocommerce-shop header#masthead:active, .woocommerce-shop header#masthead:focus, .parent-pageid-545 header#masthead.scrolled, .parent-pageid-545 header#masthead.search-open, .parent-pageid-545 header#masthead:hover, .parent-pageid-545 header#masthead:active, .parent-pageid-545 header#masthead:focus, .page-id-1245 header#masthead.scrolled, .page-id-1245 header#masthead.search-open, .page-id-1245 header#masthead:hover, .page-id-1245 header#masthead:active, .page-id-1245 header#masthead:focus {
+  .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus, .woocommerce-shop header#masthead.scrolled, .woocommerce-shop header#masthead.search-open, .woocommerce-shop header#masthead:hover, .woocommerce-shop header#masthead:active, .woocommerce-shop header#masthead:focus, .parent-pageid-545 header#masthead.scrolled, .parent-pageid-545 header#masthead.search-open, .parent-pageid-545 header#masthead:hover, .parent-pageid-545 header#masthead:active, .parent-pageid-545 header#masthead:focus, .page-id-1245 header#masthead.scrolled, .page-id-1245 header#masthead.search-open, .page-id-1245 header#masthead:hover, .page-id-1245 header#masthead:active, .page-id-1245 header#masthead:focus, .page-id-1288 header#masthead.scrolled, .page-id-1288 header#masthead.search-open, .page-id-1288 header#masthead:hover, .page-id-1288 header#masthead:active, .page-id-1288 header#masthead:focus, .page-id-1268 header#masthead.scrolled, .page-id-1268 header#masthead.search-open, .page-id-1268 header#masthead:hover, .page-id-1268 header#masthead:active, .page-id-1268 header#masthead:focus, .page-id-1301 header#masthead.scrolled, .page-id-1301 header#masthead.search-open, .page-id-1301 header#masthead:hover, .page-id-1301 header#masthead:active, .page-id-1301 header#masthead:focus {
     background-color: #FFF;
     transition: background-color 250ms ease; }
-    .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:focus .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:active .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:focus .container-fluid .navbar .navbar-brand a img {
+    .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:focus .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:active .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:focus .container-fluid .navbar .navbar-brand a img {
       height: 60px;
       transition: height 300ms ease; }
-  .home header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand {
+  .home header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand {
     margin-right: 0;
     width: 10%;
     display: flex;
     justify-content: center;
     padding: 0; }
-    .home header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a {
+    .home header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a {
       color: #000;
       height: 100%; }
-      .home header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a img {
+      .home header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a img {
         height: 100px;
         transition: height 750ms ease 750ms; }
 
@@ -1228,6 +1228,9 @@ footer#colophon {
     display: flex;
     justify-content: center;
     padding-top: 30px; }
+    footer#colophon .logo-footer .row .col-12 img {
+      height: 45px;
+      width: auto; }
   footer#colophon .container .row {
     justify-content: space-between; }
     footer#colophon .container .row .col-links {
@@ -1235,7 +1238,8 @@ footer#colophon {
       max-width: max-content; }
       footer#colophon .container .row .col-links h2 {
         font-size: 18px;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-bottom: 25px; }
       footer#colophon .container .row .col-links ul {
         list-style: none;
         padding-left: 0; }
@@ -1250,62 +1254,68 @@ footer#colophon {
     footer#colophon .container .row .last-col {
       flex: 0 0 34%;
       max-width: 34%; }
-      footer#colophon .container .row .last-col .newsletter h3 {
-        font-size: 22px;
-        text-align: center;
-        line-height: 18px; }
-        footer#colophon .container .row .last-col .newsletter h3 span {
-          font-size: 26px;
+      footer#colophon .container .row .last-col .newsletter {
+        height: 100%; }
+        footer#colophon .container .row .last-col .newsletter h3 {
+          font-size: 22px;
+          text-align: center;
+          line-height: 18px; }
+          footer#colophon .container .row .last-col .newsletter h3 span {
+            font-size: 26px;
+            font-family: baskerville-display-pt, serif;
+            font-weight: 400;
+            font-style: italic; }
+        footer#colophon .container .row .last-col .newsletter h4 {
+          text-align: center;
+          color: #AAA;
           font-family: baskerville-display-pt, serif;
           font-weight: 400;
-          font-style: italic; }
-      footer#colophon .container .row .last-col .newsletter h4 {
-        text-align: center;
-        color: #AAA;
-        font-family: baskerville-display-pt, serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px; }
-      footer#colophon .container .row .last-col .newsletter .rmagic {
-        padding-top: 30px; }
-        footer#colophon .container .row .last-col .newsletter .rmagic form fieldset {
-          padding: 0; }
-          footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset {
+          font-style: normal;
+          font-size: 16px; }
+        footer#colophon .container .row .last-col .newsletter .success {
+          margin-top: 30px;
+          text-align: center;
+          font-size: 22px; }
+        footer#colophon .container .row .last-col .newsletter .rmagic {
+          padding-top: 30px; }
+          footer#colophon .container .row .last-col .newsletter .rmagic form fieldset {
             padding: 0; }
-            footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow {
+            footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset {
               padding: 0; }
-              footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rmfield {
-                display: none; }
-              footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rminput {
-                padding: 0;
-                width: 100%;
-                height: max-content;
-                border: 0px; }
-                footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rminput input {
-                  background-image: none;
-                  background-color: transparent;
-                  -webkit-box-shadow: none;
-                  -moz-box-shadow: none;
-                  box-shadow: none;
+              footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow {
+                padding: 0; }
+                footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rmfield {
+                  display: none; }
+                footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rminput {
+                  padding: 0;
                   width: 100%;
-                  min-width: 435px;
-                  height: 45px;
-                  min-height: 0;
-                  padding-left: 15px;
-                  border: 1px solid black; }
-          footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .buttonarea {
-            margin: 0; }
-            footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .buttonarea input {
-              margin: 0;
-              min-height: inherit !important;
-              padding: 5px 15px;
-              background-color: transparent;
-              border: 0px;
-              transform: translateY(-54px);
-              width: max-content;
-              min-width: inherit;
-              text-transform: uppercase;
-              font-weight: 600; }
+                  height: max-content;
+                  border: 0px; }
+                  footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .rm_form_page .rmfieldset .rmrow .rminput input {
+                    background-image: none;
+                    background-color: transparent;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    width: 100%;
+                    min-width: 435px;
+                    height: 45px;
+                    min-height: 0;
+                    padding-left: 15px;
+                    border: 1px solid black; }
+            footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .buttonarea {
+              margin: 0; }
+              footer#colophon .container .row .last-col .newsletter .rmagic form fieldset .buttonarea input {
+                margin: 0;
+                min-height: inherit !important;
+                padding: 5px 15px;
+                background-color: transparent;
+                border: 0px;
+                transform: translateY(-54px);
+                width: max-content;
+                min-width: inherit;
+                text-transform: uppercase;
+                font-weight: 600; }
 
 @media screen and (max-width: 425px) {
   footer#colophon .container .row .col-links {
@@ -1609,85 +1619,109 @@ footer#colophon {
     .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form {
       max-width: 500px;
       padding-left: 30px;
-      padding-right: 30px; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody {
-        display: grid;
-        grid-template-columns: 285px 155px;
-        grid-template-rows: 90px 90px; }
-        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr {
-          display: flex;
-          flex-direction: column; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:first-of-type {
-            grid-column: 1;
-            grid-row: 1; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:nth-of-type(2) {
-            grid-column: 2;
-            grid-row: 1; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:last-of-type {
-            grid-column: 1;
-            grid-row: 2; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label {
-        text-transform: uppercase;
-        color: #606060;
-        font-weight: 400 !important;
-        font-size: 14px; }
-        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label:after {
-          content: ' :'; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations select {
-        display: none; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios {
-        width: 443px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: flex-end; }
-        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input {
-          opacity: 0;
-          visibility: hidden; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input.checked + label {
-            border: 1px solid #000;
-            color: #000; }
-        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          font-family: futura-pt, sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          text-transform: uppercase;
-          text-align: center;
-          font-size: 14px;
-          border: 1px solid #AAA;
-          color: #999;
-          transition: all 250ms ease;
-          line-height: 15px;
-          padding-top: 8px;
-          padding-bottom: 8px; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label span {
-            font-family: baskerville-display-pt, serif;
-            font-weight: 400;
-            font-style: italic;
-            display: block;
-            text-transform: lowercase; }
-          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label:hover {
-            border: 1px solid #000;
-            color: #000; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_color + .variation-radios label {
-        width: 90px; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_size + .variation-radios label {
-        width: 40px; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_couleur-cordon + .variation-radios label {
-        height: 38px;
+      padding-right: 30px;
+      display: flex;
+      flex-wrap: wrap; }
+      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations {
         width: 100%;
-        padding-top: 2px;
-        padding-bottom: 2px; }
-      .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .reset_variations {
-        display: none !important; }
+        max-width: 500px; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody {
+          display: grid;
+          grid-template-columns: 250px 200px;
+          grid-template-rows: 90px 1fr; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr {
+            display: flex;
+            flex-direction: column; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:first-of-type {
+              grid-column: 1;
+              grid-row: 1; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:nth-of-type(2) {
+              grid-column: 2;
+              grid-row: 1; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations tbody tr:last-of-type {
+              grid-column: 1;
+              grid-row: 2; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label {
+          text-transform: uppercase;
+          color: #606060;
+          font-weight: 400 !important;
+          font-size: 14px; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .label:after {
+            content: ' :'; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations select {
+          display: none; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios {
+          width: 450px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          align-items: flex-end;
+          flex-wrap: wrap; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input#attribute_pa_color-argent {
+              pointer-events: none; }
+              .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input#attribute_pa_color-argent + label {
+                display: none; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios input.checked + label {
+              border: 1px solid #000;
+              color: #000; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #AAA;
+            color: #999;
+            transition: all 250ms ease;
+            line-height: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            cursor: pointer; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label span {
+              font-family: baskerville-display-pt, serif;
+              font-weight: 400;
+              font-style: italic;
+              display: block;
+              text-transform: lowercase; }
+            .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .variation-radios label:hover {
+              border: 1px solid #000;
+              color: #000; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_color + .variation-radios label {
+          width: 90px; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_size + .variation-radios {
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 200px; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_size + .variation-radios label {
+            width: 40px;
+            margin-right: 10px; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_couleur-cordon + .variation-radios {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations #pa_couleur-cordon + .variation-radios label {
+            height: 38px;
+            width: calc(33.33% - 10px);
+            margin-right: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px; }
+        .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .variations .reset_variations {
+          display: none !important; }
       .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .quantity {
         display: none !important; }
       .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button {
+        font-style: normal;
         width: 100%;
-        max-width: 430px;
+        max-width: 440px;
+        min-width: 440px;
         margin-left: 0; }
         .single-product.woocommerce #content .product .container .row .col-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button::after {
           display: none; }
@@ -1698,8 +1732,9 @@ footer#colophon {
     .single-product.woocommerce #content .product .container .row .col-6 .summary .quantity {
       display: none !important; }
     .single-product.woocommerce #content .product .container .row .col-6 .summary .single_add_to_cart_button {
+      font-style: normal;
       width: 100%;
-      max-width: 430px;
+      max-width: 450px;
       margin-left: 30px; }
       .single-product.woocommerce #content .product .container .row .col-6 .summary .single_add_to_cart_button::after {
         content: ""; }
@@ -1708,7 +1743,7 @@ footer#colophon {
   .single-product.woocommerce #content .product .container .product_meta {
     display: none; }
   .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container {
-    background-color: #FFEDDD; }
+    background-color: #f9f2e7; }
     .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container {
       padding: 90px; }
       .single-product.woocommerce #content .balade-olfactive .row .col-12 > .container .row .txt-container h2 {
@@ -1796,7 +1831,7 @@ footer#colophon {
       font-style: italic;
       font-size: 22px; }
   .single-product.woocommerce #content .mode-demploi {
-    background-color: #FFEDDD;
+    background-color: #f9f2e7;
     padding: 30px 90px; }
     .single-product.woocommerce #content .mode-demploi h2 {
       font-family: futura-pt, sans-serif;
@@ -1884,7 +1919,7 @@ footer#colophon {
         .single-product.woocommerce #content .le-mot-de-latelier > .row > div .image img {
           max-height: 350px; }
   .single-product.woocommerce #content .product-upsell {
-    background-color: #FFEDDD;
+    background-color: #f9f2e7;
     padding: 30px 90px; }
     .single-product.woocommerce #content .product-upsell .col-12 {
       display: flex;
@@ -1917,37 +1952,37 @@ footer#colophon {
           text-transform: lowercase;
           font-size: 32px;
           margin-right: -180px; }
-      .single-product.woocommerce #content .product-upsell .col-12 .upsell-list {
+      .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .img-container {
         display: flex;
-        flex-direction: row; }
-        .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item {
-          padding: 0 15px;
-          width: 50%; }
-          .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .img-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 350px;
-            overflow: hidden; }
-          .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a {
-              position: absolute;
-              transform: translateY(-60px); }
-              .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover {
-                text-decoration: none; }
-            .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .title {
-              font-size: 28px;
-              margin-top: 30px;
-              margin-bottom: 0;
-              padding-bottom: 0; }
-            .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category {
-              text-transform: uppercase;
-              color: #AAA;
-              font-size: 16px; }
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        overflow: hidden; }
+        .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .img-container img {
+          min-width: 100%;
+          min-height: 100%;
+          width: 100%;
+          height: auto; }
+      .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a {
+          position: absolute;
+          font-style: normal;
+          transform: translateY(-60px); }
+          .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover {
+            text-decoration: none; }
+        .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .title {
+          font-size: 28px;
+          margin-top: 30px;
+          margin-bottom: 0;
+          padding-bottom: 0; }
+        .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category {
+          text-transform: uppercase;
+          color: #AAA;
+          font-size: 16px; }
 
 #checkoutPage {
   padding: 150px 0 90px; }
@@ -3058,7 +3093,7 @@ footer#colophon {
         .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description {
           font-size: 16px; }
       .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige {
-        background-color: #FFEDDD;
+        background-color: #f9f2e7;
         width: 45%;
         padding: 50px;
         transform: translateY(-50px); }
@@ -3139,6 +3174,10 @@ footer#colophon {
         margin-left: 60px;
         text-transform: lowercase;
         font-size: 48px; }
+  .page-id-1245 #contactPage .form-container .success {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 22px; }
   .page-id-1245 #contactPage .form-container .rmagic {
     padding-top: 90px; }
     .page-id-1245 #contactPage .form-container .rmagic form .rmheader {
@@ -3182,7 +3221,7 @@ footer#colophon {
     font-weight: 500;
     font-style: normal;
     font-size: 180px;
-    color: #FFEDDD;
+    color: #f9f2e7;
     text-shadow: 0px 0px 15px #fff; }
     .error-404 h1.title strong {
       font-family: baskerville-display-pt, serif;
@@ -3272,7 +3311,7 @@ footer#colophon {
     #monHistoire .section-2 .img-container img {
       transform: translateX(-18px); }
   #monHistoire .section-3 > .col-12 {
-    background-color: #FFEDDD; }
+    background-color: #f9f2e7; }
   #monHistoire .section-3 .txt-container {
     display: flex;
     flex-direction: column;
@@ -3417,7 +3456,7 @@ footer#colophon {
     margin-top: 30px;
     margin-bottom: 90px; }
   #tutoPage .mode-demploi {
-    background-color: #FFEDDD;
+    background-color: #f9f2e7;
     padding: 30px 90px; }
     #tutoPage .mode-demploi h2 {
       font-family: futura-pt, sans-serif;
@@ -3498,7 +3537,7 @@ footer#colophon {
         margin-top: 60px; }
   #tutoPage .section-3 {
     padding: 60px 0 30px;
-    background-color: #FFEDDD; }
+    background-color: #f9f2e7; }
     #tutoPage .section-3 .col-10 {
       display: flex;
       flex-direction: column;

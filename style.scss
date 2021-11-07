@@ -254,7 +254,7 @@ header.entry-header, footer.entry-footer {
 
 /* HEADER */
 
-.home, .single-product, .woocommerce-shop, .parent-pageid-545, .page-id-1245 {
+.home, .single-product, .woocommerce-shop, .parent-pageid-545, .page-id-1245, .page-id-1288, .page-id-1268, .page-id-1301 {
     header#masthead {
         background-color: transparent;
 
@@ -2013,6 +2013,12 @@ footer#colophon {
                 display: flex;
                 justify-content: center;
                 padding-top: 30px;
+
+                img {
+                    height: 45px;
+                    width: auto;
+
+                }
             }
         }
     }
@@ -2028,6 +2034,7 @@ footer#colophon {
                 h2 {
                     font-size: 18px;
                     font-weight: 600;
+                    margin-bottom: 25px;
                 }
 
                 ul {
@@ -2051,6 +2058,7 @@ footer#colophon {
                 max-width: 34%;
 
                 .newsletter {
+                    height: 100%;
                     h3 {
                         font-size: 22px;
                         text-align: center;
@@ -2070,6 +2078,13 @@ footer#colophon {
                         font-weight: 400;
                         font-style: normal;
                         font-size: 16px;
+                    }
+                    
+                    .success {
+                        @extend .baskerville-display-font-italic;
+                        margin-top: 30px;
+                        text-align: center;
+                        font-size: 22px;
                     }
 
                     .rmagic {
@@ -2672,13 +2687,17 @@ footer#colophon {
                                 max-width: 500px;
                                 padding-left: 30px;
                                 padding-right: 30px;
+                                display: flex;
+                                flex-wrap: wrap;
 
                                 .variations {
+                                    width: 100%;
+                                    max-width: 500px;
     
                                     tbody {
                                         display: grid;
-                                        grid-template-columns: 285px 155px;
-                                        grid-template-rows: 90px 90px;
+                                        grid-template-columns: 250px 200px;
+                                        grid-template-rows: 90px 1fr;
     
                                         tr {
                                             display: flex;
@@ -2716,15 +2735,29 @@ footer#colophon {
                                     }
     
                                     .variation-radios {
-                                        width: 443px;
+                                        width: 450px;
                                         display: flex;
                                         flex-direction: row-reverse;
                                         justify-content: flex-end;
                                         align-items: flex-end;
+                                        flex-wrap: wrap;
     
                                         input {
                                             opacity: 0;
                                             visibility: hidden;
+                                            position: absolute;
+
+                                            &#attribute_pa_color-argent {
+                                                pointer-events: none;
+
+                                                & + label {
+                                                    // color: #EEE;
+                                                    // border: 1px solid #EEE;
+                                                    // cursor: not-allowed;
+                                                    display: none;
+                                                }
+                                            }
+                                            
                                             &.checked {
                                                 & + label {
                                                     border: 1px solid #000;
@@ -2749,6 +2782,7 @@ footer#colophon {
                                             line-height: 15px;
                                             padding-top: 8px;
                                             padding-bottom: 8px;
+                                            cursor: pointer;
                                             
                                             span {
                                                 font-family: baskerville-display-pt, serif;
@@ -2766,21 +2800,32 @@ footer#colophon {
                                     }
     
                                     #pa_color + .variation-radios {
+
                                         label {
                                             width: 90px;
                                         }
                                     }
     
                                     #pa_size + .variation-radios {
+                                        justify-content: space-between;
+                                        align-items: flex-start;
+                                        width: 200px;
+
                                         label {
                                             width: 40px;
+                                            margin-right: 10px;
                                         }
                                     }
     
                                     #pa_couleur-cordon + .variation-radios {
+                                        flex-direction: row;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+
                                         label {
                                             height: 38px;
-                                            width: 100%;
+                                            width: calc(33.33% - 10px);
+                                            margin-right: 10px;
                                             padding-top: 2px;
                                             padding-bottom: 2px;
                                         }
@@ -2797,8 +2842,10 @@ footer#colophon {
                                     }
                                     .single_add_to_cart_button {
                                         @extend .black-btn;
+                                        font-style: normal;
                                         width: 100%;
-                                        max-width: 430px;
+                                        max-width: 440px;
+                                        min-width: 440px;
                                         margin-left: 0;
 
                                         &::after {
@@ -2822,8 +2869,9 @@ footer#colophon {
 
                             .single_add_to_cart_button{
                                 @extend .black-btn;
+                                font-style: normal;
                                 width: 100%;
-                                max-width: 430px;
+                                max-width: 450px;
                                 margin-left: 30px;
 
                                 &::after {
@@ -2850,7 +2898,7 @@ footer#colophon {
             .row {
                 .col-12 {
                     &>.container {
-                        background-color: #FFEDDD;
+                        background-color: #f9f2e7;
 
                         .row {
                             .txt-container {
@@ -2978,7 +3026,7 @@ footer#colophon {
         }
 
         .mode-demploi {
-            background-color: #FFEDDD;
+            background-color: #f9f2e7;
             padding: 30px 90px;
 
             h2 {
@@ -3119,7 +3167,7 @@ footer#colophon {
         }
 
         .product-upsell {
-            background-color: #FFEDDD;
+            background-color: #f9f2e7;
             padding: 30px 90px;
 
             .col-12 {
@@ -3161,18 +3209,21 @@ footer#colophon {
                 }
     
                 .upsell-list {
-                    display: flex;
-                    flex-direction: row;
     
                     .item {
-                        padding: 0 15px;
-                        width: 50%;
                         .img-container {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height: 350px;
+                            height: 450px;
                             overflow: hidden;
+
+                            img {
+                                min-width: 100%;
+                                min-height: 100%;
+                                width: 100%;
+                                height: auto;
+                            }
                         }
                         .txt-container {
                             text-align: center;
@@ -3183,6 +3234,7 @@ footer#colophon {
                             a {
                                 @extend .white-btn;
                                 position: absolute;
+                                font-style: normal;
                                 transform: translateY(-60px);
                 
                                 &:hover {
@@ -5052,7 +5104,7 @@ footer#colophon {
                             }
     
                             .encart-beige {
-                                background-color: #FFEDDD;
+                                background-color: #f9f2e7;
                                 width: 45%;
                                 padding: 50px;
                                 transform: translateY(-50px);
@@ -5226,6 +5278,14 @@ footer#colophon {
         }
 
         .form-container {
+                    
+            .success {
+                @extend .baskerville-display-font-italic;
+                margin-top: 30px;
+                text-align: center;
+                font-size: 22px;
+            }
+            
             .rmagic {
                 padding-top: 90px;
                 form {
@@ -5296,7 +5356,7 @@ footer#colophon {
         font-weight: 500;
         font-style: normal;
         font-size: 180px;
-        color: #FFEDDD;
+        color: #f9f2e7;
         text-shadow: 0px 0px 15px #fff;
 
         strong {
@@ -5440,7 +5500,7 @@ footer#colophon {
 
     .section-3 {
         & > .col-12 {
-            background-color: #FFEDDD;
+            background-color: #f9f2e7;
         }
         
         .txt-container {
@@ -5696,7 +5756,7 @@ footer#colophon {
     }
 
     .mode-demploi {
-        background-color: #FFEDDD;
+        background-color: #f9f2e7;
         padding: 30px 90px;
 
         h2 {
@@ -5832,7 +5892,7 @@ footer#colophon {
 
     .section-3 {
         padding: 60px 0 30px;
-        background-color: #FFEDDD;
+        background-color: #f9f2e7;
 
         .col-10 {
             display: flex;
