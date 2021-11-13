@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
     jQuery('#APCarousel').owlCarousel({
         loop:true,
         margin:30,
-        nav:true,
+        nav:false,
         responsive:{
             0:{
                 items:1
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
     jQuery('#VacancesCarousel').owlCarousel({
         loop:true,
         margin:30,
-        nav:true,
+        nav: false,
         mouseDrag: false,
         responsive:{
             0:{
@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
     jQuery('.product-upsell .upsell-list.owl-carousel').owlCarousel({
         loop:true,
         margin:50,
-        nav:true,
+        nav:false,
         mouseDrag: false,
         responsive:{
             0:{

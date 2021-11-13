@@ -46,7 +46,7 @@ aute dis ad qui dolorum repudic torehen imagnis ciduntur</p>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-sm-4">
 				<button id="scrollUp" class="btn"><i class="fas fa-chevron-up"></i></button>
 				<?php
 					/**
@@ -60,10 +60,10 @@ aute dis ad qui dolorum repudic torehen imagnis ciduntur</p>
 				<button id="scrollDown" class="btn"><i class="fas fa-chevron-down"></i></button>
 				<div id="owlImg" class="owl-carousel owl-theme"></div>
 			</div>
-			<div class="col-2">
+			<div class="col-12 col-sm-2">
 				<div id="owlNavigation" class="owl-carousel owl-theme"></div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-sm-6">
 				<div class="summary entry-summary">
 					<?php
 					/**

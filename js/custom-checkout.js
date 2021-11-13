@@ -18,3 +18,8 @@ function getPlaceholder() {
 if (document.getElementById('checkoutPage')) {
     getPlaceholder()
 }
+
+if (document.querySelector('body.logged-in') == null) {
+    document.getElementById('username').setAttribute('placeholder', 'EMAIL')
+    document.getElementById('password').setAttribute('placeholder', 'MOT DE PASSE')
+}

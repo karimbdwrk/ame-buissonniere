@@ -134,3 +134,38 @@ function lionplugins_woocommerce_checkout_remove_item( $product_name, $cart_item
 	return $product_name;
 }
 add_filter( 'woocommerce_cart_item_name', 'lionplugins_woocommerce_checkout_remove_item', 10, 3 );
+
+// <?php
+
+/**
+ * WooCommerce: Customers can change the quantity & delete it on checkout page.
+ */ 
+
+if ( ! defined( 'ABSPATH' ) ) {
+   exit; // Exit if accessed directly.
+}
+
+// Define plugin version
+define( 'ZWQCOC_PLUGIN_VERSION', '1.0.0' );
+
+function pippin_login_form_shortcode( $atts, $content = null ) {
+ 
+	extract( shortcode_atts( array(
+      'redirect' => ''
+      ), $atts ) );
+ 
+	if (!is_user_logged_in()) {
+		if($redirect) {
+			$redirect_url = $redirect;
+		} else {
+			$redirect_url = get_permalink();
+		}
+		$form = wp_login_form(array('echo' => false, 'redirect' => $redirect_url ));
+	} 
+	return $form;
+}
+add_shortcode('loginform', 'pippin_login_form_shortcode');
+
+remove_filter( 'the_content', 'wpautop' );
+
+remove_filter( 'the_excerpt', 'wpautop' );
