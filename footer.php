@@ -30,27 +30,29 @@
 				<div class="logo-footer-container d-flex d-sm-none">
 					<img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/logo-amebuissonniere.svg" />
 				</div>
-				<h2 class="title">AIDE</h2>
+				<h2 class="title"><span class="lang-fr">AIDE</span><span class="lang-en">HELP</span></h2>
 					<ul>
 						<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=0" template="Footer Lists Template"]'); ?>
 					</ul>
 			</div>
 			<div class="col-12 col-md-3 col-links">
-				<h2 class="title">À PROPOS</h2>
+				<h2 class="title"><span class="lang-fr">À PROPOS</span><span class="lang-en">ABOUT</span></h2>
 				<ul>
 					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=1" template="Footer Lists Template"]'); ?>
 				</ul>
 			</div>
 			<div class="col-12 col-md-3 col-links">
-				<h2 class="title">NOS PRODUITS</h2>
+				<h2 class="title"><span class="lang-fr">NOS PRODUITS</span><span class="lang-en">OUR PRODUCTS</span></h2>
 				<ul>
 					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=2" template="Footer Lists Template"]'); ?>
 				</ul>
 			</div>
 			<div class="col-12 col-md-3 last-col">
 				<div class="newsletter">
-					<h3>RECEVEZ <span>nos invitations</span></h3>
-					<h4>Rejoignez les filles buissonnières</h4>
+					<h3 class="lang-fr">RECEVEZ <span>nos invitations</span></h3>
+					<h3 class="lang-en">RECEIVE <span>our invitations</span></h3>
+					<h4 class="lang-fr">Rejoignez les filles buissonnières</h4>
+					<h4 class="lang-en">Join "les filles buissonnières"</h4>
 					<?php echo do_shortcode("[RM_Form id='3']"); ?>
 				</div>
 			</div>

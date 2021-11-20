@@ -12,7 +12,7 @@ function customMegaMenu() {
         document.getElementById(src).prepend(newImage)
     })
 }
-customMegaMenu()
+
 
 function clickImg() {
     document.getElementById('mega-menu-121-0-1').addEventListener('click', () => {
@@ -41,7 +41,12 @@ function clickImg() {
         document.querySelector('#mega-menu-167-0-3 .mega-sub-menu .mega-menu-link').click()
     })
 }
-clickImg()
+
+
+if (document.getElementById('mega-menu-wrap-primary') != null) {
+    customMegaMenu()
+    clickImg()
+}
 
 // function scrollBg() {
 //     if (window.pageYOffset > 1) {

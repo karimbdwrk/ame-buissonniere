@@ -29,43 +29,43 @@ window.onload = function(e) {
         }
     }
 
-    // const searchInput = document.getElementById('dgwt-wcas-search-input-1')
-    // const resultDiv = document.querySelector('.dgwt-wcas-suggestions-wrapp')
-    // searchInput.addEventListener('keyup', event => {
-    //     console.log('change')
+    // // const searchInput = document.getElementById('dgwt-wcas-search-input-1')
+    // // const resultDiv = document.querySelector('.dgwt-wcas-suggestions-wrapp')
+    // // searchInput.addEventListener('keyup', event => {
+    // //     console.log('change')
 
-    //     let suggestions = document.querySelectorAll('.dgwt-wcas-suggestions-wrapp .dgwt-wcas-si img')
-    //     suggestions.forEach(suggestion => {
-    //         let oldLink = suggestion.getAttribute('src')
-    //         let newLink = oldLink.replace('?fit=64%2C64', '')
-    //         suggestion.setAttribute('src', newLink)
-    //     })
+    // //     let suggestions = document.querySelectorAll('.dgwt-wcas-suggestions-wrapp .dgwt-wcas-si img')
+    // //     suggestions.forEach(suggestion => {
+    // //         let oldLink = suggestion.getAttribute('src')
+    // //         let newLink = oldLink.replace('?fit=64%2C64', '')
+    // //         suggestion.setAttribute('src', newLink)
+    // //     })
 
+    // // });
+
+    // // select the target node
+    // var target = document.querySelector('.dgwt-wcas-suggestions-wrapp');
+
+    // // create an observer instance
+    // var observer = new MutationObserver(function(mutations) {
+    //     mutations.forEach(function(mutation) {
+    //         console.log(mutation.type);
+    //         let suggestions = document.querySelectorAll('.dgwt-wcas-suggestions-wrapp .dgwt-wcas-si img')
+    //         suggestions.forEach(suggestion => {
+    //             let oldLink = suggestion.getAttribute('src')
+    //             let newLink = oldLink.replace('?fit=64%2C64', '')
+    //             suggestion.setAttribute('src', newLink)
+    //         })
+    //     });    
     // });
 
-    // select the target node
-    var target = document.querySelector('.dgwt-wcas-suggestions-wrapp');
+    // // configuration of the observer:
+    // var config = { attributes: true, childList: true, characterData: true };
 
-    // create an observer instance
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            console.log(mutation.type);
-            let suggestions = document.querySelectorAll('.dgwt-wcas-suggestions-wrapp .dgwt-wcas-si img')
-            suggestions.forEach(suggestion => {
-                let oldLink = suggestion.getAttribute('src')
-                let newLink = oldLink.replace('?fit=64%2C64', '')
-                suggestion.setAttribute('src', newLink)
-            })
-        });    
-    });
+    // // pass in the target node, as well as the observer options
+    // observer.observe(target, config);
 
-    // configuration of the observer:
-    var config = { attributes: true, childList: true, characterData: true };
-
-    // pass in the target node, as well as the observer options
-    observer.observe(target, config);
-
-    // later, you can stop observing
-    // observer.disconnect();
+    // // later, you can stop observing
+    // // observer.disconnect();
 
 }

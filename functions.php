@@ -166,6 +166,74 @@ function pippin_login_form_shortcode( $atts, $content = null ) {
 }
 add_shortcode('loginform', 'pippin_login_form_shortcode');
 
-remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_content', 'wpautop' );
 
-remove_filter( 'the_excerpt', 'wpautop' );
+// remove_filter( 'the_excerpt', 'wpautop' );
+
+// Auto uncheck "Ship to a different address"
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
+
+// recherche
+
+add_action( 'wp_footer', 'ajax_fetch' );
+function ajax_fetch() {
+    ?>
+    <script type="text/javascript" defer>
+        var search_timeout = null
+
+        function fetch(){
+            jQuery('#form').keydown(function(e){
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                } else {
+                    clearTimeout(search_timeout);
+                    search_timeout = setTimeout(function(){
+                        $.ajax({ url: '/wp-admin/admin-ajax.php',
+                            type: 'POST',
+                            data: {
+                                action: 'data_fetch',
+                                keyword: jQuery('#keyword').val()
+                            },
+                            success: function(data) {
+                                $('#datafetch').html( data );
+                            }
+                        });
+                    }, 2000);
+                }
+            });
+        }
+    </script>
+    <?php
+}
+
+/**
+ * Fonction ajax pour récupérer les produits de façon dynamique.
+ */
+add_action('wp_ajax_data_fetch' , 'data_fetch');
+add_action('wp_ajax_nopriv_data_fetch','data_fetch');
+function data_fetch(){
+    $the_query = new WP_Query(
+        array(
+            'posts_per_page' => 9,
+            's' => esc_attr($_POST['keyword']),
+            'post_type' => 'product',
+        )
+    );
+
+    if( $the_query->have_posts() ) :
+        echo '<div class="display-search-items">';
+        while( $the_query->have_posts() ): $the_query->the_post();?>
+            <?php $product = wc_get_product(get_the_ID());?>
+            <div class="display-search-item">
+                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                    <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" width="520" height="578">
+                    <h4 class="title"><?php the_title(); ?></h4>
+                    <p class="price"><?php echo $product->get_price_html(); ?></p>
+                </a>
+            </div>
+        <?php endwhile;
+       echo '</div>';
+        wp_reset_postdata();  
+    endif;
+    die();
+}

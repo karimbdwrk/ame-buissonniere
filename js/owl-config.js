@@ -54,7 +54,8 @@ jQuery(document).ready(function() {
     jQuery('#boCarousel').owlCarousel({
         loop:true,
         margin:30,
-        nav:true,
+        nav:false,
+        mouseDrag: false,
         responsive:{
             0:{
                 items:1
@@ -69,7 +70,8 @@ jQuery(document).ready(function() {
     jQuery('#boShopCarousel').owlCarousel({
         loop:true,
         margin:50,
-        nav:true,
+        nav:false,
+        mouseDrag: false,
         responsive:{
             0:{
                 items:1
@@ -84,7 +86,7 @@ jQuery(document).ready(function() {
     jQuery('.portrait-content .owl-carousel').owlCarousel({
         loop:true,
         margin:50,
-        nav:true,
+        nav:false,
         mouseDrag: false,
         responsive:{
             0:{
