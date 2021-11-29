@@ -1,11 +1,24 @@
 console.log('custom mega menu ok :)')
 
-function customMegaMenu() {
+function customMegaMenuFR() {
     const menuImagesTable = document.querySelectorAll('#tablepress-menuImages > tbody > tr') 
     console.log(menuImagesTable)
     menuImagesTable.forEach(image => {
         let src = image.querySelector('.column-1').innerHTML
-        let img = image.querySelector('.column-2 > img').getAttribute('src')
+        let img = image.querySelector('.column-3 > img').getAttribute('src')
+        console.log(src, img)
+        let newImage = document.createElement('img')
+        newImage.setAttribute('src', img)
+        document.getElementById(src).prepend(newImage)
+    })
+}
+
+function customMegaMenuEN() {
+    const menuImagesTable = document.querySelectorAll('#tablepress-menuImages > tbody > tr') 
+    console.log(menuImagesTable)
+    menuImagesTable.forEach(image => {
+        let src = image.querySelector('.column-2').innerHTML
+        let img = image.querySelector('.column-3 > img').getAttribute('src')
         console.log(src, img)
         let newImage = document.createElement('img')
         newImage.setAttribute('src', img)
@@ -42,18 +55,6 @@ function clickImg() {
     })
 }
 
-
-if (document.getElementById('mega-menu-wrap-primary') != null) {
-    customMegaMenu()
-    clickImg()
-}
-
-// function scrollBg() {
-//     if (window.pageYOffset > 1) {
-//         document.getElementById('masthead').classList.add('scrolled')
-//     }
-// }
-
 window.addEventListener("scroll", function scrollBg() {
     console.log('scrolled')
     if (window.pageYOffset > 1) {
@@ -62,3 +63,17 @@ window.addEventListener("scroll", function scrollBg() {
         document.getElementById('masthead').classList.remove('scrolled')
     }
 });
+
+if (document.getElementById('mega-menu-wrap-primary') != null && document.querySelector('html').getAttribute('lang') == 'fr-FR') {
+    customMegaMenuFR()
+    clickImg()
+} else if (document.getElementById('mega-menu-wrap-primary') != null && document.querySelector('html').getAttribute('lang') == 'en-US') {
+    customMegaMenuEN()
+    clickImg()
+}
+
+// function scrollBg() {
+//     if (window.pageYOffset > 1) {
+//         document.getElementById('masthead').classList.add('scrolled')
+//     }
+// }

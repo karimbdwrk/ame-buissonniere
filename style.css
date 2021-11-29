@@ -11,13 +11,19 @@ Version: 1.0
 #wesh {
   display: flex; }
   #wesh .morray {
-    display: inline; }
+    display: none; }
 
 html[lang=fr-FR] .lang-en {
   display: none; }
+html[lang=fr-FR] .header-link.french {
+  text-decoration: underline;
+  pointer-events: none; }
 
 html[lang=en-US] .lang-fr {
   display: none; }
+html[lang=en-US] .header-link.english {
+  text-decoration: underline;
+  pointer-events: none; }
 
 input[type=text], input[type=password], input[type=email], textarea {
   -webkit-appearance: none;
@@ -27,22 +33,22 @@ input[type=text], input[type=password], input[type=email], textarea {
 
 /* VARIABLES */
 /* GENERAL EXTENDS */
-.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .politique-conf-container, .cgv-container, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, .woocommerce-cart #content .panier-container h1, .woocommerce-cart #content .panier-container h3.title, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table thead th, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-quantity, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-price, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-subtotal, .woocommerce-cart #content .panier-container .cart-collaterals, .woocommerce-cart #content .panier-container .upsell-shop h4, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, #monHistoire h1.title, #monHistoire .section-1 .txt-container h2.title, #monHistoire .section-2 .txt-container h2.title, #monHistoire .section-3 .txt-container h2.title, #monHistoire .section-4 .txt-container h2.title, #monHistoire .section-6 .txt-container h2.title, #nosEngagements .banner, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title, #tutoPage .section-1 h1.title, #tutoPage .section-3 .col-12.col-sm-10 .title-container .subtitle {
+.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .politique-conf-container, .cgv-container, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, .woocommerce-cart #content .panier-container h1, .woocommerce-cart #content .panier-container h3.title, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table thead th, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-quantity, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-price, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-subtotal, .woocommerce-cart #content .panier-container .cart-collaterals, .woocommerce-cart #content .panier-container .upsell-shop h4, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, .page-id-2014 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1944 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, #monHistoire h1.title, #monHistoire .section-1 .txt-container h2.title, #monHistoire .section-2 .txt-container h2.title, #monHistoire .section-3 .txt-container h2.title, #monHistoire .section-4 .txt-container h2.title, #monHistoire .section-6 .txt-container h2.title, #nosEngagements .banner, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title, #tutoPage .section-1 h1.title, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .subtitle {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal; }
 
-.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-12.col-sm-10 .img-container .btn, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button, .woocommerce-cart #content .panier-container .upsell-shop .btn, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, .page-id-947 #merci .continue-shop, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
+.futura-font-italic, .white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, .page-id-2014 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container .btn, .black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button, .woocommerce-cart #content .panier-container .upsell-shop .btn, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, .page-id-1944 #contactPage .form-container .rmagic form .buttonarea .rm-btn, header#masthead .container-fluid .languages-container .header-link, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-select-parcel, .page-id-947 #merci .continue-shop, .page-id-2014 #merci .continue-shop, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p span em {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: italic; }
 
-.baskerville-display-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, .woocommerce-cart #content .panier-container nav a, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon #coupon_code, #checkoutPage nav a, #checkoutPage .woocommerce-form-login > p input, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-shipping-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-shipping-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, .select2-dropdown, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p input, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p input, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .numero, .single-post #post .row.portrait-content .hero-name .hero-description, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-4 .txt-content p.title, .single-post #post .row.portrait-content .section-4 .txt-content .description, body.page-id-1268 #content nav a, body.page-id-1288 #content nav a, body.page-id-1301 #content nav a, #monHistoire .section-1 .txt-container .text-content, #monHistoire .section-2 .txt-container .text-content, #monHistoire .section-3 .txt-container .text-content, #monHistoire .section-5 .txt-container .text-content, #monHistoire .section-6 .txt-container .text-content, #nosEngagements .container > .row > .col-12 .description, #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content, #tutoPage .section-1 .subtitle, #tutoPage .section-1 .description, #tutoPage .section-2 .container p {
+.baskerville-display-font-normal, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-body .xoo-wsc-empty-cart span, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-sp .amount bdi, .woocommerce-cart #content .panier-container nav a, .woocommerce-cart #content .panier-container .cart-empty, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon #coupon_code, #checkoutPage nav a, #checkoutPage .woocommerce-form-login > p input, #checkoutPage .checkout_coupon > .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-billing-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-shipping-fields__field-wrapper .form-row input, #checkoutPage form.checkout #customer_details .woocommerce-shipping-fields__field-wrapper .form-row .select2-selection--single, #checkoutPage form.checkout #customer_details .woocommerce-account-fields .create-account #account_password_field, #checkoutPage form.checkout #customer_details .woocommerce-additional-fields .form-row textarea, .select2-dropdown, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p input, #myAccount .woocommerce .woocommerce-MyAccount-content form .woocommerce-address-fields__field-wrapper p .select2-selection--single, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p input, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm p #wcpay_selected_currency, .single-post #post .numero, .single-post #post .row.portrait-content .hero-name .hero-description, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title, .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content .description, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content, .single-post #post .row.portrait-content .section-3 .col-12 .txt-content strong, .single-post #post .row.portrait-content .section-4 .txt-content p.title, .single-post #post .row.portrait-content .section-4 .txt-content .description, body.page-id-1268 #content nav a, body.page-id-1288 #content nav a, body.page-id-1301 #content nav a, body.page-id-1854 #content nav a, body.page-id-1891 #content nav a, body.page-id-1931 #content nav a, #monHistoire .section-1 .txt-container .text-content, #monHistoire .section-2 .txt-container .text-content, #monHistoire .section-3 .txt-container .text-content, #monHistoire .section-5 .txt-container .text-content, #monHistoire .section-6 .txt-container .text-content, #nosEngagements .container > .row > .col-12 .description, #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content, #tutoPage .section-1 .subtitle, #tutoPage .section-1 .description, #tutoPage .section-2 .container p {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: normal; }
 
-.baskerville-display-font-italic, footer#colophon .container .row .last-col .newsletter .success, .woocommerce-cart #content .panier-container h1 em, .woocommerce-cart #content .panier-container .woocommerce-notices-wrapper .woocommerce-message, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name .variation, .woocommerce-cart #content .panier-container .upsell-shop h4 em, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span, .page-id-1245 #contactPage .form-container .success, #monHistoire h1.title em, #monHistoire .section-1 .txt-container h2.title em, #monHistoire .section-2 .txt-container h2.title em, #monHistoire .section-3 .txt-container h2.title em, #monHistoire .section-3 .txt-container .subtitle, #monHistoire .section-4 .txt-container h2.title em, #monHistoire .section-6 .txt-container h2.title em, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em, #tutoPage .section-1 h1.title em, #tutoPage .section-3 .col-12.col-sm-10 .title-container .title {
+.baskerville-display-font-italic, footer#colophon .container .row .last-col .newsletter .success, .woocommerce-cart #content .panier-container h1 em, .woocommerce-cart #content .panier-container .woocommerce-notices-wrapper .woocommerce-message, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name .variation, .woocommerce-cart #content .panier-container .upsell-shop h4 em, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name .variation, #myAccount .woocommerce .woocommerce-MyAccount-content > p:last-of-type a, .single-post #post .row.title-row p.mb em, .single-post #post .row.section-row .col-12 .txt-container .section-subtitle, .single-post #post .row.portrait-content .hero-name .title, .page-id-1245 #contactPage .title-container h1 span, .page-id-1944 #contactPage .title-container h1 span, .page-id-1245 #contactPage .form-container .success, .page-id-1944 #contactPage .form-container .success, #monHistoire h1.title em, #monHistoire .section-1 .txt-container h2.title em, #monHistoire .section-2 .txt-container h2.title em, #monHistoire .section-3 .txt-container h2.title em, #monHistoire .section-3 .txt-container .subtitle, #monHistoire .section-4 .txt-container h2.title em, #monHistoire .section-6 .txt-container h2.title em, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title em, #tutoPage .section-1 h1.title em, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .title {
   font-family: baskerville-display-pt, serif;
   font-weight: 400;
   font-style: italic; }
@@ -52,7 +58,7 @@ input[type=text], input[type=password], input[type=email], textarea {
   font-weight: 400;
   font-style: normal; }
 
-.baskerville-poster-font-italic, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .title, .page-id-947 #merci .row .col-12 h1 span {
+.baskerville-poster-font-italic, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .title, .page-id-947 #merci .row .col-12 h1 span, .page-id-2014 #merci .row .col-12 h1 span {
   font-family: baskerville-poster-pt, serif;
   font-weight: 400;
   font-style: italic; }
@@ -69,7 +75,7 @@ input[type=text], input[type=password], input[type=email], textarea {
   justify-content: center;
   align-items: center; }
 
-.white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-12.col-sm-10 .img-container .btn {
+.white-btn, #banners .row .img-container a, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit, #checkoutPage .checkout_coupon > .form-row .button, .page-id-947 #merci .row .col-12 a.btn, .page-id-2014 #merci .row .col-12 a.btn, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button, #myAccount .woocommerce .woocommerce-MyAccount-content form button.button, #myAccount .woocommerce .woocommerce-MyAccount-content .button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container .btn {
   background-color: #FFF;
   color: #000;
   width: max-content;
@@ -78,10 +84,10 @@ input[type=text], input[type=password], input[type=email], textarea {
   font-size: 14px;
   text-transform: uppercase;
   padding: 8px 25px; }
-  .white-btn:hover, #banners .row .img-container a:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a:hover, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button:hover, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit:hover, #checkoutPage .checkout_coupon > .form-row .button:hover, .page-id-947 #merci .row .col-12 a.btn:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button:hover, #tutoPage .section-3 .col-12.col-sm-10 .img-container .btn:hover {
+  .white-btn:hover, #banners .row .img-container a:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .tab-content .tab-pane#p2 > .container .col-6 a:hover, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container a:hover, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody tr td.actions .coupon .button:hover, #checkoutPage .woocommerce-form-login > p.form-row .woocommerce-form-login__submit:hover, #checkoutPage .checkout_coupon > .form-row .button:hover, .page-id-947 #merci .row .col-12 a.btn:hover, .page-id-2014 #merci .row .col-12 a.btn:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods tr td a.button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .form-row button:hover, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm button:hover, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container .btn:hover {
     text-decoration: none; }
 
-.black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button, .woocommerce-cart #content .panier-container .upsell-shop .btn, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn {
+.black-btn, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button, #hero .hero-txt .btn, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button, .woocommerce-cart #content .panier-container .upsell-shop .btn, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, .page-id-1944 #contactPage .form-container .rmagic form .buttonarea .rm-btn {
   background-color: #000;
   color: #FFF;
   width: max-content;
@@ -90,7 +96,7 @@ input[type=text], input[type=password], input[type=email], textarea {
   font-size: 14px;
   text-transform: uppercase;
   padding: 8px 25px; }
-  .black-btn:hover, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button:hover, #hero .hero-txt .btn:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button:hover, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:hover, .woocommerce-cart #content .panier-container .upsell-shop .btn:hover, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button:hover, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit:hover, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn:hover {
+  .black-btn:hover, .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button:hover, #hero .hero-txt .btn:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .single_add_to_cart_button:hover, .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:hover, .woocommerce-cart #content .panier-container .upsell-shop .btn:hover, #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button:hover, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-form-login__submit:hover, .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn:hover, .page-id-1944 #contactPage .form-container .rmagic form .buttonarea .rm-btn:hover {
     text-decoration: none; }
 
 /* GENERAL BOOTSTRAP */
@@ -121,6 +127,17 @@ html {
     margin: 0; }
     .container > .row .col-12, .container-fluid > .row .col-12 {
       padding: 0; }
+
+.owl-dots {
+  margin-top: 30px; }
+  .owl-dots .owl-dot span {
+    background-color: transparent !important;
+    border: 1px solid #000 !important; }
+  .owl-dots .owl-dot.active span {
+    background-color: #000 !important;
+    border: 1px solid #000 !important; }
+  .owl-dots .owl-dot:focus {
+    outline: none !important; }
 
 /* ANIMATE CSS */
 @-webkit-keyframes fadeIn {
@@ -183,24 +200,24 @@ header.entry-header, footer.entry-footer {
   display: none !important; }
 
 /* HEADER */
-.home header#masthead, .archive header#masthead, .single-product header#masthead, .woocommerce-shop header#masthead, .woocommerce-checkout header#masthead, .parent-pageid-545 header#masthead, .page-id-1245 header#masthead, .page-id-1288 header#masthead, .page-id-1268 header#masthead, .page-id-1301 header#masthead {
+body header#masthead, .home header#masthead, .archive header#masthead, .single-product header#masthead, .woocommerce-shop header#masthead, .woocommerce-checkout header#masthead, .parent-pageid-545 header#masthead, .page-id-1245 header#masthead, .page-id-1288 header#masthead, .page-id-1268 header#masthead, .page-id-1301 header#masthead {
   background-color: transparent; }
-  .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .archive header#masthead.scrolled, .archive header#masthead.search-open, .archive header#masthead:hover, .archive header#masthead:active, .archive header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus, .woocommerce-shop header#masthead.scrolled, .woocommerce-shop header#masthead.search-open, .woocommerce-shop header#masthead:hover, .woocommerce-shop header#masthead:active, .woocommerce-shop header#masthead:focus, .woocommerce-checkout header#masthead.scrolled, .woocommerce-checkout header#masthead.search-open, .woocommerce-checkout header#masthead:hover, .woocommerce-checkout header#masthead:active, .woocommerce-checkout header#masthead:focus, .parent-pageid-545 header#masthead.scrolled, .parent-pageid-545 header#masthead.search-open, .parent-pageid-545 header#masthead:hover, .parent-pageid-545 header#masthead:active, .parent-pageid-545 header#masthead:focus, .page-id-1245 header#masthead.scrolled, .page-id-1245 header#masthead.search-open, .page-id-1245 header#masthead:hover, .page-id-1245 header#masthead:active, .page-id-1245 header#masthead:focus, .page-id-1288 header#masthead.scrolled, .page-id-1288 header#masthead.search-open, .page-id-1288 header#masthead:hover, .page-id-1288 header#masthead:active, .page-id-1288 header#masthead:focus, .page-id-1268 header#masthead.scrolled, .page-id-1268 header#masthead.search-open, .page-id-1268 header#masthead:hover, .page-id-1268 header#masthead:active, .page-id-1268 header#masthead:focus, .page-id-1301 header#masthead.scrolled, .page-id-1301 header#masthead.search-open, .page-id-1301 header#masthead:hover, .page-id-1301 header#masthead:active, .page-id-1301 header#masthead:focus {
+  body header#masthead.scrolled, body header#masthead.search-open, body header#masthead:hover, body header#masthead:active, body header#masthead:focus, .home header#masthead.scrolled, .home header#masthead.search-open, .home header#masthead:hover, .home header#masthead:active, .home header#masthead:focus, .archive header#masthead.scrolled, .archive header#masthead.search-open, .archive header#masthead:hover, .archive header#masthead:active, .archive header#masthead:focus, .single-product header#masthead.scrolled, .single-product header#masthead.search-open, .single-product header#masthead:hover, .single-product header#masthead:active, .single-product header#masthead:focus, .woocommerce-shop header#masthead.scrolled, .woocommerce-shop header#masthead.search-open, .woocommerce-shop header#masthead:hover, .woocommerce-shop header#masthead:active, .woocommerce-shop header#masthead:focus, .woocommerce-checkout header#masthead.scrolled, .woocommerce-checkout header#masthead.search-open, .woocommerce-checkout header#masthead:hover, .woocommerce-checkout header#masthead:active, .woocommerce-checkout header#masthead:focus, .parent-pageid-545 header#masthead.scrolled, .parent-pageid-545 header#masthead.search-open, .parent-pageid-545 header#masthead:hover, .parent-pageid-545 header#masthead:active, .parent-pageid-545 header#masthead:focus, .page-id-1245 header#masthead.scrolled, .page-id-1245 header#masthead.search-open, .page-id-1245 header#masthead:hover, .page-id-1245 header#masthead:active, .page-id-1245 header#masthead:focus, .page-id-1288 header#masthead.scrolled, .page-id-1288 header#masthead.search-open, .page-id-1288 header#masthead:hover, .page-id-1288 header#masthead:active, .page-id-1288 header#masthead:focus, .page-id-1268 header#masthead.scrolled, .page-id-1268 header#masthead.search-open, .page-id-1268 header#masthead:hover, .page-id-1268 header#masthead:active, .page-id-1268 header#masthead:focus, .page-id-1301 header#masthead.scrolled, .page-id-1301 header#masthead.search-open, .page-id-1301 header#masthead:hover, .page-id-1301 header#masthead:active, .page-id-1301 header#masthead:focus {
     background-color: #FFF;
     transition: background-color 250ms ease; }
-    .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .archive header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .archive header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .archive header#masthead:hover .container-fluid .navbar .navbar-brand a img, .archive header#masthead:active .container-fluid .navbar .navbar-brand a img, .archive header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:focus .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:active .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:focus .container-fluid .navbar .navbar-brand a img {
+    body header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, body header#masthead.search-open .container-fluid .navbar .navbar-brand a img, body header#masthead:hover .container-fluid .navbar .navbar-brand a img, body header#masthead:active .container-fluid .navbar .navbar-brand a img, body header#masthead:focus .container-fluid .navbar .navbar-brand a img, .home header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .home header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .home header#masthead:hover .container-fluid .navbar .navbar-brand a img, .home header#masthead:active .container-fluid .navbar .navbar-brand a img, .home header#masthead:focus .container-fluid .navbar .navbar-brand a img, .archive header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .archive header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .archive header#masthead:hover .container-fluid .navbar .navbar-brand a img, .archive header#masthead:active .container-fluid .navbar .navbar-brand a img, .archive header#masthead:focus .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .single-product header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:hover .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:active .container-fluid .navbar .navbar-brand a img, .single-product header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead:focus .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:hover .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:active .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead:focus .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:active .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead:focus .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.scrolled .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead.search-open .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:hover .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:active .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead:focus .container-fluid .navbar .navbar-brand a img {
       height: 60px;
       transition: height 300ms ease; }
-  .home header#masthead .container-fluid .navbar .navbar-brand, .archive header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand {
+  body header#masthead .container-fluid .navbar .navbar-brand, .home header#masthead .container-fluid .navbar .navbar-brand, .archive header#masthead .container-fluid .navbar .navbar-brand, .single-product header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand {
     margin-right: 0;
     width: 10%;
     display: flex;
     justify-content: center;
     padding: 0; }
-    .home header#masthead .container-fluid .navbar .navbar-brand a, .archive header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand a, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a {
+    body header#masthead .container-fluid .navbar .navbar-brand a, .home header#masthead .container-fluid .navbar .navbar-brand a, .archive header#masthead .container-fluid .navbar .navbar-brand a, .single-product header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand a, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a {
       color: #000;
       height: 100%; }
-      .home header#masthead .container-fluid .navbar .navbar-brand a img, .archive header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a img {
+      body header#masthead .container-fluid .navbar .navbar-brand a img, .home header#masthead .container-fluid .navbar .navbar-brand a img, .archive header#masthead .container-fluid .navbar .navbar-brand a img, .single-product header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-shop header#masthead .container-fluid .navbar .navbar-brand a img, .woocommerce-checkout header#masthead .container-fluid .navbar .navbar-brand a img, .parent-pageid-545 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1245 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1288 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1268 header#masthead .container-fluid .navbar .navbar-brand a img, .page-id-1301 header#masthead .container-fluid .navbar .navbar-brand a img {
         height: 100px;
         transition: height 750ms ease 750ms; }
 
@@ -288,18 +305,42 @@ header#masthead {
               color: #FFF;
               text-align: center;
               text-shadow: 3px 3px 8px #000000AA; }
-          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-0, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 {
-            width: 20%; }
-            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-0 ul li, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 ul li {
-              margin-bottom: 15px; }
           header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-item-850 .mega-menu-link {
             color: #000;
             pointer-events: none; }
-          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-4 {
-            width: 20%;
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 {
             max-height: 200px;
             overflow: hidden; }
-            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-3 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-4 .mega-menu-link {
+            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-3 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-item-168 ul li ul #mega-menu-168-0-1 .mega-menu-link {
+              display: none; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-item-1947 .mega-menu-link {
+            color: #000; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-3 {
+            max-height: 200px;
+            overflow: hidden; }
+            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-1 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1666-0 #mega-menu-1666-0-3 .mega-menu-link {
+              transform: translateY(-60px);
+              color: #FFF;
+              text-align: center;
+              text-shadow: 3px 3px 8px #000000AA; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-item-1953 .mega-menu-link {
+            color: #000;
+            pointer-events: none; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-3 {
+            max-height: 200px;
+            overflow: hidden; }
+            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-1 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1667-0 #mega-menu-1667-0-3 .mega-menu-link {
+              transform: translateY(-60px);
+              color: #FFF;
+              text-align: center;
+              text-shadow: 3px 3px 8px #000000AA; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-item-1967 .mega-menu-link {
+            color: #000;
+            pointer-events: none; }
+          header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-3 {
+            max-height: 200px;
+            overflow: hidden; }
+            header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-1 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-2 .mega-menu-link, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-1668-0 #mega-menu-1668-0-3 .mega-menu-link {
               display: none; }
       header#masthead .container-fluid .navbar .navbar-brand {
         margin-right: 0;
@@ -315,7 +356,7 @@ header#masthead {
             transition: height 750ms ease 750ms; }
     header#masthead .container-fluid .header-btns {
       margin-top: 10px;
-      width: 45%;
+      width: 38%;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -324,8 +365,7 @@ header#masthead {
         display: none; }
       header#masthead .container-fluid .header-btns #searchBtn {
         margin-left: 30px;
-        cursor: pointer;
-        pointer-events: none; }
+        cursor: pointer; }
         header#masthead .container-fluid .header-btns #searchBtn .header-icon {
           display: flex;
           height: 20px;
@@ -349,20 +389,71 @@ header#masthead {
         font-weight: 500;
         padding-bottom: 2px;
         font-size: 14px; }
-    header#masthead .container-fluid .dgwt-wcas-search-wrapp {
+    header#masthead .container-fluid .languages-container {
+      margin-top: 15px;
+      width: 7%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      header#masthead .container-fluid .languages-container .header-icon {
+        display: none; }
+      header#masthead .container-fluid .languages-container .header-link {
+        color: #000;
+        font-size: 14px; }
+      header#masthead .container-fluid .languages-container .divider {
+        color: #000;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px; }
+    header#masthead .container-fluid .search_bar {
       margin: 0;
       max-width: 100%;
       height: 0;
       overflow: hidden; }
-      header#masthead .container-fluid .dgwt-wcas-search-wrapp .dgwt-wcas-search-form {
-        width: 100%; }
-        header#masthead .container-fluid .dgwt-wcas-search-wrapp .dgwt-wcas-search-form .dgwt-wcas-sf-wrapp {
-          margin-top: 15px; }
-          header#masthead .container-fluid .dgwt-wcas-search-wrapp .dgwt-wcas-search-form .dgwt-wcas-sf-wrapp input {
-            border: 0px;
-            font-size: 16px; }
-            header#masthead .container-fluid .dgwt-wcas-search-wrapp .dgwt-wcas-search-form .dgwt-wcas-sf-wrapp input:focus {
-              box-shadow: inherit; }
+      header#masthead .container-fluid .search_bar form {
+        padding-top: 50px; }
+        header#masthead .container-fluid .search_bar form input {
+          border: 0px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 100%;
+          text-align: center;
+          height: 60px;
+          font-size: 38px;
+          font-weight: 700;
+          text-transform: uppercase; }
+          header#masthead .container-fluid .search_bar form input::placeholder {
+            color: #EEE; }
+          header#masthead .container-fluid .search_bar form input:focus-visible {
+            outline: none; }
+        header#masthead .container-fluid .search_bar form button {
+          display: none; }
+      header#masthead .container-fluid .search_bar .search_result {
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 90px; }
+        header#masthead .container-fluid .search_bar .search_result .display-search-items {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 5%;
+          padding-top: 30px; }
+          header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item {
+            width: 30%; }
+            header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item h4.title {
+              text-align: center;
+              text-transform: uppercase;
+              margin-top: 15px;
+              font-size: 20px;
+              margin-bottom: 30px; }
+            header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item .price {
+              display: none; }
+            header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item:hover {
+              text-decoration: none !important; }
+              header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item:hover a {
+                text-decoration: none !important; }
 
 @media screen and (max-width: 425px) {
   header#masthead {
@@ -431,7 +522,7 @@ header#masthead {
           display: none; }
         header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-0, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-1, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-4 {
           width: 100% !important; }
-        header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-4 {
+        header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-2, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-3, header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary #mega-menu-168-0-1 {
           display: none; }
       header#masthead .container-fluid .navbar #mega-menu-wrap-primary > .mega-menu-open:after {
         background-color: transparent;
@@ -441,6 +532,7 @@ header#masthead {
     header#masthead .container-fluid .navbar .navbar-brand .site-title img {
       max-height: 50px; }
     header#masthead .container-fluid .header-btns {
+      width: 45%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -456,7 +548,38 @@ header#masthead {
         display: none; }
       header#masthead .container-fluid .header-btns #searchBtn {
         margin-left: 0;
-        padding: 0; } }
+        padding: 0; }
+    header#masthead .container-fluid .languages-container {
+      display: none; }
+    header#masthead .container-fluid .search_bar {
+      margin: 0;
+      max-width: 100%;
+      height: 0;
+      overflow: hidden; }
+      header#masthead .container-fluid .search_bar form {
+        padding-top: 50px; }
+        header#masthead .container-fluid .search_bar form input {
+          border: 0px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 100%;
+          text-align: center;
+          height: 60px;
+          font-size: 38px;
+          font-weight: 700;
+          text-transform: uppercase; }
+          header#masthead .container-fluid .search_bar form input::placeholder {
+            color: #EEE; }
+          header#masthead .container-fluid .search_bar form input:focus-visible {
+            outline: none; }
+        header#masthead .container-fluid .search_bar form button {
+          display: none; }
+      header#masthead .container-fluid .search_bar .search_result .display-search-items {
+        flex-direction: column;
+        align-items: center; }
+        header#masthead .container-fluid .search_bar .search_result .display-search-items .display-search-item {
+          width: 90vw; } }
 .xoo-wsc-modal.xoo-wsc-cart-active .xoo-wsc-container {
   right: 0 !important; }
 .xoo-wsc-modal .xoo-wsc-container {
@@ -515,6 +638,11 @@ header#masthead {
             color: #000; }
             .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-body .xoo-wsc-products .xoo-wsc-product .xoo-wsc-sm-info .xoo-wsc-qty-price span:last-of-type > .woocommerce-Price-amount bdi span {
               color: #000; }
+  .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-body .xoo-wsc-empty-cart span {
+    font-size: 24px;
+    margin-top: 90px; }
+  .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-body .xoo-wsc-empty-cart a.btn {
+    display: none; }
   .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button {
     font-style: normal; }
     .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-footer .xoo-wsc-ft-buttons-cont .button.xoo-wsc-cart-close {
@@ -727,15 +855,7 @@ header#masthead {
         padding-left: 15px;
         padding-right: 15px; }
       #avantPremiere #APCarousel .owl-dots {
-        margin-top: 30px; }
-        #avantPremiere #APCarousel .owl-dots .owl-dot span {
-          background-color: #fff;
-          border: 1px solid #f9f2e7; }
-        #avantPremiere #APCarousel .owl-dots .owl-dot.active span {
-          background-color: #f9f2e7;
-          border: 1px solid #f9f2e7; }
-        #avantPremiere #APCarousel .owl-dots .owl-dot:focus {
-          outline: none; } }
+        margin-top: 30px; } }
 #promenade {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
@@ -765,7 +885,7 @@ header#masthead {
       font-size: 26px;
       letter-spacing: 0px; }
   #promenade h3.title {
-    font-size: 32px;
+    font-size: 46px;
     margin-top: 0px;
     margin-bottom: 60px;
     margin-left: 30px;
@@ -779,7 +899,7 @@ header#masthead {
     #promenade h3.title strong {
       text-transform: uppercase;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 36px;
       letter-spacing: .5px;
       font-family: futura-pt, sans-serif;
       font-weight: 500;
@@ -789,10 +909,10 @@ header#masthead {
       font-family: baskerville-display-pt, serif;
       font-weight: 400;
       font-style: italic;
-      font-size: 32px;
+      font-size: 46px;
       letter-spacing: 0px; }
   #promenade .description {
-    margin-left: 90px;
+    margin-left: 30px;
     font-family: baskerville-display-pt, serif;
     font-weight: 400;
     font-style: normal;
@@ -804,52 +924,22 @@ header#masthead {
   #promenade .col-12 {
     max-height: 550px;
     overflow: hidden; }
-    #promenade .col-12 img {
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
+    #promenade .col-12.video-container {
+      display: flex;
+      justify-content: flex-end; }
+      #promenade .col-12.video-container video {
+        height: 100%; }
+    #promenade .col-12.txt-container {
+      background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/11/illu-home-tuto.png");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; }
     #promenade .col-12:last-of-type {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 60px; }
-  #promenade .links {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-left: 50px; }
-    #promenade .links .btn {
-      background-color: #FFF;
-      color: #000;
-      width: max-content;
-      border-radius: 0;
-      border: 1px solid #FFF;
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-style: normal;
-      padding: 8px 25px;
-      margin-bottom: 35px; }
-    #promenade .links .navigation {
-      padding-bottom: 50px;
-      width: calc(100% - 50px);
-      max-width: 600px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      color: #FFF; }
-      #promenade .links .navigation .link {
-        color: #FFF;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 500;
-        text-shadow: 5px 5px 30px #000; }
+      padding-left: 0px; }
 
 @media screen and (max-width: 425px) {
   #promenade h2.title {
@@ -876,6 +966,10 @@ header#masthead {
       font-style: italic;
       font-size: 26px;
       letter-spacing: 0px; }
+  #promenade > .row:last-of-type > .col-12.video-container {
+    justify-content: center; }
+  #promenade > .row:last-of-type > .col-12.txt-container {
+    background-image: none; }
   #promenade > .row:last-of-type > .col-12:first-of-type {
     order: 1; }
   #promenade > .row:last-of-type > .col-12:last-of-type {
@@ -1689,7 +1783,8 @@ header#masthead {
         color: #000;
         font-family: baskerville-display-pt, serif;
         font-weight: 400;
-        font-style: italic; }
+        font-style: italic;
+        display: none; }
       #reassurance .cards .card img {
         display: none;
         max-width: 50px;
@@ -2083,21 +2178,21 @@ footer#colophon {
     .single-product.woocommerce #content .top-quote p {
       font-size: 20px;
       text-align: center; }
-  .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs {
+  .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs, .single-product.woocommerce #content .product.product_cat-fragrance-refills .woocommerce-tabs .nav-tabs {
     justify-content: flex-start !important; }
-    .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs .nav-item {
+    .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs .nav-item, .single-product.woocommerce #content .product.product_cat-fragrance-refills .woocommerce-tabs .nav-tabs .nav-item {
       margin-right: 30px; }
-    .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs span {
+    .single-product.woocommerce #content .product.product_cat-recharges-parfum .woocommerce-tabs .nav-tabs span, .single-product.woocommerce #content .product.product_cat-fragrance-refills .woocommerce-tabs .nav-tabs span {
       margin-right: 30px; }
-  .single-product.woocommerce #content .product.product_cat-recharges-parfum .bijou {
+  .single-product.woocommerce #content .product.product_cat-recharges-parfum .bijou, .single-product.woocommerce #content .product.product_cat-fragrance-refills .bijou {
     display: none; }
-  .single-product.woocommerce #content .product.product_cat-recharges-parfum .conseils .bijou {
+  .single-product.woocommerce #content .product.product_cat-recharges-parfum .conseils .bijou, .single-product.woocommerce #content .product.product_cat-fragrance-refills .conseils .bijou {
     display: none; }
-  .single-product.woocommerce #content .product.product_cat-recharges-parfum .mode-demploi, .single-product.woocommerce #content .product.product_cat-recharges-parfum .le-mot-de-latelier {
+  .single-product.woocommerce #content .product.product_cat-recharges-parfum .mode-demploi, .single-product.woocommerce #content .product.product_cat-recharges-parfum .le-mot-de-latelier, .single-product.woocommerce #content .product.product_cat-fragrance-refills .mode-demploi, .single-product.woocommerce #content .product.product_cat-fragrance-refills .le-mot-de-latelier {
     display: none; }
-  .single-product.woocommerce #content .product.product_cat-bijoux-seuls .conseils .parfum {
+  .single-product.woocommerce #content .product.product_cat-bijoux-seuls .conseils .parfum, .single-product.woocommerce #content .product.product_cat-single-jewelry .conseils .parfum {
     display: none; }
-  .single-product.woocommerce #content .product.product_cat-bijoux-seuls .balade-olfactive, .single-product.woocommerce #content .product.product_cat-bijoux-seuls .le-mot-du-parfumeur, .single-product.woocommerce #content .product.product_cat-bijoux-seuls .mode-demploi {
+  .single-product.woocommerce #content .product.product_cat-bijoux-seuls .balade-olfactive, .single-product.woocommerce #content .product.product_cat-bijoux-seuls .le-mot-du-parfumeur, .single-product.woocommerce #content .product.product_cat-bijoux-seuls .mode-demploi, .single-product.woocommerce #content .product.product_cat-single-jewelry .balade-olfactive, .single-product.woocommerce #content .product.product_cat-single-jewelry .le-mot-du-parfumeur, .single-product.woocommerce #content .product.product_cat-single-jewelry .mode-demploi {
     display: none; }
   .single-product.woocommerce #content .product.product_cat-coffret-decouverte .woocommerce-tabs .nav-tabs {
     pointer-events: none; }
@@ -2199,7 +2294,8 @@ footer#colophon {
       max-width: 500px;
       padding-left: 30px;
       padding-right: 30px;
-      padding-top: 15px; }
+      padding-top: 15px;
+      overflow: hidden; }
       .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .woocommerce-tabs .nav {
         border: 0px;
         margin-bottom: 30px;
@@ -3300,11 +3396,13 @@ footer#colophon {
         margin-bottom: 0; }
       .woocommerce-cart #content .panier-container nav a {
         color: #AAA;
-        padding-bottom: 3px; }
+        padding-bottom: 0px;
+        border-bottom: 1px solid #FFF; }
         .woocommerce-cart #content .panier-container nav a.active {
           color: #000;
           border-bottom: 1px solid #000;
-          text-decoration: none; }
+          text-decoration: none;
+          pointer-events: none; }
         .woocommerce-cart #content .panier-container nav a:hover {
           color: #000;
           text-decoration: none; }
@@ -3314,6 +3412,19 @@ footer#colophon {
         background-color: #000;
         margin-left: 15px;
         margin-right: 15px; }
+    .woocommerce-cart #content .panier-container .woocommerce-message {
+      display: none; }
+    .woocommerce-cart #content .panier-container .cart-empty {
+      border: 0px;
+      background-color: transparent;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+      margin-top: 90px; }
+      .woocommerce-cart #content .panier-container .cart-empty:before {
+        display: none; }
+    .woocommerce-cart #content .panier-container .return-to-shop {
+      display: none; }
     .woocommerce-cart #content .panier-container h1 {
       text-align: center;
       margin-top: 60px;
@@ -3511,11 +3622,13 @@ footer#colophon {
         margin-bottom: 45px; }
         .woocommerce-cart #content .panier-container nav a {
           color: #AAA;
-          padding-bottom: 3px; }
+          padding-bottom: 0px;
+          border-bottom: 1px solid #FFF; }
           .woocommerce-cart #content .panier-container nav a.active {
             color: #000;
             border-bottom: 1px solid #000;
-            text-decoration: none; }
+            text-decoration: none;
+            pointer-events: none; }
           .woocommerce-cart #content .panier-container nav a:hover {
             color: #000;
             text-decoration: none; }
@@ -3750,6 +3863,8 @@ footer#colophon {
           margin-top: 15px; } }
 #checkoutPage {
   padding: 90px 0; }
+  #checkoutPage .mailchimp-newsletter {
+    display: none; }
   #checkoutPage nav {
     width: 100%;
     display: flex;
@@ -3761,11 +3876,13 @@ footer#colophon {
       margin-bottom: 0; }
     #checkoutPage nav a {
       color: #AAA;
-      padding-bottom: 3px; }
+      padding-bottom: 0px;
+      border-bottom: 1px solid #FFF; }
       #checkoutPage nav a.active {
         color: #000;
         border-bottom: 1px solid #000;
-        text-decoration: none; }
+        text-decoration: none;
+        pointer-events: none; }
       #checkoutPage nav a:hover {
         color: #000;
         text-decoration: none; }
@@ -4019,7 +4136,7 @@ footer#colophon {
       #checkoutPage form.checkout .order-review-column h3 {
         margin: 0 0 30px 10px;
         text-transform: uppercase;
-        font-size: 24px; }
+        font-size: 20px; }
       #checkoutPage form.checkout .order-review-column #order_review {
         padding-left: 15px;
         padding-right: 15px; }
@@ -4261,11 +4378,13 @@ footer#colophon {
       margin-bottom: 45px; }
       #checkoutPage nav a {
         color: #AAA;
-        padding-bottom: 3px; }
+        padding-bottom: 0px;
+        border-bottom: 1px solid #FFF; }
         #checkoutPage nav a.active {
           color: #000;
           border-bottom: 1px solid #000;
-          text-decoration: none; }
+          text-decoration: none;
+          pointer-events: none; }
         #checkoutPage nav a:hover {
           color: #000;
           text-decoration: none; }
@@ -4772,29 +4891,31 @@ footer#colophon {
               #checkoutPage form.checkout .order-review-column #order_review #payment .place-order button.button {
                 font-style: normal;
                 width: 100%; } }
-.page-id-947 header#masthead {
+.page-id-947 header#masthead, .page-id-2014 header#masthead {
   background-color: transparent; }
-  .page-id-947 header#masthead .mega-menu-wrap {
+  .page-id-947 header#masthead .mega-menu-wrap, .page-id-2014 header#masthead .mega-menu-wrap {
     opacity: 0;
     pointer-events: none; }
-    .page-id-947 header#masthead .mega-menu-wrap a {
+    .page-id-947 header#masthead .mega-menu-wrap a, .page-id-2014 header#masthead .mega-menu-wrap a {
       pointer-events: none; }
-  .page-id-947 header#masthead .navbar-brand img {
+  .page-id-947 header#masthead .navbar-brand img, .page-id-2014 header#masthead .navbar-brand img {
     height: 100px !important; }
-  .page-id-947 header#masthead .header-link {
+  .page-id-947 header#masthead .header-link, .page-id-2014 header#masthead .header-link {
     color: #FFF; }
-  .page-id-947 header#masthead .divider {
+  .page-id-947 header#masthead .languages-container, .page-id-2014 header#masthead .languages-container {
     display: none; }
-  .page-id-947 header#masthead #cartBtn {
+  .page-id-947 header#masthead .divider, .page-id-2014 header#masthead .divider {
     display: none; }
-  .page-id-947 header#masthead #searchBtn {
+  .page-id-947 header#masthead #cartBtn, .page-id-2014 header#masthead #cartBtn {
     display: none; }
-.page-id-947 #merci {
+  .page-id-947 header#masthead #searchBtn, .page-id-2014 header#masthead #searchBtn {
+    display: none; }
+.page-id-947 #merci, .page-id-2014 #merci {
   min-height: 100vh;
   background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/10/20210520_AME-BUISSONIERE_002_045_©Maeva-Delacroix-1.jpg");
   background-size: cover;
   background-position: top; }
-  .page-id-947 #merci .continue-shop {
+  .page-id-947 #merci .continue-shop, .page-id-2014 #merci .continue-shop {
     position: absolute;
     left: -50px;
     top: 30px;
@@ -4802,19 +4923,19 @@ footer#colophon {
     color: #000;
     font-size: 14px;
     z-index: 9999; }
-  .page-id-947 #merci .row {
+  .page-id-947 #merci .row, .page-id-2014 #merci .row {
     height: 100vh; }
-    .page-id-947 #merci .row .col-12 {
+    .page-id-947 #merci .row .col-12, .page-id-2014 #merci .row .col-12 {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
       padding-bottom: 150px;
       height: 100%; }
-      .page-id-947 #merci .row .col-12 h1 {
+      .page-id-947 #merci .row .col-12 h1, .page-id-2014 #merci .row .col-12 h1 {
         color: #FFF;
         font-size: 64px; }
-        .page-id-947 #merci .row .col-12 h1 span {
+        .page-id-947 #merci .row .col-12 h1 span, .page-id-2014 #merci .row .col-12 h1 span {
           display: block; }
 
 @media screen and (max-width: 425px) {
@@ -5468,8 +5589,8 @@ footer#colophon {
           #myAccount .woocommerce .woocommerce-MyAccount-navigation ul li a {
             font-family: baskerville-display-pt, serif;
             font-weight: 400;
-            font-style: italic;
-            font-size: 24px;
+            font-style: normal;
+            font-size: 18px;
             color: #AAA; }
             #myAccount .woocommerce .woocommerce-MyAccount-navigation ul li a:hover {
               color: #000;
@@ -5477,7 +5598,7 @@ footer#colophon {
           #myAccount .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
             font-family: baskerville-display-pt, serif;
             font-weight: 500;
-            font-style: italic;
+            font-style: normal;
             border-bottom: 1px solid #000;
             color: #000; }
     #myAccount .woocommerce .woocommerce-MyAccount-content {
@@ -6064,12 +6185,14 @@ footer#colophon {
           padding: 0; } }
 .single-post article.post {
   display: none; }
-  .single-post article.post.category-portrait-dame {
+  .single-post article.post.category-interview + .navigation + #post .portrait-content, .single-post article.post.category-interview-en + .navigation + #post .portrait-content {
+    display: none; }
+  .single-post article.post.category-portrait-dame, .single-post article.post.category-soul-portrait {
     display: flex;
     justify-content: center; }
-    .single-post article.post.category-portrait-dame > .post-thumbnail {
+    .single-post article.post.category-portrait-dame > .post-thumbnail, .single-post article.post.category-soul-portrait > .post-thumbnail {
       display: none; }
-    .single-post article.post.category-portrait-dame + .post-navigation + #post {
+    .single-post article.post.category-portrait-dame + .navigation + #post .itw, .single-post article.post.category-soul-portrait + .navigation + #post .itw {
       display: none; }
 .single-post .jp-relatedposts {
   display: none !important; }
@@ -6196,11 +6319,10 @@ footer#colophon {
         background-color: #f9f2e7;
         width: 45%;
         padding: 50px;
-        transform: translateY(-50px); }
-        .single-post #post .row.portrait-content .section-1 .row .col-12 .encart-beige p {
-          text-align: center;
-          margin: 0;
-          font-size: 18px; }
+        transform: translateY(-50px);
+        text-align: center;
+        margin: 0;
+        font-size: 18px; }
     .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content {
       padding-left: 60px; }
       .single-post #post .row.portrait-content .section-1 .row:last-of-type .col-12 .txt-content p.title {
@@ -6235,12 +6357,12 @@ footer#colophon {
         justify-content: center;
         align-items: flex-start;
         font-size: 16px; }
-        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p.title {
+        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content p {
+          margin-bottom: 0; }
+        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content strong {
           margin-bottom: 0;
           font-weight: 700;
           width: 100%; }
-        .single-post #post .row.portrait-content .section-3 .col-12 .txt-content .description p {
-          margin-bottom: 0; }
   .single-post #post .row.portrait-content .section-4 .txt-content {
     padding: 30px 180px;
     font-size: 14px; }
@@ -6482,52 +6604,52 @@ footer#colophon {
       padding: 15px; }
     .single-post #post .row.portrait-content .section-5 .row .col-12:last-of-type {
       padding: 15px; } }
-.page-id-1245 #contactPage {
+.page-id-1245 #contactPage, .page-id-1944 #contactPage {
   padding: 250px 0 90px; }
-  .page-id-1245 #contactPage .title-container {
+  .page-id-1245 #contactPage .title-container, .page-id-1944 #contactPage .title-container {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .page-id-1245 #contactPage .title-container h1 {
+    .page-id-1245 #contactPage .title-container h1, .page-id-1944 #contactPage .title-container h1 {
       text-transform: uppercase;
       font-size: 42px;
       line-height: 32px;
       width: max-content; }
-      .page-id-1245 #contactPage .title-container h1 span {
+      .page-id-1245 #contactPage .title-container h1 span, .page-id-1944 #contactPage .title-container h1 span {
         display: block;
         margin-left: 60px;
         text-transform: lowercase;
         font-size: 48px; }
-  .page-id-1245 #contactPage .form-container .success {
+  .page-id-1245 #contactPage .form-container .success, .page-id-1944 #contactPage .form-container .success {
     margin-top: 30px;
     text-align: center;
     font-size: 22px; }
-  .page-id-1245 #contactPage .form-container .rmagic {
+  .page-id-1245 #contactPage .form-container .rmagic, .page-id-1944 #contactPage .form-container .rmagic {
     padding-top: 90px; }
-    .page-id-1245 #contactPage .form-container .rmagic form .rmheader {
+    .page-id-1245 #contactPage .form-container .rmagic form .rmheader, .page-id-1944 #contactPage .form-container .rmagic form .rmheader {
       display: none; }
-    .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset {
+    .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset {
       padding: 0; }
-      .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow {
+      .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow {
         padding: 0;
         min-height: max-content; }
-        .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rmfield {
+        .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rmfield, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rmfield {
           display: none; }
-        .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput {
+        .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput {
           padding: 0 0 10px 0;
           width: 100%; }
-          .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input {
+          .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input {
             font-weight: 400;
             border: 1px solid #000;
             width: 60%;
             min-height: 40px;
             padding: 10px; }
-          .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea {
+          .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea {
             font-weight: 400;
             border: 1px solid #000;
             min-height: 200px;
             padding: 10px; }
-    .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn {
+    .page-id-1245 #contactPage .form-container .rmagic form .buttonarea .rm-btn, .page-id-1944 #contactPage .form-container .rmagic form .buttonarea .rm-btn {
       margin: 0; }
 
 @media screen and (max-width: 425px) {
@@ -6646,23 +6768,25 @@ footer#colophon {
       background-color: #FFF;
       color: #000; }
 
-body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #content {
+body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #content, body.page-id-1854 #content, body.page-id-1891 #content, body.page-id-1931 #content {
   padding: 90px 0; }
-  body.page-id-1268 #content nav, body.page-id-1288 #content nav, body.page-id-1301 #content nav {
+  body.page-id-1268 #content nav, body.page-id-1288 #content nav, body.page-id-1301 #content nav, body.page-id-1854 #content nav, body.page-id-1891 #content nav, body.page-id-1931 #content nav {
     display: flex;
     flex-direction: row;
     margin: 90px 0 60px;
     justify-content: center; }
-    body.page-id-1268 #content nav a, body.page-id-1288 #content nav a, body.page-id-1301 #content nav a {
+    body.page-id-1268 #content nav a, body.page-id-1288 #content nav a, body.page-id-1301 #content nav a, body.page-id-1854 #content nav a, body.page-id-1891 #content nav a, body.page-id-1931 #content nav a {
       color: #000;
       margin: 10px 25px;
       padding-bottom: 5px;
-      font-size: 18px; }
-      body.page-id-1268 #content nav a:hover, body.page-id-1288 #content nav a:hover, body.page-id-1301 #content nav a:hover {
+      font-size: 18px;
+      border-bottom: 1px solid #FFF; }
+      body.page-id-1268 #content nav a:hover, body.page-id-1288 #content nav a:hover, body.page-id-1301 #content nav a:hover, body.page-id-1854 #content nav a:hover, body.page-id-1891 #content nav a:hover, body.page-id-1931 #content nav a:hover {
         text-decoration: none;
         border-bottom: 1px solid #000; }
-      body.page-id-1268 #content nav a.active, body.page-id-1288 #content nav a.active, body.page-id-1301 #content nav a.active {
-        border-bottom: 1px solid #000; }
+      body.page-id-1268 #content nav a.active, body.page-id-1288 #content nav a.active, body.page-id-1301 #content nav a.active, body.page-id-1854 #content nav a.active, body.page-id-1891 #content nav a.active, body.page-id-1931 #content nav a.active {
+        border-bottom: 1px solid #000;
+        pointer-events: none; }
 
 @media screen and (max-width: 425px) {
   body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #content {
@@ -6676,7 +6800,8 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
         color: #AAA;
         margin: 10px 10px;
         padding-bottom: 5px;
-        font-size: 16px; }
+        font-size: 16px;
+        border-bottom: 1px solid #FFF; }
         body.page-id-1268 #content nav a:hover, body.page-id-1288 #content nav a:hover, body.page-id-1301 #content nav a:hover {
           color: #000;
           text-decoration: none;
@@ -6975,6 +7100,8 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
       max-width: 750px;
       padding-top: 60px;
       padding-bottom: 60px; }
+      #nosEngagements .container > .row > .col-12 .description p {
+        margin: 0; }
     #nosEngagements .container > .row > .col-12 .container .row {
       margin-bottom: 30px; }
       #nosEngagements .container > .row > .col-12 .container .row .col-7 {
@@ -7028,24 +7155,34 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
               display: block; }
           #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content {
             font-size: 16px; } }
-#tutoPage .section-1 h1.title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 0px; }
-  #tutoPage .section-1 h1.title em {
-    font-size: 52px; }
-#tutoPage .section-1 .subtitle {
-  text-align: center;
-  font-size: 22px;
-  color: #AAA;
-  margin-bottom: 60px; }
-#tutoPage .section-1 .description {
-  text-align: center;
-  font-size: 20px; }
-#tutoPage .section-1 video {
-  max-width: 100%;
-  margin-top: 30px;
-  margin-bottom: 90px; }
+#tutoPage .section-1 {
+  background-image: url("https://amebuissonniere.com/wp-content/uploads/2021/11/siteweb-fond-page-tutoriel.png");
+  background-position: center;
+  background-size: contain; }
+  #tutoPage .section-1 > .row > .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #tutoPage .section-1 h1.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0px; }
+    #tutoPage .section-1 h1.title em {
+      font-size: 52px; }
+  #tutoPage .section-1 .subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #AAA;
+    margin-bottom: 60px; }
+  #tutoPage .section-1 .description {
+    text-align: center;
+    font-size: 20px; }
+  #tutoPage .section-1 video {
+    max-width: 100%;
+    max-height: 70vh;
+    margin-top: 30px;
+    margin-bottom: 90px; }
 #tutoPage .mode-demploi {
   background-color: #f9f2e7;
   padding: 30px 90px; }
@@ -7097,6 +7234,8 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
         transform: translateY(-30px); }
 #tutoPage .section-2 {
   padding: 90px 0; }
+  #tutoPage .section-2 .container .row:first-of-type .col-12:first-of-type {
+    padding-right: 15px; }
   #tutoPage .section-2 h2.title {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
@@ -7126,6 +7265,24 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
       margin-bottom: 30px;
       margin-left: 0;
       margin-top: 60px; }
+      #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title p {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 36px;
+        margin-left: 60px;
+        margin-bottom: 30px; }
+        #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title p em {
+          font-family: baskerville-poster-pt, serif;
+          font-weight: 400;
+          font-style: italic;
+          text-transform: lowercase;
+          font-size: 46px;
+          display: block;
+          margin-left: 180px; }
 #tutoPage .section-3 {
   padding: 60px 0 30px;
   background-color: #f9f2e7; }
@@ -7151,31 +7308,33 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
         font-size: 42px;
         display: block;
         margin-left: 120px; }
-    #tutoPage .section-3 .col-12.col-sm-10 .img-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      height: 475px;
-      overflow: hidden;
-      width: 100%;
-      position: relative; }
-      #tutoPage .section-3 .col-12.col-sm-10 .img-container img {
-        position: absolute;
-        z-index: 0; }
-      #tutoPage .section-3 .col-12.col-sm-10 .img-container .btn {
-        font-style: normal;
-        justify-self: flex-end;
-        transform: translateY(-25px);
-        z-index: 1; }
-    #tutoPage .section-3 .col-12.col-sm-10 .title-container {
-      margin-top: 30px; }
-      #tutoPage .section-3 .col-12.col-sm-10 .title-container .title {
-        text-align: center;
-        margin-bottom: 0; }
-      #tutoPage .section-3 .col-12.col-sm-10 .title-container .subtitle {
-        text-align: center;
-        color: #AAA; }
+    #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto {
+      width: 100%; }
+      #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 475px;
+        overflow: hidden;
+        width: 100%;
+        position: relative; }
+        #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container img {
+          position: absolute;
+          z-index: 0; }
+        #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .img-container .btn {
+          font-style: normal;
+          justify-self: flex-end;
+          transform: translateY(-25px);
+          z-index: 1; }
+      #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container {
+        margin-top: 30px; }
+        #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .title {
+          text-align: center;
+          margin-bottom: 0; }
+        #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .subtitle {
+          text-align: center;
+          color: #AAA; }
 
 @media screen and (max-width: 425px) {
   #tutoPage .section-1 h1.title {
@@ -7278,7 +7437,7 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
       padding-right: 15px; }
     #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 {
       padding-left: 15px; }
-      #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title {
+      #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title p {
         font-family: futura-pt, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -7288,7 +7447,7 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
         font-size: 26px;
         margin-left: 0px;
         margin-bottom: 30px; }
-        #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title em {
+        #tutoPage .section-2 .container .row.justify-content-center .col-12.col-sm-6 h2.title p em {
           font-family: baskerville-poster-pt, serif;
           font-weight: 400;
           font-style: italic;

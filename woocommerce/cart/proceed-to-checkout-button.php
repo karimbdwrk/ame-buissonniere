@@ -22,4 +22,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">COMMANDER</a>
+<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward"><span class="lang-fr">COMMANDER</span><span class="lang-en">CHECKOUT</span></a>

@@ -10,6 +10,12 @@
  */
 
 ?>
+<?php 
+	$lang = get_language_attributes();
+	if ($lang === 'lang="fr-FR"') {
+
+	} 
+?>
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -32,19 +38,40 @@
 				</div>
 				<h2 class="title"><span class="lang-fr">AIDE</span><span class="lang-en">HELP</span></h2>
 					<ul>
-						<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=0" template="Footer Lists Template"]'); ?>
+						<?php 
+							$lang = get_language_attributes();
+							if ($lang === 'lang="fr-FR"') {
+								echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=0" template="Footer Lists Template"]');
+							} else {
+								echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=0" template="Footer Lists Template English"]');
+							}
+						?>
 					</ul>
 			</div>
 			<div class="col-12 col-md-3 col-links">
 				<h2 class="title"><span class="lang-fr">À PROPOS</span><span class="lang-en">ABOUT</span></h2>
 				<ul>
-					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=1" template="Footer Lists Template"]'); ?>
+					<?php 
+						$lang = get_language_attributes();
+						if ($lang === 'lang="fr-FR"') {
+							echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=1" template="Footer Lists Template"]');
+						} else {
+							echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=1" template="Footer Lists Template English"]');
+						}
+					?>
 				</ul>
 			</div>
 			<div class="col-12 col-md-3 col-links">
 				<h2 class="title"><span class="lang-fr">NOS PRODUITS</span><span class="lang-en">OUR PRODUCTS</span></h2>
 				<ul>
-					<?php echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=2" template="Footer Lists Template"]'); ?>
+					<?php 
+						$lang = get_language_attributes();
+						if ($lang === 'lang="fr-FR"') {
+							echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=2" template="Footer Lists Template"]');
+						} else {
+							echo do_shortcode('[pods name="footer_link" orderby="footer-link-ordre" where="footer-link-position.meta_value=2" template="Footer Lists Template English"]');
+						}
+					?>
 				</ul>
 			</div>
 			<div class="col-12 col-md-3 last-col">

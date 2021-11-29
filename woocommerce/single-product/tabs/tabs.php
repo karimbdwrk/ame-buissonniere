@@ -54,7 +54,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 						<div class="col-6">
 							<img src="http://amebuissonniere.com/wp-content/uploads/2021/09/guide-des-tailles.jpg" />
 						</div>
-						<div class="col-6">
+						<div class="col-6 lang-fr">
 							<p><strong>Nos bracelets sont ajustables.</strong>
 							Par souci d’élégance et de confort,
 							nous souhaitons vous proposer la
@@ -69,7 +69,16 @@ if ( ! empty( $product_tabs ) ) : ?>
 							pouvez le télécharger ci-dessous.</p>
 							<a href="https://amebuissonniere.com/wp-content/uploads/2021/11/metre-ruban-ame-buissonniere-V2.pdf" download>Téléchargez le ruban à mesurer</a>
 						</div>
-						<div class="col-12">
+						<div class="col-6 lang-en">
+							<p><strong>Our bracelets are ajustable.</strong>
+							Eager to offer you elegance and comfort.
+							Eager to offer you the right wrist size.</p>
+							<p><b>HOW TO SELECT THE RIGHT SIZE</b></p>
+							<p>To find the ideal size of your bracelet, use the wrist sizer to measure your wrist.<br />
+							If you do not have any, you can download this one below.</p>
+							<a href="https://amebuissonniere.com/wp-content/uploads/2021/11/metre-ruban-ame-buissonniere-V2.pdf" download>Download the wrist sizer</a>
+						</div>
+						<div class="col-12 lang-fr">
 							<table>
 								<thead>
 									<tr>
@@ -92,6 +101,34 @@ if ( ! empty( $product_tabs ) ) : ?>
 									</tr>
 									<tr>
 										<td>Inférieure ou égale à 19,5 cm</td>
+										<td>L</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-12 lang-en">
+							<table>
+								<thead>
+									<tr>
+										<td>Wrist circumference (cm)</td>
+										<td>Bracelet size</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Less than or equal to à 16,5 cm</td>
+										<td>XS</td>
+									</tr>
+									<tr>
+										<td>Less than or equal to à 17,5 cm</td>
+										<td>S</td>
+									</tr>
+									<tr>
+										<td>Less than or equal to à 18,5 cm</td>
+										<td>M</td>
+									</tr>
+									<tr>
+										<td>Less than or equal to à 19,5 cm</td>
 										<td>L</td>
 									</tr>
 								</tbody>

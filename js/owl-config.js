@@ -117,6 +117,22 @@ jQuery(document).ready(function() {
         }
     })
 
+    jQuery('.upsell-tuto').owlCarousel({
+        loop:true,
+        margin:50,
+        nav:false,
+        mouseDrag: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                loop:false,
+                items:3
+            }
+        }
+    })
+
     // jQuery('.woocommerce-product-gallery .flex-control-nav').owlCarousel({
     //     loop:true,
     //     margin:50,

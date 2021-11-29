@@ -9,12 +9,12 @@ window.onload = function(e) {
         console.log('isOpen ' + isOpen)
 
         anime({
-            targets: '.dgwt-wcas-search-wrapp',
+            targets: '.search_bar',
             height: function() {
                 if (isOpen) {
-                    return ['0px', '50px']
+                    return ['0px', '90vh']
                 } else {
-                    return ['50px', '0px']
+                    return ['90vh', '0px']
                 }
             },
             easing: 'easeOutQuart',

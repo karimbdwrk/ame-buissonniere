@@ -84,15 +84,29 @@
                 </div>
 
                 <div class="header-btns">
-                    <a href="/mon-compte" class="header-link"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span class="lang-fr">Mon compte</span><span class="lang-en">My account</span></a>
+                    <a href="/mon-compte" class="header-link lang-fr"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span class="lang-fr">Mon compte</span></a>
+                    <a href="/my-account" class="header-link lang-en"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" /><span class="lang-en">My account</span></a>
                     <div class="divider">|</div>
                     <a class="header-link" id="cartBtn"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/shopping-bag.svg" class="header-icon" /><span class="lang-fr">Panier</span><span class="lang-en">Cart</span></a>
                     <button class="btn" id="searchBtn">
                         <img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/search.svg" class="header-icon" />
                     </button>
                 </div>
+                <div class="languages-container">
+                    <a href="https://amebuissonniere.com/fr/" class="header-link french"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/user.svg" class="header-icon" />FR</a>
+                    <div class="divider">/</div>
+                    <a href="https://amebuissonniere.com/en/" class="header-link english" id="cartBtn"><img src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/images/shopping-bag.svg" class="header-icon" />ENG</a>
+                </div>
             </nav>
-            <?php echo do_shortcode('[fibosearch]'); ?>
+            <div class="search_bar">
+                <form id="form" action="/" method="get" autocomplete="off">
+                    <input type="text" name="s" placeholder="RECHERCHER" id="keyword" class="input_search" onkeyup="fetch()">
+                    <button>
+                        Search
+                    </button>
+                </form>
+                <div class="search_result" id="datafetch"></div>
+            </div>
         </div>
 	</header><!-- #masthead -->
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>

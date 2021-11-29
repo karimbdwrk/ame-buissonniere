@@ -173,6 +173,7 @@ add_shortcode('loginform', 'pippin_login_form_shortcode');
 // Auto uncheck "Ship to a different address"
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
+
 // recherche
 
 add_action( 'wp_footer', 'ajax_fetch' );
@@ -198,7 +199,7 @@ function ajax_fetch() {
                                 $('#datafetch').html( data );
                             }
                         });
-                    }, 2000);
+                    }, 500);
                 }
             });
         }

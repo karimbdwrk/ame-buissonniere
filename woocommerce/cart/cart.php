@@ -22,7 +22,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-12 col-sm-8">
-			<h3 class="title">COMMANDE</h3>
+			<h3 class="title"><span class="lang-fr">COMMANDE</span><span class="lang-en">ORDER</span></h3>
 			<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 				<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
@@ -144,7 +144,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 								<?php if ( wc_coupons_enabled() ) { ?>
 									<div class="coupon">
-										<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>">APPLIQUER</button>
+										<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><span class="lang-fr">APPLIQUER</span><span class="lang-en">APPLY</span></button>
 										<?php do_action( 'woocommerce_cart_coupon' ); ?>
 									</div>
 								<?php } ?>
@@ -184,7 +184,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<img src="https://amebuissonniere.com/wp-content/uploads/2021/08/Capture-décran-2021-10-28-à-15.45.14.png" />
 					</div>
 					<div class="txt-container">
-						<a href="https://amebuissonniere.com/shop#recharges-parfum" class="btn">COMMANDER</a>
+						<a href="https://amebuissonniere.com/shop#recharges-parfum" class="btn"><span class="lang-fr">COMMANDER</span><span class="lang-en">DISCOVER</span></a>
 					</div>
 				</div>
 			</div>
