@@ -97,6 +97,7 @@
 		</div>
 	</footer><!-- #colophon -->
 	<?php echo do_shortcode('[table id=menuImages /]'); ?>
+	<?php echo do_shortcode('[pods name="images_mega_menu" slug="1" template="Images Mega Menu Table Template"]'); ?>
 <?php endif; ?>
 </div><!-- #page -->
 

@@ -1,11 +1,11 @@
 console.log('custom mega menu ok :)')
 
 function customMegaMenuFR() {
-    const menuImagesTable = document.querySelectorAll('#tablepress-menuImages > tbody > tr') 
+    const menuImagesTable = document.querySelectorAll('#tableImagesMenu > table > tbody > tr') 
     console.log(menuImagesTable)
     menuImagesTable.forEach(image => {
         let src = image.querySelector('.column-1').innerHTML
-        let img = image.querySelector('.column-3 > img').getAttribute('src')
+        let img = image.querySelector('.column-3').innerHTML
         console.log(src, img)
         let newImage = document.createElement('img')
         newImage.setAttribute('src', img)
@@ -14,11 +14,11 @@ function customMegaMenuFR() {
 }
 
 function customMegaMenuEN() {
-    const menuImagesTable = document.querySelectorAll('#tablepress-menuImages > tbody > tr') 
+    const menuImagesTable = document.querySelectorAll('#tableImagesMenu > table > tbody > tr') 
     console.log(menuImagesTable)
     menuImagesTable.forEach(image => {
         let src = image.querySelector('.column-2').innerHTML
-        let img = image.querySelector('.column-3 > img').getAttribute('src')
+        let img = image.querySelector('.column-3').innerHTML
         console.log(src, img)
         let newImage = document.createElement('img')
         newImage.setAttribute('src', img)
