@@ -33,7 +33,7 @@ input[type=text], input[type=password], input[type=email], textarea {
 
 /* VARIABLES */
 /* GENERAL EXTENDS */
-.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .politique-conf-container, .cgv-container, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, .woocommerce-cart #content .panier-container h1, .woocommerce-cart #content .panier-container h3.title, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table thead th, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-quantity, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-price, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-subtotal, .woocommerce-cart #content .panier-container .cart-collaterals, .woocommerce-cart #content .panier-container .upsell-shop h4, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, .page-id-2014 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1944 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, #monHistoire h1.title, #monHistoire .section-1 .txt-container h2.title, #monHistoire .section-2 .txt-container h2.title, #monHistoire .section-3 .txt-container h2.title, #monHistoire .section-4 .txt-container h2.title, #monHistoire .section-6 .txt-container h2.title, #nosEngagements .banner, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title, #tutoPage .section-1 h1.title, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .subtitle {
+.futura-font-normal, .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-product .dgwt-wcas-content-wrapp .dgwt-wcas-st .dgwt-wcas-st-title, .politique-conf-container, .cgv-container, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container p, .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .single-product.woocommerce #content .product .container .row .col-12.col-sm-6 .summary .variations_form .variations .label, .single-product.woocommerce #content .product-upsell .col-12 .upsell-list .item .txt-container .category, .woocommerce-cart #content .panier-container h1, .woocommerce-cart #content .panier-container h3.title, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table thead th, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-name, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-quantity, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-price, .woocommerce-cart #content .panier-container .woocommerce-cart-form .shop_table tbody .cart_item .product-subtotal, .woocommerce-cart #content .panier-container .cart-collaterals, .woocommerce-cart #content .panier-container .upsell-shop h4, #checkoutPage .woocommerce-form-coupon-toggle .woocommerce-info, #checkoutPage .woocommerce-info, #checkoutPage .woocommerce-form-login, #checkoutPage .woocommerce-message, #checkoutPage .checkout_coupon, #checkoutPage form.checkout #customer_details h3, #checkoutPage form.checkout .order-review-column h3, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-qty, #checkoutPage form.checkout .order-review-column #order_review .shop_table .container .row .cart_item .product-total, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .cart-subtotal div .amount, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice #shipping_method .bw-parcel-client .bw-parcel-name, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div, #checkoutPage form.checkout .order-review-column #order_review .shop_table .order-shipping-choice .order-total div .amount, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box, #checkoutPage form.checkout .order-review-column #order_review #payment .wc_payment_methods .wc_payment_method .payment_box #wc-woocommerce_payments-upe-form #wcpay-upe-element .p-PaymentElement #card-panel label.Label, .page-id-947 #merci .row .col-12 h1, .page-id-2014 #merci .row .col-12 h1, #myAccount #customer_login .u-column1 h2, #myAccount #customer_login .u-column1 .woocommerce-form-login label, #myAccount #customer_login .u-column1 .woocommerce-form-login .woocommerce-LostPassword a, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type strong, #myAccount .woocommerce .woocommerce-MyAccount-content > p:first-of-type a, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-orders, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-MyAccount-paymentMethods, #myAccount .woocommerce .woocommerce-MyAccount-content .woocommerce-PaymentMethods .woocommerce-PaymentBox, .single-post #post .row.title-row p.mb, .single-post #post .row.title-row .date, .single-post #post .row.portrait-content .section-1 .row .col-12 .txt-content h2.title, .page-id-1245 #contactPage .title-container h1, .page-id-1944 #contactPage .title-container h1, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput input, .page-id-1245 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, .page-id-1944 #contactPage .form-container .rmagic form .rm_form_page .rmfieldset .rmrow .rminput textarea, #monHistoire h1.title, #monHistoire .section-1 .txt-container h2.title, #monHistoire .section-2 .txt-container h2.title, #monHistoire .section-3 .txt-container h2.title, #monHistoire .section-4 .txt-container h2.title, #monHistoire .section-6 .txt-container h2.title, #nosEngagements .banner, #nosEngagements .container > .row > .col-12 .container .row .col-7 h2.title, #tutoPage .section-1 h1.title, #tutoPage .section-3 .col-12.col-sm-10 .upsell-tuto .item .title-container .subtitle {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal; }
@@ -360,7 +360,7 @@ header#masthead {
             transition: height 750ms ease 750ms; }
     header#masthead .container-fluid .header-btns {
       margin-top: 10px;
-      width: 38%;
+      width: 45%;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -396,7 +396,7 @@ header#masthead {
     header#masthead .container-fluid .languages-container {
       margin-top: 15px;
       width: 7%;
-      display: flex;
+      display: none;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center; }
@@ -1961,10 +1961,13 @@ footer#colophon {
     padding-right: 15px; } }
 .politique-conf-container {
   padding: 150px 15px 90px; }
-  .politique-conf-container h1 {
-    text-transform: uppercase; }
+  .politique-conf-container h1, .politique-conf-container h2 {
+    text-transform: uppercase;
+    font-size: 24px; }
   .politique-conf-container h4 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 24px; }
   .politique-conf-container p {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter; }
@@ -1974,7 +1977,9 @@ footer#colophon {
 .cgv-container {
   padding: 150px 15px 90px; }
   .cgv-container h1, .cgv-container h2 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 30px; }
   .cgv-container p {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter; }
@@ -2008,11 +2013,11 @@ footer#colophon {
       font-weight: lighter; }
       .cgv-container p strong {
         font-weight: bold; } }
-.woocommerce-shop .woocommerce, .woocommerce-shop .woocommerce-notices-wrapper, .woocommerce-shop .woocommerce-result-count, .woocommerce-shop .woocommerce-ordering, .woocommerce-shop .products.columns-4 {
+.woocommerce-shop .woocommerce, .woocommerce-shop .woocommerce-notices-wrapper, .woocommerce-shop .woocommerce-result-count, .woocommerce-shop .woocommerce-ordering, .woocommerce-shop .products.columns-4, .page-id-7 .woocommerce, .page-id-7 .woocommerce-notices-wrapper, .page-id-7 .woocommerce-result-count, .page-id-7 .woocommerce-ordering, .page-id-7 .products.columns-4 {
   display: none; }
-.woocommerce-shop #products {
+.woocommerce-shop #products, .page-id-7 #products {
   padding: 150px 0 90px; }
-  .woocommerce-shop #products h1 {
+  .woocommerce-shop #products h1, .page-id-7 #products h1 {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -2021,7 +2026,7 @@ footer#colophon {
     margin-top: 15px;
     text-transform: uppercase;
     font-size: 32px; }
-    .woocommerce-shop #products h1 em {
+    .woocommerce-shop #products h1 em, .page-id-7 #products h1 em {
       font-family: baskerville-display-pt, serif;
       font-weight: 400;
       font-style: italic;
@@ -2029,15 +2034,15 @@ footer#colophon {
       display: block;
       margin-left: 90px;
       font-size: 38px; }
-  .woocommerce-shop #products #pills-tab {
+  .woocommerce-shop #products #pills-tab, .page-id-7 #products #pills-tab {
     justify-content: space-evenly;
     padding-bottom: 20px; }
-    .woocommerce-shop #products #pills-tab.nav-pills li {
+    .woocommerce-shop #products #pills-tab.nav-pills li, .page-id-7 #products #pills-tab.nav-pills li {
       min-width: 150px;
       text-align: center;
       display: flex;
       justify-content: center; }
-      .woocommerce-shop #products #pills-tab.nav-pills li a {
+      .woocommerce-shop #products #pills-tab.nav-pills li a, .page-id-7 #products #pills-tab.nav-pills li a {
         color: #000;
         font-family: baskerville-display-pt, serif;
         font-weight: 400;
@@ -2046,38 +2051,38 @@ footer#colophon {
         border-bottom: 1px solid transparent;
         border-radius: 0px;
         width: max-content; }
-        .woocommerce-shop #products #pills-tab.nav-pills li a:hover {
+        .woocommerce-shop #products #pills-tab.nav-pills li a:hover, .page-id-7 #products #pills-tab.nav-pills li a:hover {
           background-color: transparent;
           color: #000; }
-        .woocommerce-shop #products #pills-tab.nav-pills li a.active {
+        .woocommerce-shop #products #pills-tab.nav-pills li a.active, .page-id-7 #products #pills-tab.nav-pills li a.active {
           color: #000;
           background-color: transparent;
           border-bottom: 1px solid #000; }
-  .woocommerce-shop #products #pills-tabContent .tab-pane .cards {
+  .woocommerce-shop #products #pills-tabContent .tab-pane .cards, .page-id-7 #products #pills-tabContent .tab-pane .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card {
+    .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card, .page-id-7 #products #pills-tabContent .tab-pane .cards .card {
       height: 600px;
       width: calc(33.33% - 30px);
       overflow: hidden;
       border-radius: 0;
       border: 0; }
-      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card img {
+      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card img, .page-id-7 #products #pills-tabContent .tab-pane .cards .card img {
         width: 100%; }
-      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container {
+      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container {
         position: absolute;
         bottom: 15px;
         width: 100%;
         height: 150px; }
-        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p {
+        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container p {
           color: #FFF;
           text-align: center;
           font-weight: lighter;
           font-size: 16px;
           letter-spacing: 1px;
           text-transform: uppercase; }
-        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2 {
+        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container h2 {
           font-size: 32px;
           color: #FFF;
           text-transform: uppercase;
@@ -2086,15 +2091,15 @@ footer#colophon {
           line-height: 32px;
           margin: 0;
           padding: 0; }
-  .woocommerce-shop #products #pills-tabContent .tab-pane#coffret-decouverte .card {
+  .woocommerce-shop #products #pills-tabContent .tab-pane#coffret-decouverte .card, .page-id-7 #products #pills-tabContent .tab-pane#coffret-decouverte .card {
     width: 100%; }
 
 @media screen and (max-width: 425px) {
-  .woocommerce-shop .woocommerce, .woocommerce-shop .woocommerce-notices-wrapper, .woocommerce-shop .woocommerce-result-count, .woocommerce-shop .woocommerce-ordering, .woocommerce-shop .products.columns-4 {
+  .woocommerce-shop .woocommerce, .woocommerce-shop .woocommerce-notices-wrapper, .woocommerce-shop .woocommerce-result-count, .woocommerce-shop .woocommerce-ordering, .woocommerce-shop .products.columns-4, .page-id-7 .woocommerce, .page-id-7 .woocommerce-notices-wrapper, .page-id-7 .woocommerce-result-count, .page-id-7 .woocommerce-ordering, .page-id-7 .products.columns-4 {
     display: none; }
-  .woocommerce-shop #products {
+  .woocommerce-shop #products, .page-id-7 #products {
     padding: 150px 0 90px; }
-    .woocommerce-shop #products h1 {
+    .woocommerce-shop #products h1, .page-id-7 #products h1 {
       font-family: futura-pt, sans-serif;
       font-weight: 500;
       font-style: normal;
@@ -2104,7 +2109,7 @@ footer#colophon {
       text-transform: uppercase;
       font-size: 32px;
       padding-right: 60px; }
-      .woocommerce-shop #products h1 em {
+      .woocommerce-shop #products h1 em, .page-id-7 #products h1 em {
         font-family: baskerville-display-pt, serif;
         font-weight: 400;
         font-style: italic;
@@ -2112,15 +2117,15 @@ footer#colophon {
         display: block;
         margin-left: 90px;
         font-size: 38px; }
-    .woocommerce-shop #products #pills-tab {
+    .woocommerce-shop #products #pills-tab, .page-id-7 #products #pills-tab {
       justify-content: space-evenly;
       padding-bottom: 20px; }
-      .woocommerce-shop #products #pills-tab.nav-pills li {
+      .woocommerce-shop #products #pills-tab.nav-pills li, .page-id-7 #products #pills-tab.nav-pills li {
         min-width: max-content;
         text-align: center;
         display: flex;
         justify-content: center; }
-        .woocommerce-shop #products #pills-tab.nav-pills li a {
+        .woocommerce-shop #products #pills-tab.nav-pills li a, .page-id-7 #products #pills-tab.nav-pills li a {
           color: #000;
           font-family: baskerville-display-pt, serif;
           font-weight: 400;
@@ -2129,41 +2134,41 @@ footer#colophon {
           border-bottom: 1px solid transparent;
           border-radius: 0px;
           width: max-content; }
-          .woocommerce-shop #products #pills-tab.nav-pills li a:hover {
+          .woocommerce-shop #products #pills-tab.nav-pills li a:hover, .page-id-7 #products #pills-tab.nav-pills li a:hover {
             background-color: transparent;
             color: #000; }
-          .woocommerce-shop #products #pills-tab.nav-pills li a.active {
+          .woocommerce-shop #products #pills-tab.nav-pills li a.active, .page-id-7 #products #pills-tab.nav-pills li a.active {
             color: #000;
             background-color: transparent;
             border-bottom: 1px solid #000; }
-    .woocommerce-shop #products #pills-tabContent .tab-pane .cards {
+    .woocommerce-shop #products #pills-tabContent .tab-pane .cards, .page-id-7 #products #pills-tabContent .tab-pane .cards {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding-left: 15px;
       padding-right: 15px; }
-      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card {
+      .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card, .page-id-7 #products #pills-tabContent .tab-pane .cards .card {
         height: 450px;
         width: 100%;
         overflow: hidden;
         border-radius: 0;
         border: 0;
         margin-bottom: 15px; }
-        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card img {
+        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card img, .page-id-7 #products #pills-tabContent .tab-pane .cards .card img {
           width: 100%; }
-        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container {
+        .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container {
           position: absolute;
           bottom: 0px;
           width: 100%;
           height: 150px; }
-          .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p {
+          .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container p, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container p {
             color: #FFF;
             text-align: center;
             font-weight: lighter;
             font-size: 16px;
             letter-spacing: 1px;
             text-transform: uppercase; }
-          .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2 {
+          .woocommerce-shop #products #pills-tabContent .tab-pane .cards .card .txt-container h2, .page-id-7 #products #pills-tabContent .tab-pane .cards .card .txt-container h2 {
             font-size: 26px;
             color: #FFF;
             text-transform: uppercase;
@@ -2172,7 +2177,7 @@ footer#colophon {
             line-height: 32px;
             margin: 0;
             padding: 0; }
-    .woocommerce-shop #products #pills-tabContent .tab-pane#coffret-decouverte .card {
+    .woocommerce-shop #products #pills-tabContent .tab-pane#coffret-decouverte .card, .page-id-7 #products #pills-tabContent .tab-pane#coffret-decouverte .card {
       width: 100%; } }
 .single-product.woocommerce #content {
   padding: 180px 0 90px; }
@@ -7182,11 +7187,28 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
   #tutoPage .section-1 .description {
     text-align: center;
     font-size: 20px; }
-  #tutoPage .section-1 video {
-    max-width: 100%;
-    max-height: 70vh;
+  #tutoPage .section-1 .video-container {
     margin-top: 30px;
-    margin-bottom: 90px; }
+    margin-bottom: 90px;
+    position: relative; }
+    #tutoPage .section-1 .video-container video {
+      max-width: 100%;
+      max-height: 70vh; }
+    #tutoPage .section-1 .video-container #play {
+      transition: opacity 300ms ease;
+      opacity: 0;
+      position: absolute;
+      color: #FFF;
+      background-color: transparent;
+      border: 0px;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0); }
+      #tutoPage .section-1 .video-container #play:active, #tutoPage .section-1 .video-container #play:focus {
+        outline: none; }
+    #tutoPage .section-1 .video-container:hover #play {
+      opacity: .7;
+      transition: opacity 300ms ease; }
 #tutoPage .mode-demploi {
   background-color: #f9f2e7;
   padding: 30px 90px; }
