@@ -11,7 +11,7 @@ Version: 1.0
 #wesh {
   display: flex; }
   #wesh .morray {
-    display: none; }
+    display: block; }
 
 html[lang=fr-FR] .lang-en {
   display: none; }
@@ -272,7 +272,14 @@ header#masthead {
                 display: none; }
             header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu {
               margin-top: 22px;
-              padding: 30px 30px 5px 30px; }
+              padding: 30px 30px 5px 30px;
+              display: flex;
+              justify-content: center; }
+              header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-row {
+                display: flex;
+                justify-content: center; }
+                header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-row > .mega-sub-menu {
+                  max-width: 1440px; }
               header#masthead .container-fluid .navbar #mega-menu-wrap-primary #mega-menu-primary > .mega-menu-item > .mega-sub-menu .mega-menu-column {
                 overflow: hidden;
                 padding: 0 15px;
@@ -858,6 +865,8 @@ header#masthead {
       #avantPremiere #APCarousel .item {
         padding-left: 15px;
         padding-right: 15px; }
+        #avantPremiere #APCarousel .item .img-container {
+          max-height: 425px; }
       #avantPremiere #APCarousel .owl-dots {
         margin-top: 30px; } }
 #promenade {
@@ -2226,7 +2235,7 @@ footer#colophon {
     .single-product.woocommerce #content .product .container .row > .col-12.col-sm-4 > button {
       position: absolute;
       z-index: 9;
-      right: 60px; }
+      right: 45px; }
       .single-product.woocommerce #content .product .container .row > .col-12.col-sm-4 > button:focus {
         box-shadow: 0 0 0 #00000000; }
       .single-product.woocommerce #content .product .container .row > .col-12.col-sm-4 > button#scrollUp {
@@ -3598,6 +3607,8 @@ footer#colophon {
                 color: #AAA; }
                 .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals table tbody tr td .woocommerce-shipping-destination {
                   display: none; }
+                .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals table tbody tr td .woocommerce-remove-coupon {
+                  color: #AAA; }
         .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout {
           padding: 15px; }
           .woocommerce-cart #content .panier-container .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
@@ -5538,7 +5549,6 @@ footer#colophon {
         text-transform: uppercase;
         text-align: center; }
       #myAccount #customer_login .u-column1 .woocommerce-form-login {
-        border: 1px solid #000;
         border-radius: 0px; }
         #myAccount #customer_login .u-column1 .woocommerce-form-login label {
           text-transform: uppercase; }
@@ -6615,6 +6625,11 @@ footer#colophon {
       padding: 15px; } }
 .page-id-1245 #contactPage, .page-id-1944 #contactPage {
   padding: 250px 0 90px; }
+  .page-id-1245 #contactPage .img-container, .page-id-1944 #contactPage .img-container {
+    height: 100%; }
+    .page-id-1245 #contactPage .img-container img, .page-id-1944 #contactPage .img-container img {
+      height: 100%;
+      width: auto; }
   .page-id-1245 #contactPage .title-container, .page-id-1944 #contactPage .title-container {
     display: flex;
     flex-direction: column;
@@ -7238,6 +7253,9 @@ body.page-id-1268 #content, body.page-id-1288 #content, body.page-id-1301 #conte
     justify-content: space-between; }
     #tutoPage .mode-demploi .steps .step {
       max-width: 350px; }
+      #tutoPage .mode-demploi .steps .step img {
+        height: auto;
+        width: 100%; }
       #tutoPage .mode-demploi .steps .step .txt .nbr {
         font-family: futura-pt, sans-serif;
         font-weight: 500;

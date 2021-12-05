@@ -77,6 +77,7 @@ jQuery('.variation-radios input[name=attribute_pa_couleur-cordon]').on('click', 
 // })
 
 jQuery(document).ready(function() {
+
   function arrowsCarousel() {
     let nbr = document.querySelectorAll('.flex-control-nav > li').length
     
@@ -108,5 +109,9 @@ jQuery(document).ready(function() {
       }
     })
   }
-  arrowsCarousel()
+
+  if (document.querySelector('body.single-product')) {
+    arrowsCarousel()
+  }
+  
 })

@@ -1,13 +1,14 @@
 function selectCategorie() {
     let hash = window.location.hash
-    jQuery(hash + '-tab').tab('show')
-    console.log(hash)
-    // if (hash == '#bijoux-seuls') {
-    //     console.log('ok hash')
-    //     jQuery('#bijoux-seuls-tab').tab('show')
-    // } else if (hash == '#bijoux-seuls') {
-
-    // }
+    // jQuery(hash + '-tab').tab('show')
+    console.log('hash', hash)
+    if (hash == '#bijoux-seuls' || hash == '#bijoux-seuls#bijoux-seuls') {
+        console.log('ok hash')
+        jQuery('#bijoux-seuls-tab').tab('show')
+    } else if (hash == '#recharges-parfum' || hash == '#recharges-parfum#recharges-parfum') {
+        console.log('ok hash')
+        jQuery('#recharges-parfum-tab').tab('show')
+    } 
 
     function removeHash() { 
         var scrollV, scrollH, loc = window.location;
@@ -28,7 +29,7 @@ function selectCategorie() {
     removeHash()
 }
 
-if (document.querySelector('body.post-type-archive')) {
+if (document.querySelector('body.page-id-7')) {
     selectCategorie()
 }
 

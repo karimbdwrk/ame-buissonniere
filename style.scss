@@ -12,7 +12,7 @@ Version: 1.0
 #wesh {
     display: flex;
     .morray {
-        display: none; 
+        display: block; 
     }
 }
 
@@ -437,18 +437,21 @@ header#masthead {
                         & > .mega-sub-menu {
                             margin-top: 22px;
                             padding: 30px 30px 5px 30px;
+                            display: flex;
+                            justify-content: center;
 
                             .mega-menu-row {
-                                // padding: 0 15px;
+                                display: flex;
+                                justify-content: center;
+
+                                & > .mega-sub-menu {
+                                    max-width: 1440px;
+                                }
                             }
 
                             .mega-menu-column {
                                 overflow: hidden;
                                 padding: 0 15px;
-
-                                // &.mega-menu-columns-2-of-12, &.mega-menu-columns-3-of-12 {
-                                //     width: 20%;
-                                // }
                                 margin-bottom: 30px;
     
                                 img {
@@ -1488,6 +1491,10 @@ header#masthead {
             .item {
                 padding-left: 15px;
                 padding-right: 15px;
+
+                .img-container {
+                    max-height: 425px;
+                }
             }
 
             .owl-dots {
@@ -3599,7 +3606,7 @@ footer#colophon {
                         & > button {
                             position: absolute;
                             z-index: 9;
-                            right: 60px;
+                            right: 45px;
 
                             &:focus {
                                 box-shadow: 0 0 0 #00000000;
@@ -5801,6 +5808,10 @@ footer#colophon {
 
                                     .woocommerce-shipping-destination {
                                         display: none;
+                                    }
+
+                                    .woocommerce-remove-coupon {
+                                        color: #AAA;
                                     }
                                 }
                             }
@@ -8863,7 +8874,7 @@ footer#colophon {
             }
 
             .woocommerce-form-login {
-                border: 1px solid #000;
+                // border: 1px solid #000;
                 border-radius: 0px;
 
                 label {
@@ -10697,6 +10708,15 @@ footer#colophon {
 
     #contactPage {
         padding: 250px 0 90px;
+        
+        .img-container {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
 
         .title-container {
             display: flex;
@@ -11745,8 +11765,10 @@ body.page-id-1268, body.page-id-1288, body.page-id-1301, body.page-id-1854, body
                 max-width: 350px;
 
                 img {
-
+                    height: auto;
+                    width: 100%;
                 }
+
 
                 .txt {
                     .nbr {
