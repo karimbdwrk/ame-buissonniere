@@ -1348,6 +1348,7 @@ header#masthead {
             line-height: 26px;
             color: $dark!important;
             margin-bottom: 25px;
+            max-width: 650px;
         }
         
         .btn {
@@ -1385,6 +1386,8 @@ header#masthead {
             .description {
                 font-size: 16px;
                 line-height: 16px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
     }
@@ -1719,6 +1722,7 @@ header#masthead {
 
             &.video-container {
                 justify-content: center;
+                padding-bottom: 30px;
             }
 
             &.txt-container {
@@ -11634,6 +11638,10 @@ body.page-id-1268, body.page-id-1288, body.page-id-1301, body.page-id-1854, body
                     .container {
                         .row {
                             margin-bottom: 30px;
+
+                            &:first-of-type {
+                                margin-top: 30px;
+                            }
     
                             .col-7{
                                 display: flex;
@@ -11652,7 +11660,7 @@ body.page-id-1268, body.page-id-1288, body.page-id-1301, body.page-id-1854, body
                                 }
             
                                 .txt-content {
-                                    font-size: 16px;
+                                    font-size: 14px;
                                 }
     
                             }

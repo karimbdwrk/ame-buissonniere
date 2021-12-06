@@ -988,6 +988,7 @@ header#masthead .container-fluid .search_bar .search_result .display-search-item
   line-height: 26px;
   color: #000 !important;
   margin-bottom: 25px;
+  max-width: 650px;
 }
 #hero .hero-txt .btn {
   font-style: normal;
@@ -1016,6 +1017,8 @@ header#masthead .container-fluid .search_bar .search_result .display-search-item
   #hero .hero-txt .description {
     font-size: 16px;
     line-height: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 #avantPremiere {
@@ -1250,6 +1253,7 @@ header#masthead .container-fluid .search_bar .search_result .display-search-item
   }
   #promenade > .row:last-of-type > .col-12.video-container {
     justify-content: center;
+    padding-bottom: 30px;
   }
   #promenade > .row:last-of-type > .col-12.txt-container {
     background-image: none;
@@ -8986,6 +8990,9 @@ body.page-id-1268 #content nav a.active, body.page-id-1288 #content nav a.active
   #nosEngagements .container > .row > .col-12 .container .row {
     margin-bottom: 30px;
   }
+  #nosEngagements .container > .row > .col-12 .container .row:first-of-type {
+    margin-top: 30px;
+  }
   #nosEngagements .container > .row > .col-12 .container .row .col-7 {
     display: flex;
     flex-direction: column;
@@ -9001,7 +9008,7 @@ body.page-id-1268 #content nav a.active, body.page-id-1288 #content nav a.active
     display: block;
   }
   #nosEngagements .container > .row > .col-12 .container .row .col-7 .txt-content {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 #tutoPage .section-1 {
