@@ -119,5 +119,9 @@
 <script async type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/custom-checkout.js" id="custom-checkout-js"></script>
 <script async type="text/javascript" src="https://amebuissonniere.com/wp-content/themes/wp-bootstrap-starter-child/js/page-tuto.min.js" id="page-tuto-js"></script>-->
 
+<script>
+	document.getElementById('heroVideo').play();
+</script>
+
 </body>
 </html>

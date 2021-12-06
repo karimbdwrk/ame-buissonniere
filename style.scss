@@ -16,6 +16,18 @@ Version: 1.0
     }
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    body {
+        display: none;
+    }
+
+}
+
 html[lang=fr-FR] {
     .lang-en {
         display: none;
@@ -437,7 +449,7 @@ header#masthead {
                         & > .mega-sub-menu {
                             margin-top: 22px;
                             padding: 30px 30px 5px 30px;
-                            display: flex;
+                            // display: flex;
                             justify-content: center;
 
                             .mega-menu-row {
@@ -900,9 +912,11 @@ header#masthead {
 
                                 .mega-indicator {
                                     display: flex;
+                                    font-family: 'Font Awesome\ 5 Free';
 
-                                    &:after {
-                                        content: "\f347";
+                                    &::after {
+                                        font-family: 'Font Awesome\ 5 Free';
+                                        content: "\f078";
                                         font-size: 16px;
                                         font-style: normal;
                                     }
@@ -1033,6 +1047,8 @@ header#masthead {
         }
     }
 }
+
+
 
 .xoo-wsc-modal {
     &.xoo-wsc-cart-active {
@@ -10337,7 +10353,7 @@ footer#colophon {
                 }
     
                 &+.post-navigation+#post {
-                    display: none;
+                    // display: none;
                 }
             }
         }
